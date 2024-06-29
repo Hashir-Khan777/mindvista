@@ -20,7 +20,7 @@ const Navbar = ({ clicked }) => {
         <Box to="/" as={NavLink}>
           <Text sx={style.links}>Home</Text>
         </Box>
-        <Box as={NavLink}>
+        <Box to="/services" as={NavLink}>
           <Text sx={style.links}>Services</Text>
         </Box>
         <Box to="/aboutUs" as={NavLink}>
@@ -29,31 +29,15 @@ const Navbar = ({ clicked }) => {
         <Box to="/contactUs" as={NavLink}>
           <Text sx={style.links}>Contact Us</Text>
         </Box>
-        <Box as={NavLink}>
+        <Box to="/portfolio" as={NavLink}>
           <Text sx={style.links}>Portfolio</Text>
         </Box>
       </Flex>
-      <Flex gap="30px" >
-        <Circle
-          display={{ base: "none", lg: "block" }}
-          as="button"
-          h="45px"
-          w="45px"
-          pt="5px"
-          color="#fff"
-          bgColor="bisque.100"
-        >
+      <Flex display={{ base: "none", lg: "flex" }} gap="30px">
+        <Circle as="button" sx={style.iconButton}>
           <Icon fontSize="25px" as={IoMdMail} />
         </Circle>
-        <Circle
-          display={{ base: "none", lg: "block" }}
-          as="button"
-          h="45px"
-          w="45px"
-          pt="5px"
-          color="#fff"
-          bgColor="bisque.100"
-        >
+        <Circle as="button" sx={style.iconButton}>
           <Icon fontSize="25px" as={FaPhoneAlt} />
         </Circle>
       </Flex>

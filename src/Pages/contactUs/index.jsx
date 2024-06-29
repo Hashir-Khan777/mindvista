@@ -22,21 +22,18 @@ import { IoLogoTwitter } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import CustomInput from "../../Components/inputField";
 import CustomButton from "../../Components/button";
+import Herosection from "../../Components/heroSection";
 
 const ContactUs = () => {
   return (
     <Box>
-      <Box sx={style.background}>
-        <Flex sx={style.overlay}>
-          <Heading sx={style.contactHeading}>CONTACT US</Heading>
-          <Text sx={style.contactText}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+      <Herosection
+        heading="CONTACT US"
+        text="  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
             consectetur, in neque quia hic odit ab porro molestias culpa, atque
             deleniti dolorem necessitatibus sed nobis maiores! Obcaecati nam
-            quod vel?
-          </Text>
-        </Flex>
-      </Box>
+            quod vel?"
+      />
       <Flex
         direction={{ base: "column", lg: "row" }}
         align="center"

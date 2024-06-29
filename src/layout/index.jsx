@@ -11,7 +11,7 @@ const Layout = () => {
   return (
     <Flex flexDirection="column" height="100vh">
       <Navbar clicked={() => setIsOpen(true)} />
-      <Box flex={1} >
+      <Box flex={1}>
         <Outlet />
       </Box>
       <Footer />

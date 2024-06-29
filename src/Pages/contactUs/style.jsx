@@ -1,28 +1,4 @@
 const style = {
-  background: {
-    bgImage: "url(./images/contact-image.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    h: "650px",
-  },
-  overlay: {
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column",
-    h: "100%",
-    w: "100%",
-    bgColor: "rgba(0,0,0,0.4)",
-  },
-  contactHeading: {
-    color: "white",
-    fontSize: "40px",
-  },
-  contactText: {
-    mt: "20px",
-    w: {base:"80%" , sm:"450px" , md:"500px" , lg:"600px"},
-    fontSize: "20px",
-    color: "white",
-  },
   text: {
     fontSize: "19px",
   },
@@ -50,7 +26,7 @@ const style = {
     w: "45px",
   },
   textArea: {
-    h: { lg:"200px" , xl:"250px"},
+    h: { lg: "200px", xl: "250px" },
     pt: "20px",
     px: "10px",
     borderRadius: "none",

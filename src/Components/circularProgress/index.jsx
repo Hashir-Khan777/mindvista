@@ -15,7 +15,7 @@ const Circularprogress = ({ value , label, text }) => {
         justify="center"
         align="center"
         value={value}
-        size={{ base: "50px", sm: "40px" , md:"80px"  }}
+        size={{ base: "50px", sm: "40px" , md:"80px"}}
         thickness="7px"
       >
         <CircularProgressLabel>{label}</CircularProgressLabel>

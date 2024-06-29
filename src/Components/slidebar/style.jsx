@@ -25,6 +25,12 @@ const style = {
     p: "5px 8px",
     borderBottom: "2px solid #e7e5ea",
   },
+  iconButton:{
+    h:"45px",
+    w:"45px",
+    color:"#fff",
+    bgColor:"bisque.100",
+  }
 };
 
 export default style;
