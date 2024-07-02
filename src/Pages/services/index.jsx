@@ -35,7 +35,6 @@ const Services = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 100) {
-        // console.log("true")
         setScrollPosition(true);
       } else {
         setScrollPosition(false);

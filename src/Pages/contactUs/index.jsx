@@ -25,20 +25,17 @@ import CustomButton from "../../Components/button";
 import Herosection from "../../Components/heroSection";
 
 const ContactUs = () => {
-
   const [scrollPosition, setScrollPosition] = useState("");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 250) {
-        console.log("true")
         setScrollPosition(true);
       } else {
         setScrollPosition(false);
       }
     });
   }, []);
-
 
   return (
     <Box>
@@ -58,7 +55,7 @@ const ContactUs = () => {
         justify="center"
       >
         <Stack
-        border="2px solid black"
+          border="2px solid black"
           gap="20px"
           px="20px"
           w={{ base: "100%", lg: "550px", xl: "600px" }}
