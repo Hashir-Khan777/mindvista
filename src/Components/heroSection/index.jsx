@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import style from "./style";
+import { motion } from "framer-motion";
 
 const Herosection = ({ heading, text }) => {
   const [animation, setAnimation] = useState();
@@ -13,12 +14,27 @@ const Herosection = ({ heading, text }) => {
     <Box sx={style.background}>
       <Flex sx={style.overlay}>
         <Heading
-          left={animation ? "600px" : "-180px"}
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateY(-20px)" }}
+          animate={{
+            opacity: 1,
+            transform: "translateY(0)",
+            transition: { duration: 1 },
+          }}
           sx={style.contactHeading}
         >
           {heading}
         </Heading>
-        <Text bottom={animation ? "160px" : "-120px"} sx={style.contactText}>
+        <Text
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateY(20px)" }}
+          animate={{
+            opacity: 1,
+            transform: "translateY(0)",
+            transition: { duration: 1, delay: 1 },
+          }}
+          sx={style.contactText}
+        >
           {text}
         </Text>
       </Flex>

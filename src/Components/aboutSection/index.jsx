@@ -5,16 +5,35 @@ import Customlistitem from "../customListItem";
 import { TiTick } from "react-icons/ti";
 import CustomButton from "../button";
 import style from "./style";
+import { motion } from "framer-motion";
 
 const Aboutsection = () => {
   return (
     <Box sx={style.aboutContainer}>
-      <Box sx={style.imageContainer}>
+      <Box
+        sx={style.imageContainer}
+        as={motion.div}
+        initial={{ opacity: 0, transform: "translateX(-20px)" }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0)",
+          transition: { duration: 1 },
+        }}
+      >
         <Image sx={style.aboutImage2} src="./images/about-image-2.jpg" />
         <Box sx={style.aboutImage1} />
         <Image sx={style.borderImage} src="./images/about-image-1.png" />
       </Box>
-      <Box sx={style.aboutContent}>
+      <Box
+        as={motion.div}
+        initial={{ opacity: 0, transform: "translateX(20px)" }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0)",
+          transition: { duration: 1 },
+        }}
+        sx={style.aboutContent}
+      >
         <Heading sx={style.aboutHeading}>
           We Prominent Truly Trusted IT Business Solutions
         </Heading>

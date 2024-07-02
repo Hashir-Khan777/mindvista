@@ -15,17 +15,11 @@ const style = {
     bgColor: "rgba(0,0,0,0.4)",
   },
   contactHeading: {
-    position: "absolute",
     color: "white",
-    top: "200px",
-    transition: "all 0.8s ease-in-out",
     fontSize: "40px",
   },
   contactText: {
-    position: "absolute",
-    transition: "all 0.8s ease-in-out 0.8s",
     textAlign: "center",
-    mt: "20px",
     w: { base: "80%", sm: "450px", md: "500px", lg: "600px" },
     fontSize: "20px",
     color: "white",

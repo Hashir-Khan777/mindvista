@@ -1,7 +1,8 @@
 import React from "react";
 import CustomButton from "../button";
-import { Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import style from "./style";
+import { motion } from "framer-motion";
 
 const PortfolioSection = (props) => {
   return (
@@ -12,7 +13,20 @@ const PortfolioSection = (props) => {
       gap="30px"
       align="center"
     >
-      <Stack px="20px" w={{ base: "100%", lg: "550px" }}>
+      <Stack
+        as={motion.div}
+        initial={{
+          opacity: 0,
+          transform: `translateX(${props.reverse ? "20px" : "-20px"})`,
+        }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0)",
+          transition: { duration: 1 },
+        }}
+        px="20px"
+        w={{ base: "100%", lg: "550px" }}
+      >
         <Image mb="20px" w="80px" src={props.iconImage} />
         <Text sx={style.portfolioText}>{props.subHeading}</Text>
         <Heading mb="20px" fontWeight={700}>
@@ -26,7 +40,20 @@ const PortfolioSection = (props) => {
           text="View Case Study"
         />
       </Stack>
-      <Image src={props.image} />
+      <Box
+        as={motion.div}
+        initial={{
+          opacity: 0,
+          transform: `translateX(${props.reverse ? "-20px" : "20px"})`,
+        }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0)",
+          transition: { duration: 1 },
+        }}
+      >
+        <Image src={props.image} />
+      </Box>
     </Flex>
   );
 };

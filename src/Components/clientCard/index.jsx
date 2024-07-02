@@ -9,10 +9,20 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import style from "./style";
+import { motion } from "framer-motion";
 
-const Clientcard = ({heading , image , subHeading , text }) => {
+const Clientcard = ({ heading, image, subHeading, text }) => {
   return (
-    <Box sx={style.reviewBox}>
+    <Box
+      as={motion.div}
+      initial={{ opacity: 0, transform: "translateY(50px)" }}
+      whileInView={{
+        opacity: 1,
+        transform: "translateY(0)",
+        transition: { duration: 1 },
+      }}
+      sx={style.reviewBox}
+    >
       <Flex align="center" gap="30px">
         <Circle h="80px" w="80px">
           <Image src={image} />

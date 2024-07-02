@@ -24,6 +24,7 @@ import Technologycard from "../../Components/technologyCard";
 import { CiMobile4 } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa";
 import { SiHiveBlockchain } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
@@ -83,6 +84,7 @@ const Portfolio = () => {
           customStyle={{
             flexDirection: { base: "column-reverse", lg: "row-reverse" },
           }}
+          reverse
           subHeading="MOBILE APP"
           heading="Hictic - revolutionizing traditional advertising & digital marketing"
           text="Launch new adverts and engage with your customers - an all-in-one
@@ -114,7 +116,17 @@ const Portfolio = () => {
           </TabList>
           <TabIndicator sx={style.tabIndicator} />
           <TabPanels>
-            <TabPanel as={Flex} sx={style.tabPanel}>
+            <TabPanel
+              as={motion.div}
+              display="flex"
+              initial={{ opacity: 0, transform: "translateY(50px)" }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateY(0)",
+                transition: { duration: 1 },
+              }}
+              sx={style.tabPanel}
+            >
               <Technologycard
                 image="./images/technology-image-1.png"
                 text="Ios"
@@ -148,7 +160,17 @@ const Portfolio = () => {
                 text="Objective-c"
               />
             </TabPanel>
-            <TabPanel as={Flex} sx={style.tabPanel}>
+            <TabPanel
+              as={motion.div}
+              display="flex"
+              initial={{ opacity: 0, transform: "translateY(50px)" }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateY(0)",
+                transition: { duration: 1 },
+              }}
+              sx={style.tabPanel}
+            >
               <Technologycard
                 image="./images/technology-image-9.png"
                 text="Agular js"
@@ -174,7 +196,17 @@ const Portfolio = () => {
                 text="Html5"
               />
             </TabPanel>
-            <TabPanel as={Flex} sx={style.tabPanel}>
+            <TabPanel
+              as={motion.div}
+              display="flex"
+              initial={{ opacity: 0, transform: "translateY(50px)" }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateY(0)",
+                transition: { duration: 1 },
+              }}
+              sx={style.tabPanel}
+            >
               <Technologycard
                 image="./images/technology-image-14.png"
                 text="Mongodb"
@@ -200,7 +232,17 @@ const Portfolio = () => {
                 text="Redis"
               />
             </TabPanel>
-            <TabPanel as={Flex} sx={style.tabPanel}>
+            <TabPanel
+              as={motion.div}
+              display="flex"
+              initial={{ opacity: 0, transform: "translateY(50px)" }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateY(0)",
+                transition: { duration: 1 },
+              }}
+              sx={style.tabPanel}
+            >
               <Technologycard
                 image="./images/technology-image-20.png"
                 text="Php"

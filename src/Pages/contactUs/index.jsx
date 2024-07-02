@@ -23,6 +23,7 @@ import { FaInstagram } from "react-icons/fa";
 import CustomInput from "../../Components/inputField";
 import CustomButton from "../../Components/button";
 import Herosection from "../../Components/heroSection";
+import { motion } from "framer-motion";
 
 const ContactUs = () => {
   const [scrollPosition, setScrollPosition] = useState("");
@@ -55,6 +56,13 @@ const ContactUs = () => {
         justify="center"
       >
         <Stack
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateX(-20px)" }}
+          whileInView={{
+            opacity: 1,
+            transform: "translateX(0)",
+            transition: { duration: 1 },
+          }}
           border="2px solid black"
           gap="20px"
           px="20px"
@@ -113,6 +121,13 @@ const ContactUs = () => {
           <Image mt="20px" src="./images/contact.jpg" />
         </Stack>
         <Box
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateX(20px)" }}
+          whileInView={{
+            opacity: 1,
+            transform: "translateX(0)",
+            transition: { duration: 1 },
+          }}
           p="40px 30px "
           bgColor="bisque.100"
           w={{ base: "90%", lg: "500px", xl: "550px" }}

@@ -22,6 +22,7 @@ import {
   keyframes,
 } from "@chakra-ui/react";
 import CustomButton from "../button";
+import { motion } from "framer-motion";
 
 export default function App() {
   const [hoverEffect, setHoverEffect] = useState("");
@@ -50,7 +51,16 @@ export default function App() {
   return (
     <Box>
       <Heading sx={style.portfolioHeading}>OUR PORTFOLIO</Heading>
-      <Box sx={style.protfolioSlider}>
+      <Box
+        as={motion.div}
+        initial={{ opacity: 0, transform: "translateY(50px)" }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0)",
+          transition: { duration: 1 },
+        }}
+        sx={style.protfolioSlider}
+      >
         <Swiper
           loop={true}
           autoplay={{

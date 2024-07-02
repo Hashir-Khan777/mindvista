@@ -28,20 +28,9 @@ import { GiMaterialsScience } from "react-icons/gi";
 import Advisorcard from "../../Components/advisorCard";
 import { CiMail } from "react-icons/ci";
 import ContactSection from "../../Components/contactSection";
+import { motion } from "framer-motion";
 
 const Services = () => {
-  const [scrollPosition, setScrollPosition] = useState("");
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 100) {
-        setScrollPosition(true);
-      } else {
-        setScrollPosition(false);
-      }
-    });
-  }, []);
-
   return (
     <Box>
       <Herosection
@@ -59,9 +48,14 @@ const Services = () => {
           </Heading>
         </Box>
         <SimpleGrid
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateY(50px)" }}
+          whileInView={{
+            opacity: 1,
+            transform: "translateY(0)",
+            transition: { duration: 1 },
+          }}
           mb="30px"
-          transition="all 0.4s ease-in-out"
-          bottom={scrollPosition ? "20px" : "-70px"}
           position="relative"
           placeItems="center"
           gap={{ base: "20px", lg: "40px 0" }}
@@ -87,15 +81,6 @@ const Services = () => {
             heading="Customer Software Development"
             text="We approached WiaTech with complex project deliver"
           />
-        </SimpleGrid>
-        <SimpleGrid
-          position="relative"
-          transition="all 0.4s ease-in-out 1s "
-          bottom={scrollPosition ? "20px" : "-70px"}
-          placeItems="center"
-          gap={{ base: "20px", lg: "40px 0" }}
-          columns={{ base: 1, md: 2, lg: 4 }}
-        >
           <Card
             icon={GiMaterialsScience}
             heading="Customer Software Development"
@@ -132,7 +117,17 @@ const Services = () => {
             </Box>
             <CustomButton text="Get A Free Quote" customStyle={style.button} />
           </Flex>
-          <Flex gap={{ base: "30px", lg: "25px" }} sx={style.whiteContainer}>
+          <Flex
+            as={motion.div}
+            initial={{ opacity: 0, transform: "translateY(50px)" }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateY(0)",
+              transition: { duration: 1 },
+            }}
+            gap={{ base: "30px", lg: "25px" }}
+            sx={style.whiteContainer}
+          >
             <Advisorcard
               icon={IoSettingsOutline}
               heading="It Consultancy"

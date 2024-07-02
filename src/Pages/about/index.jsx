@@ -22,6 +22,7 @@ import Customlistitem from "../../Components/customListItem";
 import { MdArrowOutward } from "react-icons/md";
 import Herosection from "../../Components/heroSection";
 import Aboutsection from "../../Components/aboutSection";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   const animationKeyframes = keyframes`
@@ -49,11 +50,28 @@ const AboutUs = () => {
           direction={{ base: "column", lg: "row" }}
           gap={10}
         >
-          <Image
-            w={{ md: "600px", lg: "650px", xl: "800px" }}
-            src="./images/About-us-image-1.jpg"
-          />
+          <Box
+            as={motion.div}
+            initial={{ opacity: 0, transform: "translateX(-20px)" }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateX(0)",
+              transition: { duration: 1 },
+            }}
+          >
+            <Image
+              w={{ md: "600px", lg: "650px", xl: "800px" }}
+              src="./images/About-us-image-1.jpg"
+            />
+          </Box>
           <Stack
+            as={motion.div}
+            initial={{ opacity: 0, transform: "translateX(20px)" }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateX(0)",
+              transition: { duration: 1 },
+            }}
             justify="center"
             w={{ base: "100%", md: "600px", lg: "300px" }}
           >
@@ -76,7 +94,17 @@ const AboutUs = () => {
           align="center"
           my="6rem"
         >
-          <Box mx="20px" w={{ base: "95%", md: "600px", lg: "570px" }}>
+          <Box
+            as={motion.div}
+            initial={{ opacity: 0, transform: "translateX(-20px)" }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateX(0)",
+              transition: { duration: 1 },
+            }}
+            mx="20px"
+            w={{ base: "95%", md: "600px", lg: "570px" }}
+          >
             <Text mb="10px" sx={style.textUnderline}>
               HOW TO MANAGE
             </Text>
@@ -149,7 +177,16 @@ const AboutUs = () => {
               </TabPanels>
             </Tabs>
           </Box>
-          <Box sx={style.backgroundImage}>
+          <Box
+            as={motion.div}
+            initial={{ opacity: 0, transform: "translateX(20px)" }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateX(0)",
+              transition: { duration: 1 },
+            }}
+            sx={style.backgroundImage}
+          >
             <Stack animation={animation_1} gap="4rem" sx={style.stack}>
               <Flex gap="25px">
                 <CircularProgress
