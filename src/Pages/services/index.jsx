@@ -13,12 +13,12 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Herosection from "../../Components/heroSection";
 import style from "./style";
 import Card from "../../Components/card";
 import CustomButton from "../../Components/button";
-import { IoSettingsOutline } from "react-icons/io5";
+import { IoLocationSharp, IoSettingsOutline } from "react-icons/io5";
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import Customaccordian from "../../Components/customAccordian";
@@ -26,8 +26,23 @@ import { FaPhone } from "react-icons/fa";
 import CustomInput from "../../Components/inputField";
 import { GiMaterialsScience } from "react-icons/gi";
 import Advisorcard from "../../Components/advisorCard";
+import { CiMail } from "react-icons/ci";
+import ContactSection from "../../Components/contactSection";
 
 const Services = () => {
+  const [scrollPosition, setScrollPosition] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 100) {
+        // console.log("true")
+        setScrollPosition(true);
+      } else {
+        setScrollPosition(false);
+      }
+    });
+  }, []);
+
   return (
     <Box>
       <Herosection
@@ -45,6 +60,10 @@ const Services = () => {
           </Heading>
         </Box>
         <SimpleGrid
+          mb="30px"
+          transition="all 0.4s ease-in-out"
+          bottom={scrollPosition ? "20px" : "-70px"}
+          position="relative"
           placeItems="center"
           gap={{ base: "20px", lg: "40px 0" }}
           columns={{ base: 1, md: 2, lg: 4 }}
@@ -69,6 +88,15 @@ const Services = () => {
             heading="Customer Software Development"
             text="We approached WiaTech with complex project deliver"
           />
+        </SimpleGrid>
+        <SimpleGrid
+          position="relative"
+          transition="all 0.4s ease-in-out 1s "
+          bottom={scrollPosition ? "20px" : "-70px"}
+          placeItems="center"
+          gap={{ base: "20px", lg: "40px 0" }}
+          columns={{ base: 1, md: 2, lg: 4 }}
+        >
           <Card
             icon={GiMaterialsScience}
             heading="Customer Software Development"
@@ -197,76 +225,7 @@ const Services = () => {
           </Stack>
         </Accordion>
       </Stack>
-      <Flex
-        justify="center"
-        align="center"
-        gap="30px"
-        sx={style.contactSection}
-      >
-        <Box w={{ base: "100%", md: "600px", lg: "550px" }}>
-          <Text sx={style.contactSubHeading}>IT SUPPORTED HELP</Text>
-          <Heading sx={style.contactHeading}>LET,S WORK</Heading>
-          <Heading sx={style.contactHeading}>TOGETHER</Heading>
-          <Text sx={style.para}>
-            We denounce with righteous indignation and like men beguiled and
-            demoralized by the charms
-          </Text>
-          <Stack mt="40px" gap="20px">
-            <Flex align="center" gap="40px">
-              <Icon sx={style.icon} as={FaPhone} />
-              <Box>
-                <Text sx={style.infoText}>Call For Inquiry</Text>
-                <Text sx={style.info}>+000 00000000</Text>
-              </Box>
-            </Flex>
-            <Flex align="center" gap="40px">
-              <Icon sx={style.icon} as={FaPhone} />
-              <Box>
-                <Text sx={style.infoText}>Send Us Email</Text>
-                <Text sx={style.info}>info@example.com</Text>
-              </Box>
-            </Flex>
-            <Flex align="center" gap="40px">
-              <Icon sx={style.icon} as={FaPhone} />
-              <Box>
-                <Text sx={style.infoText}>Location</Text>
-                <Text sx={style.info}>info@example.com</Text>
-              </Box>
-            </Flex>
-          </Stack>
-        </Box>
-        <Box sx={style.contactContainer}>
-          <Heading mb="20px" fontWeight={600} fontSize="30px">
-            Need Help For Project!
-          </Heading>
-          <Text fontSize="18px">
-            We are ready to help your next projects, let’s work together
-          </Text>
-          <Stack m="auto" mt="30px" w="90%" gap="25px">
-            <Flex
-              flexDirection={{ base: "column", lg: "row" }}
-              align="center"
-              gap={{ base: "20px", lg: "30px" }}
-            >
-              <CustomInput customStyle={style.input} placeholder="NAME" />
-              <CustomInput customStyle={style.input} placeholder="E-MAIL" />
-            </Flex>
-            <CustomInput
-              customStyle={style.input}
-              placeholder="KIND OF PROJECT"
-            />
-            <Textarea
-              variant="unstyled"
-              sx={style.textArea}
-              placeholder="ENTER YOUR MASSAGE"
-            />
-            <CustomButton
-              customStyle={style.contactButton}
-              text="GET IN TOUCH"
-            />
-          </Stack>
-        </Box>
-      </Flex>
+      <ContactSection />
     </Box>
   );
 };

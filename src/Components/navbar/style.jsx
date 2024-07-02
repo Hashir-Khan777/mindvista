@@ -6,7 +6,6 @@ const style = {
     position: "fixed",
     w: "100%",
     px: "20px",
-    zIndex: "999",
     bgColor: "rgba(22,28,34,0.68)",
     boxShadow: "md",
   },
@@ -39,12 +38,12 @@ const style = {
     display: "block",
     border: "1px solid black",
   },
-  iconButton:{
-    h:"45px",
-    w:"45px",
-    color:"#fff",
-    bgColor:"bisque.100",
-  }
+  iconButton: {
+    h: "45px",
+    w: "45px",
+    color: "#fff",
+    bgColor: "bisque.100",
+  },
 };
 
 export default style;

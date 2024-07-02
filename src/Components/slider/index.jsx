@@ -54,42 +54,40 @@ const Slider = () => {
   };
 
   return (
-    <>
-      <Box position="relative" height="600px">
-        <Box position="relative" w="100%" bgColor="rgba(0,0,0,0.2)">
-          <Box sx={style.sliderContainer}>
-            <Box sx={style.slider}>
-              {slides.map((slide, index) => {
-                return (
-                  <Box
-                    key={index}
-                    sx={style.slide}
-                    backgroundImage={`url(${slide.url})`}
-                    transform={`translateX(-${current * 100}%)`}
-                  />
-                );
-              })}
-            </Box>
-          </Box>
+    <Box position="relative" height="600px">
+      <Box sx={style.sliderContainer}>
+        <Box sx={style.slider}>
+          {slides.map((slide, index) => {
+            return (
+              <Box
+                key={index}
+                sx={style.slide}
+                backgroundImage={`url(${slide.url})`}
+                transform={`translateX(-${current * 100}%)`}
+              >
+                <Box position="relative" w="100%" h="100%" bgColor="rgba(0,0,0,0.4)" />
+              </Box>
+            );
+          })}
         </Box>
-        <Circle
-          as={Button}
-          variant="unstyle"
-          onClick={() => nextSlide()}
-          sx={style.prev}
-        >
-          <MdOutlineArrowBackIos />
-        </Circle>
-        <Circle
-          onClick={() => prevSlide()}
-          as={Button}
-          variant="unstyle"
-          sx={style.next}
-        >
-          <MdOutlineArrowForwardIos />
-        </Circle>
       </Box>
-    </>
+      <Circle
+        as={Button}
+        variant="unstyle"
+        onClick={() => nextSlide()}
+        sx={style.prev}
+      >
+        <MdOutlineArrowBackIos />
+      </Circle>
+      <Circle
+        onClick={() => prevSlide()}
+        as={Button}
+        variant="unstyle"
+        sx={style.next}
+      >
+        <MdOutlineArrowForwardIos />
+      </Circle>
+    </Box>
   );
 };
 

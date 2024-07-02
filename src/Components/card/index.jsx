@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Circle,
@@ -14,11 +14,14 @@ import style from "./style";
 const Card = ({icon , heading , text}) => {
   const [hover, setHover] = useState(false);
 
+
   return (
+
     <Box
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
-      sx={style.card}
+      _before={hover ? null :{ bottom:"100%" , h:"0" }  }
+      sx={{...style.card}}
     >
       <Stack gap="20px">
         <Box transform={hover ? "rotateY(180deg)" : "null"} sx={style.icon}>
@@ -30,7 +33,7 @@ const Card = ({icon , heading , text}) => {
             as={icon}
           />
         </Box>
-        <Heading fontSize="21px" fontWeight={600}>
+        <Heading fontSize="20px" fontWeight={600}>
           {heading}
         </Heading>
         <Text fontSize="16px" lineHeight="1.7em">

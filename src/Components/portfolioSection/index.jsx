@@ -1,113 +1,34 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
+import CustomButton from "../button";
+import { Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import style from "./style";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
-import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
-import { Box, Flex, Heading, Image, ScaleFade, Text } from "@chakra-ui/react";
-import CustomButton from "../button";
-
-export default function App() {
-  const [hoverEffect, setHoverEffect] = useState("");
-
-  const slides = [
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-  ];
-
+const PortfolioSection = (props) => {
   return (
-    <Box>
-      <Heading sx={style.portfolioHeading}>OUR PORTFOLIO</Heading>
-      <Box sx={style.protfolioSlider}>
-        <Swiper
-          loop={true}
-          autoplay={{
-            delay: 2500,
-          }}
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-          }}
-          effect={"coverflow"}
-          spaceBetween={15}
-          grabCursor={true}
-          centeredSlides={true}
-          initialSlide={2}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination, Autoplay]}
-          className="mySwiper"
-        >
-          {slides.map((slide, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <Box border="2px solid #e7e5ea" rounded="3xl">
-                  <Box
-                    onMouseOver={() => setHoverEffect(index)}
-                    onMouseOut={()=>setHoverEffect(false)}
-                    bgImage={`url(${slide.url})`}
-                    sx={style.slider}
-                  >
-                    <Box
-                      w="100%"
-                      h="100%"
-                      borderRadius="3xl"
-                      bgColor={hoverEffect === index ? "rgba(0,0,0,0.4)" : null}
-                    ></Box>
-                  </Box>
-                  <Flex px="20px" align="center" h="80px">
-                    <Text fontSize="23px" fontWeight={700}>
-                      EtechGems
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </Box>
-      <CustomButton
-        text="veiw all portfolio"
-        customStyle={{ w: "180px", m: "auto" }}
-      />
-    </Box>
+    <Flex
+      sx={props.customStyle}
+      direction={{ base: "column", lg: "row" }}
+      justify="center"
+      gap="30px"
+      align="center"
+    >
+      <Stack px="20px" w={{ base: "100%", lg: "550px" }}>
+        <Image mb="20px" w="80px" src={props.iconImage} />
+        <Text sx={style.portfolioText}>{props.subHeading}</Text>
+        <Heading mb="20px" fontWeight={700}>
+          {props.heading}
+        </Heading>
+        <Text fontSize="20px" lineHeight="1.8em">
+          {props.text}
+        </Text>
+        <CustomButton
+          customStyle={{ w: "180px", mt: "30px" }}
+          text="View Case Study"
+        />
+      </Stack>
+      <Image src={props.image} />
+    </Flex>
   );
-}
+};
+
+export default PortfolioSection;

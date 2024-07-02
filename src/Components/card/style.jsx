@@ -5,8 +5,9 @@ const style = {
     rounded: "lg",
     boxShadow: "xl",
     position: "relative",
-    w: {base:"250px" , md:"200px" , xl:"250px"},
+    w: { base: "250px", md: "200px", xl: "250px" },
     h: "350px",
+    transition: "all 0.4s ease-in-out",
     _before: {
       content: `""`,
       position: "absolute",
@@ -16,6 +17,7 @@ const style = {
       height: "0",
       backgroundColor: "bisque.100",
       zIndex: -1,
+      transition: "all 0.4s ease-in-out",
     },
     _hover: {
       color: "#fff",

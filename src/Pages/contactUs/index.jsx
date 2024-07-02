@@ -11,7 +11,7 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./style";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
@@ -25,6 +25,21 @@ import CustomButton from "../../Components/button";
 import Herosection from "../../Components/heroSection";
 
 const ContactUs = () => {
+
+  const [scrollPosition, setScrollPosition] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 250) {
+        console.log("true")
+        setScrollPosition(true);
+      } else {
+        setScrollPosition(false);
+      }
+    });
+  }, []);
+
+
   return (
     <Box>
       <Herosection
@@ -43,6 +58,7 @@ const ContactUs = () => {
         justify="center"
       >
         <Stack
+        border="2px solid black"
           gap="20px"
           px="20px"
           w={{ base: "100%", lg: "550px", xl: "600px" }}

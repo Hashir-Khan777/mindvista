@@ -13,7 +13,7 @@ const Slidebar = ({ clicked }) => {
           <Icon as={IoMdClose} />
         </Circle>
       </Flex>
-      <Stack gap="20px" >
+      <Stack gap="20px">
         <Box as={NavLink}>
           <Text sx={style.links}>Home</Text>
         </Box>
@@ -30,13 +30,13 @@ const Slidebar = ({ clicked }) => {
           <Text sx={style.links}>Portfolio</Text>
         </Box>
         <Flex my="20px" gap="30px">
-        <Circle as="button" sx={style.iconButton}>
-          <Icon fontSize="25px" as={IoMdMail} />
-        </Circle>
-        <Circle as="button" sx={style.iconButton}>
-          <Icon fontSize="25px" as={FaPhoneAlt} />
-        </Circle>
-      </Flex>
+          <Circle as="button" sx={style.iconButton}>
+            <Icon fontSize="25px" as={IoMdMail} />
+          </Circle>
+          <Circle as="button" sx={style.iconButton}>
+            <Icon fontSize="25px" as={FaPhoneAlt} />
+          </Circle>
+        </Flex>
       </Stack>
     </Box>
   );

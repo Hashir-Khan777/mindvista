@@ -14,8 +14,10 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = ({ clicked }) => {
   return (
-    <Flex sx={style.navBar}>
-      <Image src="./images/MindVista-Logo-05.jpg" />
+    <Flex sx={style.navBar} zIndex={1}>
+      <Box w="90px" as={NavLink} to="/" >
+        <Image src="./images/MindVista-Logo-05.jpg" />
+        </Box>
       <Flex sx={{ ...style.navMenu }}>
         <Box to="/" as={NavLink}>
           <Text sx={style.links}>Home</Text>

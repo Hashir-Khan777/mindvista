@@ -3,6 +3,7 @@ const style = {
     w: { base: "305px", md: "400px" },
     h: "100%",
     backgroundColor: "white",
+    position:"fixed",
     boxShadow: "md",
     fontSize: "17px",
     fontWeight: 600,

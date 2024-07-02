@@ -5,7 +5,7 @@ import style from "./style";
 import { IoFolder } from "react-icons/io5";
 import ServiceCard from "../../Components/serviceCard";
 import Clientcard from "../../Components/clientCard";
-import Protfolio from "../../Components/portfolioSection";
+import Protfolio from "../../Components/portfolioSlider";
 import Aboutsection from "../../Components/aboutSection";
 
 const Home = () => {
