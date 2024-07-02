@@ -95,7 +95,7 @@ export default function App() {
                     sx={style.slider}
                   >
                     <Box
-                    transition="all 0.4s ease-in-out"
+                      transition="all 0.4s ease-in-out"
                       w="100%"
                       h="100%"
                       borderRadius="3xl"

@@ -4,6 +4,7 @@ const style = {
     height: "70px",
     justifyContent: "space-between",
     position: "fixed",
+    zIndex: 2,
     w: "100%",
     px: "20px",
     bgColor: "rgba(22,28,34,0.68)",

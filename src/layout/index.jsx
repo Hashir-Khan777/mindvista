@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import Slidebar from "../Components/slidebar";
 import Footer from "../Components/footer";
 import { IoIosArrowUp } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Layout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,24 @@ const Layout = () => {
       >
         <Icon fontSize="20px" as={IoIosArrowUp} />
       </Flex>
+      <Box
+        as="a"
+        left="10"
+        bottom="10"
+        zIndex="999"
+        position="fixed"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        href="https://api.whatsapp.com/send?phone=+923110011927&text=Hello"
+        target="_blank"
+        bgColor="green"
+        h="80px"
+        w="80px"
+        borderRadius="50%"
+      >
+        <Icon fontSize="50px" as={FaWhatsapp} color="white" />
+      </Box>
       <Footer />
       <Slide
         transition={{
