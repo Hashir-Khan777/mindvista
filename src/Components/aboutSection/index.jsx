@@ -11,22 +11,8 @@ const Aboutsection = () => {
   return (
     <Box sx={style.aboutContainer}>
       <Box
-        sx={style.imageContainer}
         as={motion.div}
         initial={{ opacity: 0, transform: "translateX(-20px)" }}
-        whileInView={{
-          opacity: 1,
-          transform: "translateX(0)",
-          transition: { duration: 1 },
-        }}
-      >
-        <Image sx={style.aboutImage2} src="./images/about-image-2.jpg" />
-        <Box sx={style.aboutImage1} />
-        <Image sx={style.borderImage} src="./images/about-image-1.png" />
-      </Box>
-      <Box
-        as={motion.div}
-        initial={{ opacity: 0, transform: "translateX(20px)" }}
         whileInView={{
           opacity: 1,
           transform: "translateX(0)",
@@ -60,6 +46,18 @@ const Aboutsection = () => {
           </List>
           <CustomButton text="Explore More" />
         </Box>
+      </Box>
+      <Box
+        sx={style.imageContainer}
+        as={motion.div}
+        initial={{ opacity: 0, transform: "translateX(20px)" }}
+        whileInView={{
+          opacity: 1,
+          transform: "translateX(0)",
+          transition: { duration: 1 },
+        }}
+      >
+        <Image sx={style.borderImage} src="./images/about us.png" />
       </Box>
     </Box>
   );

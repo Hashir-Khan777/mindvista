@@ -9,39 +9,41 @@ import {
 } from "@chakra-ui/react";
 import style from "./style";
 import { NavLink } from "react-router-dom";
-import { IoMdMail } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
+import { MdOutlinePhone } from "react-icons/md";
 
 const Navbar = ({ clicked }) => {
   return (
     <Flex sx={style.navBar} zIndex={1}>
-      <Box w="90px" as={NavLink} to="/">
-        <Image src="./images/MindVista-Logo-05.jpg" />
-      </Box>
-      <Flex sx={{ ...style.navMenu }}>
-        <Box to="/" as={NavLink}>
-          <Text sx={style.links}>Home</Text>
+      <Flex gap="20px">
+        <Box w="90px" as={NavLink} to="/">
+          <Image src="./images/logopng.png" />
         </Box>
-        <Box to="/aboutUs" as={NavLink}>
-          <Text sx={style.links}>About Us</Text>
-        </Box>
-        <Box to="/services" as={NavLink}>
-          <Text sx={style.links}>Services</Text>
-        </Box>
-        <Box to="/portfolio" as={NavLink}>
-          <Text sx={style.links}>Portfolio</Text>
-        </Box>
-        <Box to="/contactUs" as={NavLink}>
-          <Text sx={style.links}>Contact Us</Text>
-        </Box>
+        <Flex sx={{ ...style.navMenu }}>
+          <Box to="/" as={NavLink}>
+            <Text sx={style.links}>Home</Text>
+          </Box>
+          <Box to="/aboutUs" as={NavLink}>
+            <Text sx={style.links}>About Us</Text>
+          </Box>
+          <Box to="/services" as={NavLink}>
+            <Text sx={style.links}>Services</Text>
+          </Box>
+          <Box to="/portfolio" as={NavLink}>
+            <Text sx={style.links}>Portfolio</Text>
+          </Box>
+          <Box to="/contactUs" as={NavLink}>
+            <Text sx={style.links}>Contact Us</Text>
+          </Box>
+        </Flex>
       </Flex>
       <Flex display={{ base: "none", lg: "flex" }} gap="30px">
-        <Circle as="button" sx={style.iconButton}>
-          <Icon fontSize="25px" as={IoMdMail} />
-        </Circle>
-        <Circle as="button" sx={style.iconButton}>
-          <Icon fontSize="25px" as={FaPhoneAlt} />
-        </Circle>
+        <Box as="button" sx={style.iconButton}>
+          <Icon fontSize="24px" as={IoMailOutline} />
+        </Box>
+        <Box as="button" sx={style.iconButton}>
+          <Icon fontSize="24px" as={MdOutlinePhone} />
+        </Box>
       </Flex>
       <Circle as="button" onClick={clicked} sx={style.hamBurger}>
         <Box sx={style.bar} as="span" />

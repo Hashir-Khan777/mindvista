@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import Slider from "../../Components/slider";
 import style from "./style";
@@ -11,7 +11,49 @@ import Aboutsection from "../../Components/aboutSection";
 const Home = () => {
   return (
     <Box flex={1}>
-      <Slider />
+      <Box sx={style.background}>
+        <Flex sx={style.overlay}>
+          <Box sx={{ flex: 0.65 }}>
+            <Text
+              sx={{
+                fontSize: "24px",
+                fontWeight: 600,
+                color: "#fff",
+              }}
+            >
+              MindVista
+            </Text>
+            <Text
+              sx={{
+                fontSize: "48px",
+                fontWeight: 600,
+                color: "#fff",
+              }}
+            >
+              Your{" "}
+              <Text as="span" sx={{ color: "#F4A950" }}>
+                Comprehensive
+              </Text>{" "}
+              Solution for{" "}
+              <Text as="span" sx={{ color: "#F4A950" }}>
+                Online Business.
+              </Text>
+            </Text>
+            <Heading
+              sx={{
+                fontSize: "24px",
+                fontWeight: 500,
+                color: "#fff",
+              }}
+            >
+              Unlock your business potential with MindVista! If you can dream
+              it, we can make it happen. Start your journey to success now!
+              Click the button below to get in touch.
+            </Heading>
+          </Box>
+          <Image src="./images/bannerimage.png" />
+        </Flex>
+      </Box>
       <Heading sx={style.heading}>
         Outstanding Software And Services That Solve Your Hassle
       </Heading>

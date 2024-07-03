@@ -4,12 +4,6 @@ import style from "./style";
 import { motion } from "framer-motion";
 
 const Herosection = ({ heading, text }) => {
-  const [animation, setAnimation] = useState();
-
-  useEffect(() => {
-    setAnimation(true);
-  }, []);
-
   return (
     <Box sx={style.background}>
       <Flex sx={style.overlay}>
