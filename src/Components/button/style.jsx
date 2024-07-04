@@ -2,7 +2,7 @@ const style = {
   defaultStyle: {
     w: {base:"130px" , sm:"160px"},
     h: "50px",
-    fontSize: "18px",
+    fontSize: "14px",
     border: "2px solid #F4A950",
     color: "bisque.100",
     display:"flex",

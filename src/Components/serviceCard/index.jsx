@@ -19,7 +19,9 @@ const ServiceCard = (service) => {
       <Circle sx={style.serviceIcon}>{service.icon}</Circle>
       <Text sx={style.serviceHeading}>{service.heading}</Text>
       <Text sx={style.serviceText}>{service.text}</Text>
-      <CustomButton text="Veiw More"></CustomButton>
+      <CustomButton
+        text="View More"
+      ></CustomButton>
     </Box>
   );
 };

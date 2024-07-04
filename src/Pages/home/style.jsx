@@ -1,11 +1,29 @@
 const style = {
   heading: {
+    color: "#fff",
     textAlign: "center",
     m: "auto",
     mt: "5rem",
     p: "0 20px",
     w: { base: "fit-content", md: "470px", lg: "650px" },
     fontSize: { base: "22px", md: "28px", lg: "40px" },
+  },
+  serviceHeading: {
+    pt: { base: "2rem", md: "3rem", lg: "4rem" },
+    color: "#fff",
+    textAlign: "center",
+    m: "auto",
+    fontSize: { base: "22px", md: "28px", lg: "40px" },
+  },
+  text: {
+    textAlign: "center",
+    mt: "20px",
+    fontSize: "18px",
+    color: "#fff",
+  },
+  serviceBox: {
+    bgColor: "black",
+    height: "auto",
   },
   serviceContainer: {
     mt: "4rem",

@@ -6,8 +6,7 @@ const style = {
     justifyContent: "center",
     aligItems: "center",
     gap: "60px",
-    mb: { base: "2rem", lg: "6rem" },
-    py: { base: "2rem", lg: "6rem" },
+    // py: { base: "2rem", lg: "6rem" },
   },
   imageContainer: {
     m: { base: "auto", lg: "0" },

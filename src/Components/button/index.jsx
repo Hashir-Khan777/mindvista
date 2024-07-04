@@ -8,7 +8,14 @@ const CustomButton = ({ type, text, clicked, customStyle }) => {
       type={type}
       onClick={clicked}
       variant="unstyled"
-      sx={{ ...style.defaultStyle, ...customStyle }}
+      sx={{
+        ...style.defaultStyle,
+        ...customStyle,
+
+        margin: "auto",
+        display: "block",
+        textAlign: "center",
+      }}
     >
       <Text>{text}</Text>
     </Button>

@@ -1,19 +1,22 @@
 const style = {
   services: {
-    w: { base: "300px", sm: "360px" , md:"320px" ,  lg:"300px" , xl:"360px"   },
-    border: "2px solid #e7e5ea",
-    borderRadius: "10px",
+    w: { base: "300px", sm: "360px", md: "320px", lg: "300px", xl: "360px" },
     p: "2rem 2rem",
-    _hover: {
-      boxShadow: "2xl",
-    },
+    textAlign: "center",
+    justifyContent: "center",
+    display: "flex",
+    flexDirection: "column",
+    margin: "auto",
   },
   serviceHeading: {
-    color: "black.900",
+    color: "#F8BE28",
     fontSize: "20px",
     fontWeight: 600,
   },
   serviceIcon: {
+    textAlign: "center",
+    display: "flex",
+    margin: "auto",
     w: "50px",
     h: "50px",
     fontSize: "25px",
@@ -25,8 +28,8 @@ const style = {
     mt: "1rem",
     mb: "2rem",
     fontSize: "18px",
-    color: "grey",
-    fontWeight: 600,
+    color: "white",
+    fontWeight: 400,
   },
 };
 

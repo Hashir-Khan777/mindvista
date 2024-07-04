@@ -1,8 +1,5 @@
-import { Box, Flex, Grid, Heading, Image, List, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import Circularprogress from "../circularProgress";
-import Customlistitem from "../customListItem";
-import { TiTick } from "react-icons/ti";
 import CustomButton from "../button";
 import style from "./style";
 import { motion } from "framer-motion";
@@ -40,6 +37,7 @@ const Aboutsection = () => {
             gap={6}
             maxW="1200px"
             mx="auto"
+            mb="15px"
           >
             <Box textAlign="left">
               <Text fontSize="3xl" fontWeight="bold">
@@ -66,6 +64,7 @@ const Aboutsection = () => {
               <Text>Driving Excellence and Achievement</Text>
             </Box>
           </Grid>
+          <CustomButton text="Know more about us"></CustomButton>
         </Box>
       </Box>
       <Box
