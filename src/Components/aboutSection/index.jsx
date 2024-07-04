@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, List, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Image, List, Text } from "@chakra-ui/react";
 import React from "react";
 import Circularprogress from "../circularProgress";
 import Customlistitem from "../customListItem";
@@ -20,31 +20,52 @@ const Aboutsection = () => {
         }}
         sx={style.aboutContent}
       >
+        <Text sx={style.aboutText}>About Us</Text>
         <Heading sx={style.aboutHeading}>
-          We Prominent Truly Trusted IT Business Solutions
+          Driving Business Success Through Innovation
         </Heading>
         <Text sx={style.aboutText}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis cum
-          magnam repellat?
+          {` MindVista is an innovative IT services company enhancing business
+          efficiency with cutting-edge digital solutions. With a proven track
+          record of over 100 satisfied clients, partner with us to unlock your
+          business's full potential and thrive in today's competitive market.`}
         </Text>
-        <Box ms={{ md: "30px" }}>
-          <Flex mt="20px" gap="10px">
-            <Circularprogress value={68} label="68%" text="Business Strategy" />
-            <Circularprogress
-              value={81}
-              label="81%"
-              text="Real Time Solution"
-            />
-          </Flex>
-          <List sx={style.list} spacing="18px">
-            <Customlistitem icon={TiTick} text="Professional Team Member" />
-            <Customlistitem
-              icon={TiTick}
-              text="Awards Winning IT Solutions Company"
-            />
-            <Customlistitem icon={TiTick} text="Dedicated Tech Services" />
-          </List>
-          <CustomButton text="Explore More" />
+        <Box bg="black" color="white" py={10}>
+          <Grid
+            templateColumns={{
+              base: "1fr",
+              md: "1fr 1fr",
+              lg: "repeat(2, 1fr)",
+            }}
+            gap={6}
+            maxW="1200px"
+            mx="auto"
+          >
+            <Box textAlign="left">
+              <Text fontSize="3xl" fontWeight="bold">
+                50+ Years
+              </Text>
+              <Text>of leading Innovation in IT Services</Text>
+            </Box>
+            <Box textAlign="left">
+              <Text fontSize="3xl" fontWeight="bold">
+                100+ Projects
+              </Text>
+              <Text>Successfully delivered with excellence.</Text>
+            </Box>
+            <Box textAlign="left">
+              <Text fontSize="3xl" fontWeight="bold">
+                20+ Awards
+              </Text>
+              <Text>Recognizing Excellence in Innovation and Service</Text>
+            </Box>
+            <Box textAlign="left">
+              <Text fontSize="3xl" fontWeight="bold">
+                99+ Success
+              </Text>
+              <Text>Driving Excellence and Achievement</Text>
+            </Box>
+          </Grid>
         </Box>
       </Box>
       <Box

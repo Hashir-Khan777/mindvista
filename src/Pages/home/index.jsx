@@ -13,7 +13,7 @@ const Home = () => {
     <Box flex={1}>
       <Box sx={style.background}>
         <Flex sx={style.overlay}>
-          <Box sx={{ flex: 0.65 }}>
+          <Box sx={{ flex: 0.85 }}>
             <Text
               sx={{
                 fontSize: "24px",
@@ -31,19 +31,21 @@ const Home = () => {
               }}
             >
               Your{" "}
-              <Text as="span" sx={{ color: "#F4A950" }}>
+              <Text as="span" sx={{ color: "#F8BE28" }}>
                 Comprehensive
               </Text>{" "}
               Solution for{" "}
-              <Text as="span" sx={{ color: "#F4A950" }}>
+              <Text as="span" sx={{ color: "#F8BE28" }}>
                 Online Business.
               </Text>
             </Text>
             <Heading
               sx={{
-                fontSize: "24px",
-                fontWeight: 500,
+                fontSize: "14px",
+                fontWeight: 400,
                 color: "#fff",
+                letterSpacing: "1px",
+                lineHeight: "20px",
               }}
             >
               Unlock your business potential with MindVista! If you can dream
@@ -54,6 +56,7 @@ const Home = () => {
           <Image src="./images/bannerimage.png" />
         </Flex>
       </Box>
+      <Aboutsection />
       <Heading sx={style.heading}>
         Outstanding Software And Services That Solve Your Hassle
       </Heading>
@@ -74,7 +77,6 @@ const Home = () => {
           text="Lorem ipsum dolor sit amet consectetur adipisicing."
         />
       </Box>
-      <Aboutsection />
       <Protfolio />
       <Box sx={style.reviewContainer}>
         <Heading sx={style.reviewHeading}>

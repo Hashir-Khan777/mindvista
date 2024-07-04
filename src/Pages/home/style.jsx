@@ -26,7 +26,8 @@ const style = {
     textAlign: "center",
   },
   background: {
-    bgImage: "url(./images/abiut.png)",
+    position: "relative",
+    bgImage: "url(./images/hero.png)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     h: "100vh",
@@ -38,6 +39,12 @@ const style = {
     width: "100%",
     flexDirection: "row",
     padding: "0 40px",
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "#00000080",
   },
   contactHeading: {
     color: "white",

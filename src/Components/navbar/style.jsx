@@ -5,7 +5,7 @@ const style = {
     justifyContent: "space-between",
     w: "100%",
     px: "20px",
-    bgColor: "#161C25",
+    bgColor: "#040507",
     boxShadow: "md",
   },
   navMenu: {
