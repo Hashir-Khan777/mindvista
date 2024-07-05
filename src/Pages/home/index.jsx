@@ -9,12 +9,18 @@ import {
   Button,
   SimpleGrid,
   keyframes,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
 } from "@chakra-ui/react";
 import ServiceCard from "../../Components/serviceCard";
 import Clientcard from "../../Components/clientCard";
 import Protfolio from "../../Components/portfolioSlider";
 import Aboutsection from "../../Components/aboutSection";
 import style from "./style";
+import ContactUs from "../contactUs";
+import ContactForm from "../contactform";
 
 const Home = () => {
   const logos = [
@@ -330,6 +336,65 @@ const Home = () => {
             </Box>
           </Box>
         </Box>
+        {/* Contact Section */}
+        <Box sx={style.contactBackground}>
+          <Box sx={style.contactOverlay}>
+            <Heading sx={style.serviceHeading}>Contact Us</Heading>
+            <Text sx={style.text}>
+              {`Reach Out to Elevate Your Business. Contact Us for Premium Services and Tailored Solutions.`}
+            </Text>
+            <Box
+              bg="#00000080"
+              p={6}
+              borderRadius="md"
+              border="1px solid rgba(255, 255, 255, 0.2)"
+              width={"60%"}
+              justifyContent={"center"}
+              m={"auto"}
+              my={10}
+            >
+              <Flex justifyContent={"center"} alignItems={"center"} gap={10}>
+                <Box>
+                  <FormControl mb={4}>
+                    <FormLabel color="white">
+                      Name <span style={{ color: "red" }}>*</span>
+                    </FormLabel>
+                    <Input placeholder="Name" />
+                  </FormControl>
+                  <FormControl mb={4}>
+                    <FormLabel color="white">
+                      Email <span style={{ color: "red" }}>*</span>
+                    </FormLabel>
+                    <Input placeholder="Email" type="email" />
+                  </FormControl>
+                  <FormControl mb={4}>
+                    <FormLabel color="white">Phone Number</FormLabel>
+                    <Input placeholder="Phone Number" type="tel" />
+                  </FormControl>
+                </Box>
+                <Box>
+                  <FormControl mb={4}>
+                    <FormLabel color="white">Message</FormLabel>
+                    <Textarea placeholder="Message" />
+                  </FormControl>
+                </Box>
+              </Flex>
+
+              <Button
+                colorScheme="transparent"
+                width="12vw"
+                borderColor={"#fff"}
+                borderWidth={1}
+                justifyContent={"center"}
+                m={"auto"}
+                display={"flex"}
+              >
+                Send Message
+              </Button>
+            </Box>
+          </Box>
+        </Box>
+        {/* <ContactForm /> */}
       </Box>
     </>
   );
