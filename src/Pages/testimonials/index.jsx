@@ -39,7 +39,13 @@ export default function App() {
   ];
 
   return (
-    <Box minH="100vh" display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+    <Box
+      minH="100vh"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+    >
       <Box sx={style.background}>
         <Box>
           <Heading sx={style.heading}>Portfolio</Heading>
@@ -138,4 +144,3 @@ export default function App() {
     </Box>
   );
 }
-

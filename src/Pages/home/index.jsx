@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -7,39 +7,15 @@ import {
   Image,
   Text,
   Button,
+  SimpleGrid
 } from "@chakra-ui/react";
 import ServiceCard from "../../Components/serviceCard";
 import Clientcard from "../../Components/clientCard";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Protfolio from "../../Components/portfolioSlider";
 import Aboutsection from "../../Components/aboutSection";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import style from "./style";
-import { motion } from "framer-motion";
 
 const Home = () => {
-  const [hoverEffect, setHoverEffect] = useState("");
-
-  const slides = [
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-    {
-      url: "./images/portfolio-image-1.jpg",
-    },
-  ];
 
   const servicesData = [
     {
@@ -184,41 +160,47 @@ const Home = () => {
         <Box sx={style.reviewContainer}>
           <Heading sx={style.serviceHeading}>Testimonial</Heading>
           <Text sx={style.text}>
-            {`Don't just take our word for it - see what actual users of our
-            service have to say about their experience.`}
+            {`Don't just take our word for it - see what actual users of our service have to say about their experience.`}
           </Text>
-          <Flex
+          <SimpleGrid
             my="40px"
-            justify="center"
-            flexDirection={{ base: "column", lg: "row" }}
-            align="center"
-            gap="30px"
+            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+            spacing="30px"
+            justifyItems="center"
           >
             <Clientcard
               image="./images/client-image-1.webp"
-              heading="Ernest Smith"
-              subHeading="Developer At MindVista"
+              heading="Jane Smith"
+              subHeading="CEO of Tech Innovators"
               text="MindVista transformed our outdated systems into a cutting-edge digital platform. Their expertise and dedication have significantly boosted our efficiency and client satisfaction. We couldn’t be happier with the results!"
+              rating={5}
+              bgColor="#1a1405"
             />
             <Clientcard
               image="./images/client-image-1.webp"
-              heading="Ernest Smith"
-              subHeading="Developer At MindVista"
+              heading="Tom Williams"
+              subHeading="Founder of Creative Solutions"
               text="Working with MindVista has been a game-changer for our company. Their ability to understand our needs and provide tailored solutions has helped us navigate the digital landscape with confidence. Outstanding service!"
+              rating={5}
+              bgColor="#1e1e1e"
             />
             <Clientcard
               image="./images/client-image-1.webp"
-              heading="Ernest Smith"
-              subHeading="Developer At MindVista"
+              heading="Michael Brown"
+              subHeading="Marketing Director of PrimeTech"
               text="From the initial consultation to the final implementation, MindVista has been a pleasure to work with. Their innovative approach and professional execution have greatly improved our business efficiency. We highly recommend their services!"
+              rating={4}
+              bgColor="#1e1e1e"
             />
             <Clientcard
               image="./images/client-image-1.webp"
-              heading="Ernest Smith"
-              subHeading="Developer At MindVista"
+              heading="Sarah Johnson"
+              subHeading="CEO of NextGen Solutions"
               text="MindVista exceeded our expectations at every turn. Their creative strategies and advanced technological solutions have significantly enhanced our operational efficiency. We're thrilled with the partnership and results!"
+              rating={5}
+              bgColor="#1e1e1e"
             />
-          </Flex>
+          </SimpleGrid>
         </Box>
       </Box>
     </>
