@@ -2,8 +2,8 @@ const style = {
   slideBar: {
     w: { base: "305px", md: "400px" },
     h: "100%",
-    backgroundColor: "white",
-    position:"fixed",
+    backgroundColor: "black",
+    position: "fixed",
     boxShadow: "md",
     fontSize: "17px",
     fontWeight: 600,
@@ -18,20 +18,20 @@ const style = {
     w: "45px",
     mb: "20px",
     color: "black.900",
-    bgColor: "bisque.100",
+    bgColor: "#f8be28",
     flexDirection: "column",
   },
   links: {
-    color: "black.900",
+    color: "white",
     p: "5px 8px",
     borderBottom: "2px solid #e7e5ea",
   },
-  iconButton:{
-    h:"45px",
-    w:"45px",
-    color:"#fff",
-    bgColor:"bisque.100",
-  }
+  iconButton: {
+    h: "45px",
+    w: "45px",
+    color: "#000",
+    bgColor: "#f8be28",
+  },
 };
 
 export default style;

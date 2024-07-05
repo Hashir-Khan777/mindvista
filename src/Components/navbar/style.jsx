@@ -28,7 +28,7 @@ const style = {
   hamBurger: {
     h: "45px",
     w: "45px",
-    bgColor: "bisque.100",
+    bgColor: "#f8be28",
     display: { base: "flex", lg: "none" },
     flexDirection: "column",
   },
