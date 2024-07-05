@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text, Button } from "@chakra-ui/react";
 import React from "react";
 import Slider from "../../Components/slider";
 import { IoFolder } from "react-icons/io5";
@@ -17,10 +17,10 @@ const Home = () => {
             sx={style.overlay}
             flexDirection={{ base: "column", md: "row" }}
           >
-            <Box sx={{ flex: 0.85, textAlign: { base: "center", md: "left" } }}>
+            <Box sx={{ flex: 0.4, textAlign: { base: "center", md: "left" } }}>
               <Text
                 sx={{
-                  fontSize: { base: "20px", md: "24px" },
+                  fontSize: { base: "1rem", md: "1.2rem" },
                   fontWeight: 600,
                   color: "#fff",
                 }}
@@ -29,7 +29,7 @@ const Home = () => {
               </Text>
               <Text
                 sx={{
-                  fontSize: { base: "36px", md: "48px" },
+                  fontSize: { base: "1.5rem", md: "2.2rem" },
                   fontWeight: 600,
                   color: "#fff",
                 }}
@@ -45,7 +45,7 @@ const Home = () => {
               </Text>
               <Heading
                 sx={{
-                  fontSize: { base: "12px", md: "14px" },
+                  fontSize: { base: "10px", md: "12px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
@@ -57,11 +57,26 @@ const Home = () => {
                 it, we can make it happen. Start your journey to success now!
                 Click the button below to get in touch.
               </Heading>
+              <Button
+                sx={{
+                  mt: "14px",
+                  fontSize: { base: "10px", md: "12px" },
+                  fontWeight: 700,
+                }}
+              >
+                Book a Free Call
+              </Button>
             </Box>
-            <Image
-              src="./images/bannerimage.png"
-              mt={{ base: 4, md: 0 }}
-            />
+            <Box sx={{ flex: 0.4, textAlign: { base: "center", md: "left" } }}>
+              <Image
+                src="./images/bannerimage.png"
+                sx={{
+                  width: "auto",
+                  height: "auto",
+                }}
+                // mt={{ base: 4, md: 0 }}
+              />
+            </Box>
           </Flex>
         </Box>
         <Aboutsection />
