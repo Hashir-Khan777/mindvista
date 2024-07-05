@@ -28,6 +28,7 @@ const style = {
     lineHeight: "20px",
     display: "flex",
     m: "auto",
+    justifyContent: "center",
   },
   serviceBox: {
     bgColor: "black",
