@@ -1,77 +1,3 @@
-// import {
-//   Box,
-//   Heading,
-//   Image,
-//   List,
-//   ListItem,
-//   SimpleGrid,
-//   Text,
-// } from "@chakra-ui/react";
-// import React from "react";
-// import style from "./style";
-
-// const Footer = () => {
-//   return (
-//     <Box sx={style.background}>
-//       <Box w="100%" bgColor="rgba(22,28,34,0.68)">
-//         <SimpleGrid columns={{base:1 , md:2 , lg:4  }} spacing={10} m="auto" pt="40px  " maxW="1440px">
-//           <Box p="30px" h="220px" w={{base:"300px" , lg:"240px" }}>
-//             <Image w="140px" src="./images/MindVista-Logo-05.jpg" />
-//             <Text mt="30px" color="white" fontSize="18px">
-//               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi
-//               totam nam blanditiis.
-//             </Text>
-//           </Box>
-//           <Box sx={style.footerBox} >
-//             <Heading sx={style.footerHeading} >
-//               Services
-//             </Heading>
-//             <List mt="20px" fontSize="20px" spacing="10px" color="#fff">
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//             </List>
-//           </Box>
-//           <Box sx={style.footerBox}>
-//             <Heading sx={style.footerHeading}>
-//               Services
-//             </Heading>
-//             <List mt="20px" fontSize="20px" spacing="10px" color="#fff">
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//             </List>
-//           </Box>
-//           <Box sx={style.footerBox}>
-//             <Heading sx={style.footerHeading}>
-//               Services
-//             </Heading>
-//             <List mt="20px" fontSize="20px" spacing="10px" color="#fff">
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//               <ListItem>Lorem, ipsum.</ListItem>
-//             </List>
-//           </Box>
-//         </SimpleGrid>
-//       </Box>
-//     </Box>
-//   );
-// };
-
-// export default Footer;
-
 import React from "react";
 import {
   Box,
@@ -97,52 +23,59 @@ const Footer = () => {
         mx="auto"
         px={{ base: 4, md: 8 }}
         alignItems="center"
-        justifyContent={"center"}
-        m={"auto"}
+        justifyContent="center"
+        flexDirection="column"
+        textAlign="center"
       >
-        <Box>
-          <Box w="90px" as={NavLink} to="/">
+        <Box mb={4}>
+          <NavLink to="/">
             <Image
-              sx={{
-                justifyContent: "center",
-                m: "auto",
-                mb: "2rem",
-              }}
+              w="90px"
               src="./images/logopng.png"
+              mx="auto"
+              mb={4}
             />
-          </Box>
-          <Flex mt={{ base: 4, md: 0 }} justifyContent={"center"} mb={14}>
-            <Link href="/about-us" mr={4} mb={{ base: 2, md: 0 }}>
-              About Us
-            </Link>
-            <Link href="/contact-us" mr={4} mb={{ base: 2, md: 0 }}>
-              Contact Us
-            </Link>
-            <Link href="/features" mr={4} mb={{ base: 2, md: 0 }}>
-              Features
-            </Link>
-            <Link href="/terms-and-conditions" mr={4} mb={{ base: 2, md: 0 }}>
-              Terms and Conditions
-            </Link>
-            <Link href="/help" mr={4} mb={{ base: 2, md: 0 }}>
-              Help
-            </Link>
-            <Link href="/privacy-policy" mb={{ base: 2, md: 0 }}>
-              Privacy Policy
-            </Link>
-          </Flex>
+          </NavLink>
         </Box>
-      </Flex>
-      <Divider mt={4} />
-      <Flex mx={10} mb={5} flexWrap="wrap" justifyContent="space-between">
-        <Text textAlign="center" mt={2}>
-          © 2021 MindVista. All rights reserved
-        </Text>
         <Flex
-          mt={2}
-          flexWrap="wrap"
-          justifyContent={{ base: "center", md: "flex-start" }}
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+          justifyContent="center"
+          wrap="wrap"
+          mb={8}
         >
+          <Link href="/about-us" mx={2} mb={{ base: 2, md: 0 }}>
+            About Us
+          </Link>
+          <Link href="/contact-us" mx={2} mb={{ base: 2, md: 0 }}>
+            Contact Us
+          </Link>
+          <Link href="/features" mx={2} mb={{ base: 2, md: 0 }}>
+            Features
+          </Link>
+          <Link href="/terms-and-conditions" mx={2} mb={{ base: 2, md: 0 }}>
+            Terms and Conditions
+          </Link>
+          <Link href="/help" mx={2} mb={{ base: 2, md: 0 }}>
+            Help
+          </Link>
+          <Link href="/privacy-policy" mx={2} mb={{ base: 2, md: 0 }}>
+            Privacy Policy
+          </Link>
+        </Flex>
+      </Flex>
+      <Divider />
+      <Flex
+        maxW="1200px"
+        mx="auto"
+        px={{ base: 4, md: 8 }}
+        alignItems="center"
+        justifyContent="space-between"
+        flexDirection={{ base: "column", md: "row" }}
+        mt={4}
+      >
+        <Text mb={{ base: 4, md: 0 }}>© 2021 MindVista. All rights reserved</Text>
+        <Flex>
           <IconButton
             as="a"
             href="https://www.instagram.com"
