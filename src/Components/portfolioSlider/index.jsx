@@ -94,7 +94,7 @@ export default function App() {
               {slides.map((slide, index) => {
                 return (
                   <SwiperSlide key={index}>
-                    <Box border="2px solid #e7e5ea" rounded="3xl">
+                    <Box>
                       <Box
                         onMouseOver={() => setHoverEffect(index)}
                         onMouseOut={() => setHoverEffect(false)}
@@ -111,11 +111,11 @@ export default function App() {
                           }
                         ></Box>
                       </Box>
-                      <Flex px="20px" align="center" h="80px">
-                        <Text fontSize="23px" fontWeight={700}>
+                      {/* <Flex px="20px" align="center" h="80px">
+                        <Text fontSize="14px" fontWeight={700} color={"#fff"}>
                           EtechGems
                         </Text>
-                      </Flex>
+                      </Flex> */}
                     </Box>
                   </SwiperSlide>
                 );
