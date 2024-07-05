@@ -39,7 +39,9 @@ const style = {
     gap: "30px",
   },
   reviewContainer: {
-    my: "6rem",
+    py: "6rem",
+    bgColor: "black",
+    height: "auto",
   },
   reviewHeading: {
     mx: "10px",

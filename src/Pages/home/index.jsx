@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Flex,
@@ -10,11 +10,37 @@ import {
 } from "@chakra-ui/react";
 import ServiceCard from "../../Components/serviceCard";
 import Clientcard from "../../Components/clientCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Protfolio from "../../Components/portfolioSlider";
 import Aboutsection from "../../Components/aboutSection";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import style from "./style";
+import { motion } from "framer-motion";
 
 const Home = () => {
+  const [hoverEffect, setHoverEffect] = useState("");
+
+  const slides = [
+    {
+      url: "./images/portfolio-image-1.jpg",
+    },
+    {
+      url: "./images/portfolio-image-1.jpg",
+    },
+    {
+      url: "./images/portfolio-image-1.jpg",
+    },
+    {
+      url: "./images/portfolio-image-1.jpg",
+    },
+    {
+      url: "./images/portfolio-image-1.jpg",
+    },
+    {
+      url: "./images/portfolio-image-1.jpg",
+    },
+  ];
+
   const servicesData = [
     {
       heading: "Web Designing",
@@ -156,9 +182,11 @@ const Home = () => {
         </Box>
         <Protfolio />
         <Box sx={style.reviewContainer}>
-          <Heading sx={style.reviewHeading}>
-            What our Customers Are Saying
-          </Heading>
+          <Heading sx={style.serviceHeading}>Testimonial</Heading>
+          <Text sx={style.text}>
+            {`Don't just take our word for it - see what actual users of our
+            service have to say about their experience.`}
+          </Text>
           <Flex
             my="40px"
             justify="center"
@@ -170,22 +198,25 @@ const Home = () => {
               image="./images/client-image-1.webp"
               heading="Ernest Smith"
               subHeading="Developer At MindVista"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-      officiis veniam"
+              text="MindVista transformed our outdated systems into a cutting-edge digital platform. Their expertise and dedication have significantly boosted our efficiency and client satisfaction. We couldn’t be happier with the results!"
             />
             <Clientcard
               image="./images/client-image-1.webp"
               heading="Ernest Smith"
               subHeading="Developer At MindVista"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-      officiis veniam"
+              text="Working with MindVista has been a game-changer for our company. Their ability to understand our needs and provide tailored solutions has helped us navigate the digital landscape with confidence. Outstanding service!"
             />
             <Clientcard
               image="./images/client-image-1.webp"
               heading="Ernest Smith"
               subHeading="Developer At MindVista"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-      officiis veniam"
+              text="From the initial consultation to the final implementation, MindVista has been a pleasure to work with. Their innovative approach and professional execution have greatly improved our business efficiency. We highly recommend their services!"
+            />
+            <Clientcard
+              image="./images/client-image-1.webp"
+              heading="Ernest Smith"
+              subHeading="Developer At MindVista"
+              text="MindVista exceeded our expectations at every turn. Their creative strategies and advanced technological solutions have significantly enhanced our operational efficiency. We're thrilled with the partnership and results!"
             />
           </Flex>
         </Box>
