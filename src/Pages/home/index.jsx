@@ -17,10 +17,17 @@ const Home = () => {
             sx={style.overlay}
             flexDirection={{ base: "column", md: "row" }}
           >
-            <Box sx={{ flex: 0.4, textAlign: { base: "center", md: "left" } }}>
+            <Box
+              sx={{
+                flex: { base: "1", md: "0.4" },
+                textAlign: { base: "left", md: "left" },
+                maxW: "80%",
+                m: "auto",
+              }}
+            >
               <Text
                 sx={{
-                  fontSize: { base: "1rem", md: "1.2rem" },
+                  fontSize: { base: "0.8rem", md: "1.2rem" },
                   fontWeight: 600,
                   color: "#fff",
                 }}
@@ -29,7 +36,7 @@ const Home = () => {
               </Text>
               <Text
                 sx={{
-                  fontSize: { base: "1.5rem", md: "2.2rem" },
+                  fontSize: { base: "1.8rem", md: "2.2rem" },
                   fontWeight: 600,
                   color: "#fff",
                 }}
@@ -46,6 +53,7 @@ const Home = () => {
               <Heading
                 sx={{
                   fontSize: { base: "10px", md: "12px" },
+
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
@@ -59,20 +67,22 @@ const Home = () => {
               </Heading>
               <Button
                 sx={{
-                  mt: "14px",
                   fontSize: { base: "10px", md: "12px" },
                   fontWeight: 700,
+                  mt: "10px",
                 }}
               >
                 Book a Free Call
               </Button>
             </Box>
-            <Box sx={{ flex: 0.4, textAlign: { base: "center", md: "left" } }}>
+            <Box sx={{ textAlign: { base: "center", md: "left" } }}>
               <Image
                 src="./images/bannerimage.png"
                 sx={{
                   width: "auto",
                   height: "auto",
+                  display: { base: "none", md: "block" },
+                  flex: { base: "0", md: "0.4" },
                 }}
                 // mt={{ base: 4, md: 0 }}
               />
