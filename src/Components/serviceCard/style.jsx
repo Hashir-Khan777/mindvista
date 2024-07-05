@@ -1,28 +1,24 @@
 const style = {
   services: {
-    w: { base: "300px", sm: "360px", md: "320px", lg: "300px", xl: "360px" },
     p: "2rem 2rem",
     textAlign: "center",
     justifyContent: "center",
     display: "flex",
     flexDirection: "column",
     margin: "auto",
+    borderRadius: "8px",
+    boxShadow: "lg",
+  },
+  serviceImg: {
+    w: "100px",
+    h: "100px",
+    objectFit: "cover",
+    margin: "0 auto 1rem",
   },
   serviceHeading: {
     color: "#F8BE28",
     fontSize: "20px",
     fontWeight: 600,
-  },
-  serviceIcon: {
-    textAlign: "center",
-    display: "flex",
-    margin: "auto",
-    w: "50px",
-    h: "50px",
-    fontSize: "25px",
-    color: "#ffff",
-    bgColor: "bisque.100",
-    mb: "2rem",
   },
   serviceText: {
     mt: "1rem",
@@ -30,6 +26,11 @@ const style = {
     fontSize: "18px",
     color: "white",
     fontWeight: 400,
+  },
+  serviceContainer: {
+    py: { base: "2rem", lg: "6rem" },
+    px: { base: "1rem", md: "2rem", lg: "4rem" },
+    bgColor: "black",
   },
 };
 

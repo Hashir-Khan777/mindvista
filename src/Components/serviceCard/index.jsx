@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./style";
-import { Box, Circle, Text } from "@chakra-ui/react";
-import CustomButton from "../button";
+import { Box, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import CustomButton from "../button";
+import style from './style'
 
-const ServiceCard = (service) => {
+const ServiceCard = ({ service }) => {
   return (
     <Box
       as={motion.div}
@@ -16,12 +16,10 @@ const ServiceCard = (service) => {
       }}
       sx={style.services}
     >
-      <Circle sx={style.serviceIcon}>{service.icon}</Circle>
+      <Image src={service.img} alt={service.heading} sx={style.serviceImg} />
       <Text sx={style.serviceHeading}>{service.heading}</Text>
       <Text sx={style.serviceText}>{service.text}</Text>
-      <CustomButton
-        text="View More"
-      ></CustomButton>
+      <CustomButton text="View More"></CustomButton>
     </Box>
   );
 };
