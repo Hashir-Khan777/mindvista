@@ -7,7 +7,7 @@ import {
   Image,
   Text,
   Button,
-  SimpleGrid
+  SimpleGrid,
 } from "@chakra-ui/react";
 import ServiceCard from "../../Components/serviceCard";
 import Clientcard from "../../Components/clientCard";
@@ -16,12 +16,11 @@ import Aboutsection from "../../Components/aboutSection";
 import style from "./style";
 
 const Home = () => {
-
   const servicesData = [
     {
       heading: "Web Designing",
       text: "Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience.",
-      img: "./images/web-designing.png",
+      img: "./images/icon.png",
     },
     {
       heading: "Web Development",
@@ -199,6 +198,67 @@ const Home = () => {
               text="MindVista exceeded our expectations at every turn. Their creative strategies and advanced technological solutions have significantly enhanced our operational efficiency. We're thrilled with the partnership and results!"
               rating={5}
               bgColor="#1e1e1e"
+            />
+          </SimpleGrid>
+        </Box>
+        {/* Teams Section */}
+        <Box
+          sx={{
+            py: "6rem",
+            px: "4rem",
+            bgColor: "#090909",
+            height: "auto",
+          }}
+        >
+          <Heading sx={style.serviceHeading}>Our Team</Heading>
+          <Text sx={style.text}>
+            {`Explore Our Success Stories and Innovative Projects`}
+          </Text>
+          <SimpleGrid
+            my="40px"
+            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+            spacing="30px"
+            justifyItems="center"
+          >
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
+            />
+            <Image
+              src={"./images/about-image-2.jpg"}
+              borderRadius={"10px"}
+              width={"auto"}
             />
           </SimpleGrid>
         </Box>

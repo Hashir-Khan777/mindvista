@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import CustomButton from "../button";
-import style from './style'
+import style from "./style";
 
 const ServiceCard = ({ service }) => {
   return (
@@ -19,7 +19,22 @@ const ServiceCard = ({ service }) => {
       <Image src={service.img} alt={service.heading} sx={style.serviceImg} />
       <Text sx={style.serviceHeading}>{service.heading}</Text>
       <Text sx={style.serviceText}>{service.text}</Text>
-      <CustomButton text="View More"></CustomButton>
+      {/* <CustomButton text="View More"></CustomButton> */}
+      <Button
+        sx={{
+          fontSize: { base: "10px", md: "12px" },
+          fontWeight: 700,
+          mt: "10px",
+          color: "#f8be28",
+          borderColor: "#f8be28",
+          borderWidth: "1px",
+          bgColor: "black",
+          margin: "auto",
+          display: "block",
+        }}
+      >
+        View More
+      </Button>
     </Box>
   );
 };
