@@ -55,7 +55,6 @@ const Home = () => {
               <Heading
                 sx={{
                   fontSize: { base: "10px", md: "12px" },
-
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
