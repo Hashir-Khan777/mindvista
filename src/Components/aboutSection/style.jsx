@@ -5,7 +5,6 @@ const style = {
     flexDirection: { base: "column", md: "row" },
     justifyContent: "center",
     alignItems: "center",
-    // gap: "60px",
     py: { base: "2rem", lg: "6rem" },
     height: "auto",
   },
@@ -34,8 +33,8 @@ const style = {
     zIndex: "1",
   },
   borderImage: {
-    zIndex: "-1",
-    position: "absolute",
+    // zIndex: "999",
+    // position: "absolute",
     // right: { base: "20px", sm: "50px", lg: "20px", xl: "50px" },
     // top: { base: "10px", sm: "120px" },
   },
