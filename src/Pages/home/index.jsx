@@ -8,6 +8,7 @@ import {
   Text,
   Button,
   SimpleGrid,
+  keyframes,
 } from "@chakra-ui/react";
 import ServiceCard from "../../Components/serviceCard";
 import Clientcard from "../../Components/clientCard";
@@ -16,6 +17,23 @@ import Aboutsection from "../../Components/aboutSection";
 import style from "./style";
 
 const Home = () => {
+  const logos = [
+    "./images/yahoo-finance.webp",
+    "./images/yahoo-finance.webp",
+    "./images/yahoo-finance.webp",
+    "./images/yahoo-finance.webp",
+    "./images/yahoo-finance.webp",
+    "./images/yahoo-finance.webp",
+    "./images/yahoo-finance.webp",
+  ];
+  const scrollAnimation = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+`;
   const servicesData = [
     {
       heading: "Web Designing",
@@ -205,7 +223,6 @@ const Home = () => {
         <Box
           sx={{
             py: "6rem",
-            px: "4rem",
             bgColor: "#090909",
             height: "auto",
           }}
@@ -261,6 +278,57 @@ const Home = () => {
               width={"auto"}
             />
           </SimpleGrid>
+        </Box>
+        {/* Partners Section */}
+        <Box
+          sx={{
+            pb: "8rem",
+            bgColor: "#000",
+            height: "auto",
+          }}
+        >
+          <Heading sx={style.serviceHeading}>
+            We Work With the Best Partners
+          </Heading>
+          <Text sx={style.text}>
+            {`Collaborating with Industry Leaders for Unmatched Quality and Innovation`}
+          </Text>
+          <Box
+            overflow="hidden"
+            position="relative"
+            // p="20px"
+            w="100%"
+            display="flex"
+            justifyContent="center"
+            m="auto"
+            top="50px"
+          >
+            <Box
+              display="flex"
+              animation={`${scrollAnimation} 6s linear infinite`}
+            >
+              {logos.map((logo, index) => (
+                <Image
+                  key={index}
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  h="40px"
+                  mr="30px"
+                  className="logo"
+                />
+              ))}
+              {logos.map((logo, index) => (
+                <Image
+                  key={index}
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  h="40px"
+                  mr="30px"
+                  className="logo"
+                />
+              ))}
+            </Box>
+          </Box>
         </Box>
       </Box>
     </>
