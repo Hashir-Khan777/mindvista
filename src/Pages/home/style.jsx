@@ -30,14 +30,13 @@ const style = {
     height: "auto",
   },
   serviceContainer: {
-    pt: "4rem",
+    py: "4rem",
     display: "flex",
     flexWrap: "wrap",
     flexDirection: { base: "column", md: "row" },
     justifyContent: "center",
     alignItems: "center",
     gap: "30px",
-    mb: "7rem",
   },
   reviewContainer: {
     my: "6rem",

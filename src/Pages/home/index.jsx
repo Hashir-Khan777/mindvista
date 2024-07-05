@@ -133,45 +133,6 @@ const Home = () => {
           </Flex>
         </Box>
         <Aboutsection />
-        {/* <Box sx={style.serviceBox}>
-          <Heading sx={style.serviceHeading}>Our Services</Heading>
-          <Text sx={style.text}>
-            We provide tailored IT services using cutting-edge technology and
-            creative <br /> strategies to drive efficiency and success.
-          </Text>
-          <Box sx={style.serviceContainer}>
-            <ServiceCard
-              icon={<IoFolder />}
-              heading="Web Designing"
-              text="Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience."
-            />
-            <ServiceCard
-              icon={<IoFolder />}
-              heading="Web Development"
-              text="Building robust and scalable websites using the latest technologies to ensure optimal performance. Our development services include everything from custom website creation to e-commerce solutions and web applications."
-            />
-            <ServiceCard
-              icon={<IoFolder />}
-              heading="App Development"
-              text="Developing intuitive and high-performing mobile applications for both iOS and Android platforms. We focus on creating apps that offer seamless functionality and an engaging user experience."
-            />
-            <ServiceCard
-              icon={<IoFolder />}
-              heading="Content Writing"
-              text="Producing compelling and relevant content that resonates with your target audience. Our content writing services cover everything from website copy to blog posts and social media content."
-            />
-            <ServiceCard
-              icon={<IoFolder />}
-              heading="Branding and PR"
-              text="Build a strong brand identity and enhance your reputation with our branding and PR services. We help you define your brand story, manage your online reputation, and develop strategic PR campaigns to increase visibility and credibility."
-            />
-            <ServiceCard
-              icon={<IoFolder />}
-              heading="SEO Optimization"
-              text="Enhancing online visibility and search engine rankings to attract more organic traffic. Our SEO strategies are designed to improve your website's performance and help you reach a larger audience."
-            />
-          </Box>
-        </Box> */}
         <Box sx={style.serviceBox}>
           <Heading sx={style.serviceHeading}>Our Services</Heading>
           <Text sx={style.text}>
