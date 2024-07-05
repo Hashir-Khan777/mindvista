@@ -16,6 +16,7 @@ const Home = () => {
           <Flex
             sx={style.overlay}
             flexDirection={{ base: "column", md: "row" }}
+            display={{ base: "block", md: "flex" }}
           >
             <Box
               sx={{
@@ -23,6 +24,7 @@ const Home = () => {
                 textAlign: { base: "left", md: "left" },
                 maxW: "80%",
                 m: "auto",
+                pt: { base: "7rem", md: "0" },
               }}
             >
               <Text
@@ -75,16 +77,19 @@ const Home = () => {
                 Book a Free Call
               </Button>
             </Box>
-            <Box sx={{ textAlign: { base: "center", md: "left" } }}>
+            <Box
+              sx={{
+                textAlign: { base: "center", md: "left" },
+                flex: { base: "0", md: "0.4" },
+              }}
+            >
               <Image
                 src="./images/bannerimage.png"
                 sx={{
                   width: "auto",
                   height: "auto",
                   display: { base: "none", md: "block" },
-                  flex: { base: "0", md: "0.4" },
                 }}
-                // mt={{ base: 4, md: 0 }}
               />
             </Box>
           </Flex>
