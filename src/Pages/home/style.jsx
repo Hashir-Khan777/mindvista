@@ -45,7 +45,7 @@ const style = {
   },
   reviewContainer: {
     py: "6rem",
-    px: "4rem",
+    px: "2rem",
     bgColor: "black",
     height: "auto",
   },
