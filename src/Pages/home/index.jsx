@@ -22,13 +22,13 @@ import style from "./style";
 
 const Home = () => {
   const logos = [
-    "./images/yahoo-finance.webp",
-    "./images/yahoo-finance.webp",
-    "./images/yahoo-finance.webp",
-    "./images/yahoo-finance.webp",
-    "./images/yahoo-finance.webp",
-    "./images/yahoo-finance.webp",
-    "./images/yahoo-finance.webp",
+    "./images/google.png",
+    "./images/amazon-logo.png",
+    "./images/stripe-logo.png",
+    "./images/microsoft-logo.png",
+    "./images/shopify-logo.png",
+    "./images/google-logo.png",
+    "./images/coursera-logo.png",
   ];
   const scrollAnimation = keyframes`
   0% {
@@ -42,32 +42,32 @@ const Home = () => {
     {
       heading: "Web Designing",
       text: "Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience.",
-      img: "./images/icon.png",
+      img: "./images/service-1.png",
     },
     {
       heading: "Web Development",
       text: "Building robust and scalable websites using the latest technologies to ensure optimal performance. Our development services include everything from custom website creation to e-commerce solutions and web applications.",
-      img: "./images/web-development.png",
+      img: "./images/service-2.png",
     },
     {
       heading: "App Development",
       text: "Developing intuitive and high-performing mobile applications for both iOS and Android platforms. We focus on creating apps that offer seamless functionality and an engaging user experience.",
-      img: "./images/app-development.png",
+      img: "./images/service-3.png",
     },
     {
       heading: "Content Writing",
       text: "Producing compelling and relevant content that resonates with your target audience. Our content writing services cover everything from website copy to blog posts and social media content.",
-      img: "./images/content-writing.png",
+      img: "./images/service-4.png",
     },
     {
       heading: "Branding and PR",
       text: "Build a strong brand identity and enhance your reputation with our branding and PR services. We help you define your brand story, manage your online reputation, and develop strategic PR campaigns to increase visibility and credibility.",
-      img: "./images/branding-pr.png",
+      img: "./images/service-5.png",
     },
     {
       heading: "SEO Optimization",
       text: "Enhancing online visibility and search engine rankings to attract more organic traffic. Our SEO strategies are designed to improve your website's performance and help you reach a larger audience.",
-      img: "./images/seo-optimization.png",
+      img: "./images/service-6.png",
     },
   ];
 
@@ -145,7 +145,7 @@ const Home = () => {
               }}
             >
               <Image
-                src="./images/bannerimage.png"
+                src="./images/hero-bg.png"
                 sx={{
                   width: "auto",
                   height: "auto",
@@ -190,7 +190,7 @@ const Home = () => {
             justifyItems="center"
           >
             <Clientcard
-              image="./images/client-image-1.webp"
+              image="./images/testimonial-1.png"
               heading="Jane Smith"
               subHeading="CEO of Tech Innovators"
               text="MindVista transformed our outdated systems into a cutting-edge digital platform. Their expertise and dedication have significantly boosted our efficiency and client satisfaction. We couldn’t be happier with the results!"
@@ -198,7 +198,7 @@ const Home = () => {
               bgColor="#1a1405"
             />
             <Clientcard
-              image="./images/client-image-1.webp"
+              image="./images/testimonial-2.png"
               heading="Tom Williams"
               subHeading="Founder of Creative Solutions"
               text="Working with MindVista has been a game-changer for our company. Their ability to understand our needs and provide tailored solutions has helped us navigate the digital landscape with confidence. Outstanding service!"
@@ -206,7 +206,7 @@ const Home = () => {
               bgColor="#1e1e1e"
             />
             <Clientcard
-              image="./images/client-image-1.webp"
+              image="./images/testimonial-3.png"
               heading="Michael Brown"
               subHeading="Marketing Director of PrimeTech"
               text="From the initial consultation to the final implementation, MindVista has been a pleasure to work with. Their innovative approach and professional execution have greatly improved our business efficiency. We highly recommend their services!"
@@ -214,7 +214,7 @@ const Home = () => {
               bgColor="#1e1e1e"
             />
             <Clientcard
-              image="./images/client-image-1.webp"
+              image="./images/testimonial-4.png"
               heading="Sarah Johnson"
               subHeading="CEO of NextGen Solutions"
               text="MindVista exceeded our expectations at every turn. Their creative strategies and advanced technological solutions have significantly enhanced our operational efficiency. We're thrilled with the partnership and results!"
@@ -242,42 +242,42 @@ const Home = () => {
             justifyItems="center"
           >
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-1.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-2.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-3.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-4.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-5.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-6.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-7.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
             <Image
-              src={"./images/about-image-2.jpg"}
+              src={"./images/team-8.png"}
               borderRadius={"10px"}
               width={"auto"}
             />
