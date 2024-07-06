@@ -12,8 +12,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
-import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
-import CustomButton from "../button";
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 export default function App() {
@@ -41,7 +40,7 @@ export default function App() {
   ];
 
   return (
-    <Box h={"auto"} flex={1}>
+    <Box flex={1}>
       <Box sx={style.background}>
         <Box sx={style.overlay}>
           <Heading sx={style.heading}>Portfolio</Heading>

@@ -31,17 +31,15 @@ const style = {
     justifyContent: "center",
   },
   serviceBox: {
-    bgColor: "black",
+    bgColor: "#090909",
     height: "auto",
   },
   serviceContainer: {
-    py: "4rem",
     display: "flex",
     flexWrap: "wrap",
     flexDirection: { base: "column", md: "row" },
     justifyContent: "center",
     alignItems: "center",
-    gap: "30px",
   },
   reviewContainer: {
     py: "6rem",

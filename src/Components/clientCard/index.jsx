@@ -77,7 +77,7 @@ const style = {
  
   text: {
     color: "white",
-    fontSize: "10px",
+    fontSize: "12px",
     lineHeight: "1.2rem",
   },
 };

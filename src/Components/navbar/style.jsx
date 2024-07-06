@@ -39,14 +39,18 @@ const style = {
     border: "1px solid black",
   },
   iconButton: {
-    h: "45px",
-    w: "45px",
+    h: "35px",
+    w: "35px",
     color: "#fff",
     border: "1px solid #fff",
     borderRadius: 10,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    _hover: {
+      color: "bisque.100",
+      borderColor: "bisque.100",
+    },
   },
 };
 
