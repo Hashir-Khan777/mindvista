@@ -338,7 +338,7 @@ const Home = () => {
         <Box sx={style.contactBackground}>
           <Box sx={style.contactOverlay}>
             <Heading sx={style.serviceHeading}>Contact Us</Heading>
-            <Text sx={style.text}>
+            <Text sx={style.contactText}>
               {`Reach Out to Elevate Your Business. Contact Us for Premium Services and Tailored Solutions.`}
             </Text>
             <Box
@@ -346,46 +346,116 @@ const Home = () => {
               p={6}
               borderRadius="md"
               border="1px solid rgba(255, 255, 255, 0.2)"
-              width={"60%"}
               justifyContent={"center"}
               m={"auto"}
-              my={10}
+              mt={2}
+              sx={{
+                width: { base: "100%", lg: "80%" },
+              }}
             >
-              <Flex justifyContent={"center"} alignItems={"center"} gap={10}>
-                <Box>
+              <Flex
+                direction={{ base: "column", md: "row" }}
+                justifyContent={"center"}
+                alignItems={"center"}
+                gap={10}
+                sx={{
+                  gap: { base: 0, md: 10 },
+                }}
+              >
+                <Box
+                  sx={{
+                    flex: { base: "1", md: "0.4" },
+                  }}
+                >
                   <FormControl mb={4}>
-                    <FormLabel color="white">
+                    <FormLabel
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      color="white"
+                    >
                       Name <span style={{ color: "red" }}>*</span>
                     </FormLabel>
-                    <Input placeholder="Name" />
+                    <Input
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      placeholder="Name"
+                    />
                   </FormControl>
                   <FormControl mb={4}>
-                    <FormLabel color="white">
+                    <FormLabel
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      color="white"
+                    >
                       Email <span style={{ color: "red" }}>*</span>
                     </FormLabel>
-                    <Input placeholder="Email" type="email" />
+                    <Input
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      placeholder="Email"
+                      type="email"
+                    />
                   </FormControl>
                   <FormControl mb={4}>
-                    <FormLabel color="white">Phone Number</FormLabel>
-                    <Input placeholder="Phone Number" type="tel" />
+                    <FormLabel
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      color="white"
+                    >
+                      Phone Number
+                    </FormLabel>
+                    <Input
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      placeholder="Phone Number"
+                      type="tel"
+                    />
                   </FormControl>
                 </Box>
-                <Box>
+                <Box
+                  sx={{
+                    flex: { base: "1", md: "0.4" },
+                  }}
+                >
                   <FormControl mb={4}>
-                    <FormLabel color="white">Message</FormLabel>
-                    <Textarea placeholder="Message" />
+                    <FormLabel
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                      }}
+                      color="white"
+                    >
+                      Message
+                    </FormLabel>
+                    <Textarea
+                      // cols={24}
+                      placeholder="Message"
+                      height="100%"
+                      // width={'auto'}
+                    />
                   </FormControl>
                 </Box>
               </Flex>
 
               <Button
-                colorScheme="transparent"
-                width="12vw"
-                borderColor={"#fff"}
-                borderWidth={1}
-                justifyContent={"center"}
-                m={"auto"}
-                display={"flex"}
+                sx={{
+                  fontSize: { base: "10px", md: "12px" },
+                  fontWeight: 700,
+                  position: "relative",
+                  top: "45px",
+                  borderColor: "#fff",
+                  borderWidth: 1,
+                  justifyContent: "center",
+                  bgColor: "#00000080",
+                  m: "auto",
+                  display: "flex",
+                  color: "#fff",
+                }}
               >
                 Send Message
               </Button>
