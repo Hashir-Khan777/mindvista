@@ -19,8 +19,6 @@ import Clientcard from "../../Components/clientCard";
 import Protfolio from "../../Components/portfolioSlider";
 import Aboutsection from "../../Components/aboutSection";
 import style from "./style";
-import ContactUs from "../contactUs";
-import ContactForm from "../contactform";
 
 const Home = () => {
   const logos = [
@@ -86,7 +84,7 @@ const Home = () => {
               sx={{
                 flex: { base: "1", md: "0.4" },
                 textAlign: { base: "left", md: "left" },
-                maxW: "80%",
+                maxW: "100%",
                 m: "auto",
                 pt: { base: "7rem", md: "0" },
               }}

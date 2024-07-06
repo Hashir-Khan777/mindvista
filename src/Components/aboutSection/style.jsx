@@ -40,7 +40,7 @@ const style = {
   },
   aboutContent: {
     m: { base: "auto", lg: "0" },
-    p: { base: "20px", sm: "30px", lg: "0px" },
+    p: { base: "0px", sm: "30px", lg: "0px" },
     w: { base: "100%", sm: "425px", md: "620px", lg: "520px", xl: "600px" },
     flex: { base: "1", md: "0.4" },
     textAlign: { base: "left", md: "left" },

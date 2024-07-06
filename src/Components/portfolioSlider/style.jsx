@@ -21,7 +21,7 @@ const style = {
     backgroundColor: "rgba(0, 0, 0, 0.85)",
   },
   heading: {
-    pt: { base: "2rem", md: "3rem", lg: "4rem" },
+    pt: { base: "1rem", md: "2rem" },
     textAlign: "center",
     m: "auto",
     fontSize: { base: "1.8rem", md: "2.2rem" },
@@ -39,7 +39,7 @@ const style = {
   },
   slider: {
     cursor: "pointer",
-    borderTopRadius: "3xl",
+    borderRadius: "3xl",
     backgroundSize: "cover",
     backgroundPosition: "center",
     h: "339px",
@@ -53,7 +53,7 @@ const style = {
     maxW: "1440px",
     w: "90%",
     m: "auto",
-    my: "3rem",
+    my: "2rem",
   },
   pagination: {
     border: "2px solid black",
