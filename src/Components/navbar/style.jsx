@@ -16,7 +16,7 @@ const style = {
     display: { base: "none", lg: "flex" },
   },
   links: {
-    fontSize: "14px",
+    fontSize: "16px",
     p: "5px 8px",
     borderRadius: "5px",
     color: "#ffffff",

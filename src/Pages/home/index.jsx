@@ -377,9 +377,7 @@ const Home = () => {
                 <Box flex={1} width={{ base: "100%", md: "%" }} height={"auto"}>
                   <FormControl mb={4}>
                     <FormLabel color="white">Message</FormLabel>
-                    <Textarea placeholder="Message" height="100%" 
-                    rows={9}
-                    />
+                    <Textarea placeholder="Message" height="100%" rows={9} />
                   </FormControl>
                 </Box>
               </Flex>
