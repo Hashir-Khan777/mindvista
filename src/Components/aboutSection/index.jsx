@@ -18,7 +18,6 @@ const Aboutsection = () => {
         sx={style.aboutContent}
       >
         <Text
-          // sx={style.aboutText}
           sx={{
             fontSize: { base: "0.8rem", md: "1.2rem" },
             fontWeight: 600,
@@ -28,7 +27,6 @@ const Aboutsection = () => {
           About Us
         </Text>
         <Heading
-          //  sx={style.aboutHeading}
           sx={{
             fontSize: { base: "1.8rem", md: "2.2rem" },
             fontWeight: 600,
@@ -176,7 +174,7 @@ const Aboutsection = () => {
           transition: { duration: 1 },
         }}
       >
-        <Image src="./images/about us.png" />
+        <Image src="./images/about-bg.png" />
       </Box>
     </Box>
   );

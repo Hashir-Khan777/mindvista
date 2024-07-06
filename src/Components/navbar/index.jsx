@@ -15,7 +15,7 @@ import { MdOutlinePhone } from "react-icons/md";
 const Navbar = ({ clicked }) => {
   return (
     <Flex sx={style.navBar} zIndex={1}>
-      <Flex gap="40px" ml={'4rem'}>
+      <Flex gap="60px" ml={'4rem'}>
         <Box w="90px" as={NavLink} to="/">
           <Image src="./images/logopng.png" />
         </Box>

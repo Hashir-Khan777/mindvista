@@ -85,7 +85,8 @@ const Home = () => {
                 flex: { base: "1", md: "0.4" },
                 textAlign: { base: "left", md: "left" },
                 maxW: "100%",
-                m: "auto",
+                // m: "auto",
+                ml: "3rem",
                 pt: { base: "7rem", md: "0" },
               }}
             >
