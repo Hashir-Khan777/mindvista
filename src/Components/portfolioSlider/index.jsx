@@ -104,19 +104,20 @@ export default function App() {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <Button
+              sx={{
+                fontSize: { base: "10px", md: "12px" },
+                fontWeight: 700,
+                color: "#000",
+                bgColor: "#f8be28",
+                margin: "auto",
+                display: "block",
+                mt: "2rem",
+              }}
+            >
+              View All Portfolio
+            </Button>
           </Box>
-          <Button
-            sx={{
-              fontSize: { base: "10px", md: "12px" },
-              fontWeight: 700,
-              color: "#000",
-              bgColor: "#f8be28",
-              margin: "auto",
-              display: "block",
-            }}
-          >
-            View All Portfolio
-          </Button>
         </Box>
       </Box>
     </Box>
