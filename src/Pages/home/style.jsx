@@ -77,7 +77,8 @@ const style = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "#00000080",
+    // backgroundColor: "#00000080",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
   },
   contactBackground: {
     position: "relative",

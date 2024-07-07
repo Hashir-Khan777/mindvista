@@ -186,6 +186,7 @@ const Home = () => {
           </Text>
           <SimpleGrid
             my="20px"
+            mt="2rem"
             columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
             spacing="30px"
             justifyItems="center"
