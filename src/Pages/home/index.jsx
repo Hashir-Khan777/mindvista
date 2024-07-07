@@ -117,7 +117,7 @@ const Home = () => {
               </Text>
               <Heading
                 sx={{
-                  fontSize: { base: "10px", md: "12px" },
+                  fontSize: { base: "12px", md: "14px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
@@ -227,10 +227,10 @@ const Home = () => {
         {/* Teams Section */}
         <Box
           sx={{
-            py: "6rem",
             bgColor: "#090909",
             height: "auto",
-            px: "10px",
+            py: { base: "2rem", lg: "6rem" },
+            px: { base: "1rem", lg: "4rem" },
           }}
         >
           <Heading sx={style.serviceHeading}>Our Team</Heading>
@@ -288,9 +288,10 @@ const Home = () => {
         {/* Partners Section */}
         <Box
           sx={{
-            pb: "8rem",
             bgColor: "#000",
             height: "auto",
+            px: { base: "1rem", lg: "4rem" },
+            pb: "8rem",
           }}
         >
           <Heading sx={style.serviceHeading}>
@@ -315,20 +316,24 @@ const Home = () => {
             >
               {logos.map((logo, index) => (
                 <Image
+                sx={{
+                  h: { base: "30px", md: "40px" },
+                }}
                   key={index}
                   src={logo}
                   alt={`Logo ${index + 1}`}
-                  h="40px"
                   mr="30px"
                   className="logo"
                 />
               ))}
               {logos.map((logo, index) => (
                 <Image
+                  sx={{
+                    h: { base: "30px", md: "40px" },
+                  }}
                   key={index}
                   src={logo}
                   alt={`Logo ${index + 1}`}
-                  h="40px"
                   mr="30px"
                   className="logo"
                 />

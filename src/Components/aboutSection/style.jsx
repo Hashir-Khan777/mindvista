@@ -6,9 +6,9 @@ const style = {
     justifyContent: "center",
     alignItems: "center",
     py: { base: "2rem", lg: "6rem" },
+    px: { base: "0", lg: "4rem" },
     height: "auto",
     gap: { base: "0", lg: "8rem" },
-    px: { base: "0", lg: "4rem" },
   },
   imageContainer: {
     m: { base: "auto", lg: "0" },

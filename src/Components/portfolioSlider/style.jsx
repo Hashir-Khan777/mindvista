@@ -15,7 +15,9 @@ const style = {
     height: "100%",
     width: "100%",
     flexDirection: "column",
-    padding: "0 40px",
+    // padding: "2rem 40px",
+    py: { base: "2rem", lg: "6rem" },
+    px: { base: "0", lg: "4rem" },
     backgroundColor: "rgba(0, 0, 0, 0.85)",
   },
   heading: {

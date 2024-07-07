@@ -17,7 +17,7 @@ const Footer = () => {
   const color = useColorModeValue("white", "gray.200");
 
   return (
-    <Box bg={bg} color={color} py={4}>
+    <Box bg={bg} color={color} py={8}>
       <Flex
         maxW="1200px"
         mx="auto"

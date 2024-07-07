@@ -21,7 +21,7 @@ const style = {
     textAlign: "center",
     mt: "20px",
     fontSize: { base: "10px", md: "12px" },
-    maxW: { base: "80%", md: "40%" },
+    maxW: { base: "80%", md: "60%" },
     fontWeight: 400,
     color: "#fff",
     letterSpacing: "1px",
@@ -33,6 +33,9 @@ const style = {
   serviceBox: {
     bgColor: "#090909",
     height: "auto",
+    // pb: "2rem",
+    py: { base: "2rem", lg: "6rem" },
+    px: { base: "0", lg: "4rem" },
   },
   serviceContainer: {
     display: "flex",
@@ -42,10 +45,12 @@ const style = {
     alignItems: "center",
   },
   reviewContainer: {
-    py: "6rem",
-    px: "2rem",
+    // py: "6rem",
+    // px: "2rem",
     bgColor: "black",
     height: "auto",
+    py: { base: "2rem", lg: "6rem" },
+    px: { base: "1rem", lg: "4rem" },
   },
   reviewHeading: {
     mx: "10px",
@@ -65,7 +70,8 @@ const style = {
     height: "100%",
     width: "100%",
     flexDirection: "row",
-    padding: "0 40px",
+    // padding: "0 40px",
+    px: { base: "0", lg: "4rem" },
     position: "absolute",
     top: 0,
     left: 0,
@@ -91,6 +97,8 @@ const style = {
     width: "100%",
     padding: "20px",
     backgroundColor: "#00000080",
+    py: { base: "2rem", lg: "6rem" },
+    px: { base: "0", lg: "4rem" },
   },
   contactHeading: {
     color: "white",
