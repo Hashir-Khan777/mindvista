@@ -10,8 +10,8 @@ const style = {
     boxShadow: "lg",
   },
   serviceImg: {
-    w: "30px",
-    h: "30px",
+    h: "auto",
+    w: { base: "40px", lg: "60px" },
     objectFit: "cover",
     margin: "0 auto 1rem",
   },
