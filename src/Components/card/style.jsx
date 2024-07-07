@@ -15,7 +15,7 @@ const style = {
       left: 0,
       width: "100%",
       height: "0",
-      backgroundColor: "bisque.100",
+      backgroundColor: "#F8BE28",
       zIndex: -1,
       transition: "all 0.4s ease-in-out",
     },

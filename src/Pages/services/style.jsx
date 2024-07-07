@@ -5,7 +5,7 @@ const style = {
     textTransform: "uppercase",
     letterSpacing: "2px",
     fontWeight: 700,
-    color: "bisque.100",
+    color: "#F8BE28",
     mb: "10px",
   },
   heading: {
@@ -49,7 +49,7 @@ const style = {
   },
   button: {
     w: "180px",
-    bgColor: "bisque.100",
+    bgColor: "#F8BE28",
     color: "#fff",
   },
   whiteContainer: {

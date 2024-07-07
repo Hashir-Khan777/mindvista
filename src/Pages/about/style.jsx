@@ -13,34 +13,35 @@ const style = {
   },
   stack: {
     p: "35px 30px ",
-    bgColor: "bisque.100",
+    bgColor: "#F8BE28",
     w: "288px",
     h: "300px",
     position: "absolute",
     bottom: "10",
-    left: {base:"0px" , lg:  "-60px"},
+    left: { base: "0px", lg: "-60px" },
   },
   text: {
     fontSize: "19px",
     letterSpacing: "2px",
     fontWeight: 700,
+    color: "#fff",
   },
   textUnderline: {
-    color: "bisque.100",
+    color: "#F8BE28",
     fontSize: "19px",
     letterSpacing: "2px",
     fontWeight: 600,
     textDecor: "underline",
   },
   tab: {
-    _selected: { color: "bisque.100" },
+    _selected: { color: "#F8BE28" },
     fontWeight: 600,
     fontSize: { base: "16px", md: "18px", lg: "19px" },
   },
   tabIndicator: {
     mt: "20px",
     height: "3px",
-    bgColor: "bisque.100",
+    bgColor: "#F8BE28",
     borderRadius: "1px",
   },
   tabHeading: {
@@ -51,10 +52,12 @@ const style = {
     pb: "1.5rem",
     px: "15px",
     w: { lg: "450px" },
+    color: "#fff",
   },
   tabpanel: {
     lineHeight: "2em",
     fontSize: "17px",
+    color: "#fff",
   },
   circularProgressText: {
     fontWeight: 500,

@@ -29,7 +29,7 @@ const Card = ({icon , heading , text}) => {
           <Icon
             position="relative"
             fontSize="60px"
-            color={hover ? "#fff" : "bisque.100"}
+            color={hover ? "#fff" : "#F8BE28"}
             as={icon}
           />
         </Box>

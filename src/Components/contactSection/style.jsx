@@ -2,18 +2,18 @@ const style = {
   contactSubHeading: {
     fontSize: "18px",
     fontWeight: 700,
-    color: "bisque.100",
+    color: "#F8BE28",
   },
   contactHeading: {
     fontSize: "45px",
     mt: "5px",
   },
   icon: {
-    color: "bisque.100",
+    color: "#F8BE28",
     fontSize: { base: "30px", lg: "40px" },
   },
   infoText: {
-    color: "bisque.100",
+    color: "#F8BE28",
     fontSize: "19px",
     mb: "10px",
     fontWeight: 700,
@@ -31,7 +31,7 @@ const style = {
     p: "40px 20px",
     color: "#fff",
     textAlign: "center",
-    bgColor: "bisque.100",
+    bgColor: "#F8BE28",
     w: { base: "100%", md: "600px", lg: "550px" },
   },
   input: {

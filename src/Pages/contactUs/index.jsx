@@ -129,7 +129,7 @@ const ContactUs = () => {
             transition: { duration: 1 },
           }}
           p="40px 30px "
-          bgColor="bisque.100"
+          bgColor="#F8BE28"
           w={{ base: "90%", lg: "500px", xl: "550px" }}
         >
           <Heading mb="35px">Fill Up The Form</Heading>

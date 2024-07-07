@@ -36,7 +36,7 @@ const Portfolio = () => {
         deleniti dolorem necessitatibus sed nobis maiores! Obcaecati nam
         quod vel?"
       />
-      <Box py="4rem" px="20px" textAlign="center" bgColor="bisque.100">
+      <Box py="4rem" px="20px" textAlign="center" bgColor="#F8BE28">
         <Box m="auto" maxWidth={1440}>
           <Heading sx={style.heading}>
             Develop results-driven products for entrepreneurs, startups, and

@@ -1,9 +1,11 @@
 const style = {
   background: {
     bgImage: "url(./images/contact-image.jpg)",
+    h: "550px",
+    position: "relative",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    h: "550px",
+    // h: "100vh",
   },
   overlay: {
     alignItems: "center",
@@ -12,7 +14,7 @@ const style = {
     h: "100%",
     position: "relative",
     w: "100%",
-    bgColor: "rgba(0,0,0,0.4)",
+    bgColor: "rgba(0,0,0,0.8)",
   },
   contactHeading: {
     color: "white",

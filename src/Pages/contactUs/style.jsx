@@ -6,10 +6,10 @@ const style = {
     fontSize: "23px",
     fontWeight: 700,
     textDecor: "underline",
-    color: "bisque.100",
+    color: "#F8BE28",
   },
   infoIcon: {
-    color: "bisque.100",
+    color: "#F8BE28",
     fontSize: "30px",
   },
   infoHeding: {
@@ -19,7 +19,7 @@ const style = {
     cursor: "pointer",
     _hover: {
       color: "#fff",
-      bgColor: "bisque.100",
+      bgColor: "#F8BE28",
     },
     border: "3px solid #e7e5ea",
     h: "45px",

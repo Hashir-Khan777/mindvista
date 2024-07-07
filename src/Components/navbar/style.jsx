@@ -22,7 +22,7 @@ const style = {
     borderRadius: "5px",
     color: "#ffffff",
     _hover: {
-      color: "bisque.100",
+      color: "#F8BE28",
     },
   },
 
@@ -49,8 +49,8 @@ const style = {
     justifyContent: "center",
     alignItems: "center",
     _hover: {
-      color: "bisque.100",
-      borderColor: "bisque.100",
+      color: "#F8BE28",
+      borderColor: "#F8BE28",
     },
   },
 };

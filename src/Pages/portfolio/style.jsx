@@ -2,13 +2,13 @@ const style = {
   tab: {
     fontWeight: 600,
     fontSize: {base:"12px" , sm:"18px" ,  lg:"19px"},
-    _hover: { color: "bisque.100" },
-    _selected: { color: "bisque.100" },
+    _hover: { color: "#F8BE28" },
+    _selected: { color: "#F8BE28" },
   },
   tabIndicator: {
     mt: "-1.5px",
     height: "2px",
-    bg: "bisque.100",
+    bg: "#F8BE28",
     borderRadius: "1px",
   },
   tabPanel: {
