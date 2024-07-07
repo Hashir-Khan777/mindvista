@@ -32,11 +32,19 @@ const Layout = () => {
         href="https://api.whatsapp.com/send?phone=+923110011927&text=Hello"
         target="_blank"
         bgColor="green"
-        h="80px"
-        w="80px"
+        sx={{
+          h: { base: "40px", md: "80px" },
+          w: { base: "40px", md: "80px" },
+        }}
         borderRadius="50%"
       >
-        <Icon fontSize="50px" as={FaWhatsapp} color="white" />
+        <Icon
+          sx={{
+            fontSize: { base: "20px", md: "50px" },
+          }}
+          as={FaWhatsapp}
+          color="white"
+        />
       </Box>
       <Footer />
       <Slide
