@@ -20,22 +20,31 @@ export default function App() {
 
   const slides = [
     {
-      url: "./images/verctoe-1.png",
+      url: "./images/portfolio-1.png",
     },
     {
-      url: "./images/vector-2.png",
+      url: "./images/portfolio-2.png",
     },
     {
-      url: "./images/vector-3.png",
+      url: "./images/portfolio-3.png",
     },
     {
-      url: "./images/vector-4.png",
+      url: "./images/portfolio-4.png",
     },
     {
-      url: "./images/vector-5.png",
+      url: "./images/portfolio-5.png",
     },
     {
-      url: "./images/verctoe-1.png",
+      url: "./images/portfolio-6.png",
+    },
+    {
+      url: "./images/portfolio-7.png",
+    },
+    {
+      url: "./images/portfolio-8.png",
+    },
+    {
+      url: "./images/portfolio-9.png",
     },
   ];
 

@@ -42,32 +42,32 @@ const Home = () => {
     {
       heading: "Web Designing",
       text: "Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience.",
-      img: "./images/service-1.png",
+      img: "./images/web-design.png",
     },
     {
       heading: "Web Development",
       text: "Building robust and scalable websites using the latest technologies to ensure optimal performance. Our development services include everything from custom website creation to e-commerce solutions and web applications.",
-      img: "./images/service-2.png",
+      img: "./images/web-dev.png",
     },
     {
       heading: "App Development",
       text: "Developing intuitive and high-performing mobile applications for both iOS and Android platforms. We focus on creating apps that offer seamless functionality and an engaging user experience.",
-      img: "./images/service-3.png",
+      img: "./images/app-dev.png",
     },
     {
       heading: "Content Writing",
       text: "Producing compelling and relevant content that resonates with your target audience. Our content writing services cover everything from website copy to blog posts and social media content.",
-      img: "./images/service-4.png",
+      img: "./images/content-writing.png",
     },
     {
       heading: "Branding and PR",
       text: "Build a strong brand identity and enhance your reputation with our branding and PR services. We help you define your brand story, manage your online reputation, and develop strategic PR campaigns to increase visibility and credibility.",
-      img: "./images/service-5.png",
+      img: "./images/branding-pr.png",
     },
     {
       heading: "SEO Optimization",
       text: "Enhancing online visibility and search engine rankings to attract more organic traffic. Our SEO strategies are designed to improve your website's performance and help you reach a larger audience.",
-      img: "./images/service-6.png",
+      img: "./images/seo.png",
     },
   ];
 
@@ -82,7 +82,7 @@ const Home = () => {
           >
             <Box
               sx={{
-                flex: { base: "1", md: "0.4" },
+                flex: { base: "1", md: "0.5" },
                 textAlign: { base: "left", md: "left" },
                 maxW: "100%",
                 // m: "auto",
@@ -101,7 +101,7 @@ const Home = () => {
               </Text>
               <Text
                 sx={{
-                  fontSize: { base: "1.8rem", md: "2.2rem" },
+                  fontSize: { base: "1.8rem", md: "2.4rem" },
                   fontWeight: 600,
                   color: "#fff",
                 }}
