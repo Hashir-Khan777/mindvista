@@ -95,9 +95,9 @@ export default function App() {
                         w="100%"
                         h="100%"
                         borderRadius="3xl"
-                        bgColor={
-                          hoverEffect === index ? "rgba(0,0,0,0.4)" : null
-                        }
+                        // bgColor={
+                        //   hoverEffect === index ? "rgba(0,0,0,0.4)" : null
+                        // }
                       ></Box>
                     </Box>
                   </Box>
