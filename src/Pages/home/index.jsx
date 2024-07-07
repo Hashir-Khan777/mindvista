@@ -117,7 +117,7 @@ const Home = () => {
               </Text>
               <Heading
                 sx={{
-                  fontSize: { base: "12px", md: "14px" },
+                  fontSize: { base: "12px", md: "15px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
@@ -354,7 +354,7 @@ const Home = () => {
               borderRadius="md"
               border="1px solid rgba(255, 255, 255, 0.2)"
               width={{ base: "90%", sm: "80%", md: "60%" }}
-              mt={2}
+              mt={6}
             >
               <Flex
                 direction={{ base: "column", md: "row" }}

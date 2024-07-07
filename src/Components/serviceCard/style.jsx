@@ -23,7 +23,7 @@ const style = {
   serviceText: {
     mt: "1rem",
     mb: "2rem",
-    fontSize: "13px",
+    fontSize: { base: "12px", md: "14px" },
     lineHeight: "1.5rem",
     color: "white",
     fontWeight: 400,

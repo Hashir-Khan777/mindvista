@@ -20,7 +20,7 @@ const style = {
   text: {
     textAlign: "center",
     mt: "20px",
-    fontSize: { base: "10px", md: "12px" },
+    fontSize: { base: "12px", md: "14px" },
     maxW: { base: "80%", md: "60%" },
     fontWeight: 400,
     color: "#fff",

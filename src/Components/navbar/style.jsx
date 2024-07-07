@@ -4,9 +4,10 @@ const style = {
     height: "70px",
     justifyContent: "space-between",
     w: "100%",
-    px: "20px",
+    px: "3.5rem",
     bgColor: "#040507",
     boxShadow: "md",
+    pr:"5rem"
   },
   navMenu: {
     fontSize: "18px",

@@ -30,7 +30,7 @@ const style = {
   },
   text: {
     textAlign: "center",
-    fontSize: { base: "10px", md: "12px" },
+    fontSize: { base: "12px", md: "14px" },
     fontWeight: 400,
     color: "#fff",
     letterSpacing: "1px",
