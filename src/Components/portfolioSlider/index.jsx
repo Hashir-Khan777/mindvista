@@ -55,24 +55,15 @@ export default function App() {
               transform: "translateX(0)",
               transition: { duration: 1 },
             }}
-            sx={style.protfolioSlider}
+            sx={style.portfolioSlider}
           >
             <Swiper
               loop={true}
-              autoplay={{
-                delay: 2500,
-              }}
+              autoplay={{ delay: 2500 }}
               breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 3,
-                },
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 0,
-                },
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4, spaceBetween: 0 },
               }}
               effect={"coverflow"}
               spaceBetween={15}
@@ -90,46 +81,34 @@ export default function App() {
               modules={[EffectCoverflow, Pagination, Autoplay]}
               className="mySwiper"
             >
-              {slides.map((slide, index) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <Box>
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <Box>
+                    <Box
+                      onMouseOver={() => setHoverEffect(index)}
+                      onMouseOut={() => setHoverEffect(false)}
+                      bgImage={`url(${slide.url})`}
+                      sx={style.slider}
+                    >
                       <Box
-                        onMouseOver={() => setHoverEffect(index)}
-                        onMouseOut={() => setHoverEffect(false)}
-                        bgImage={`url(${slide.url})`}
-                        sx={style.slider}
-                      >
-                        <Box
-                          transition="all 0.4s ease-in-out"
-                          w="100%"
-                          h="100%"
-                          borderRadius="3xl"
-                          bgColor={
-                            hoverEffect === index ? "rgba(0,0,0,0.4)" : null
-                          }
-                        ></Box>
-                      </Box>
-                      {/* <Flex px="20px" align="center" h="80px">
-                        <Text fontSize="14px" fontWeight={700} color={"#fff"}>
-                          EtechGems
-                        </Text>
-                      </Flex> */}
+                        transition="all 0.4s ease-in-out"
+                        w="100%"
+                        h="100%"
+                        borderRadius="3xl"
+                        bgColor={
+                          hoverEffect === index ? "rgba(0,0,0,0.4)" : null
+                        }
+                      ></Box>
                     </Box>
-                  </SwiperSlide>
-                );
-              })}
+                  </Box>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </Box>
-          {/* <CustomButton
-            text="View all portfolio"
-            customStyle={{ w: "180px", m: "auto" }}
-          /> */}
           <Button
             sx={{
               fontSize: { base: "10px", md: "12px" },
               fontWeight: 700,
-              mt: "10px",
               color: "#000",
               bgColor: "#f8be28",
               margin: "auto",
