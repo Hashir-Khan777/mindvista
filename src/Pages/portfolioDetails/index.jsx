@@ -27,7 +27,15 @@ const ProjectDetails = () => {
             ))}
           </Swiper>
         </Box>
-        <Box w={{ base: "100%", lg: "50%" }}>
+        <Box
+          sx={{
+            justifyContent: "center",
+            display: "flex",
+            flexDir: "column",
+            
+          }}
+          w={{ base: "100%", lg: "50%" }}
+        >
           <Heading>{project.title}</Heading>
           <Text mt="2rem">{project.description}</Text>
           <Text mt="2rem">Category: {category}</Text>
