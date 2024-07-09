@@ -250,38 +250,43 @@ const Portfolio = () => {
           mx={"4rem"}
         >
           {projectData[selectedCategory].map((project, index) => (
-            <Card maxW="sm" key={index} minH={"500px"} bgColor={"#1E1E1E"}>
+            <Card maxW="sm" key={index} minH={"450px"} bgColor={"#1E1E1E"}>
               <CardBody>
                 <Image
+                  h={"auto"}
+                  w={"100%"}
                   src={project.image}
                   alt={project.title}
                   borderRadius="lg"
                 />
                 <Stack mt="6" spacing="3">
-                  <Heading size="md" color={"#fff"}>
+                  <Heading size="1.2rem" color={"#fff"}>
                     {project.title}
                   </Heading>
-                  <Text color={"#fff"}>{project.description}</Text>
+                  <Text color={"#fff"} fontSize={"0.8rem"}>
+                    {project.description}
+                  </Text>
                   <Stack direction="row" spacing={2} mt={2}>
                     {project.tags.map((tag, idx) => (
                       <Tag key={idx} colorScheme={tagColors[tag]}>
-                        <TagLabel>{tag}</TagLabel>
+                        <TagLabel fontSize={"0.7rem"}>{tag}</TagLabel>
                       </Tag>
                     ))}
                   </Stack>
+                  <Button
+                    sx={{
+                      fontSize: { base: "10px", md: "12px" },
+                      fontWeight: 700,
+                      mt: "10px",
+                    }}
+                  >
+                    View More Details
+                  </Button>
                 </Stack>
               </CardBody>
-              <CardFooter>
-                <Button
-                  sx={{
-                    fontSize: { base: "10px", md: "12px" },
-                    fontWeight: 700,
-                    mt: "10px",
-                  }}
-                >
-                  View More Details
-                </Button>
-              </CardFooter>
+              {/* <CardFooter>
+               
+              </CardFooter> */}
             </Card>
           ))}
         </SimpleGrid>
@@ -305,7 +310,7 @@ const Portfolio = () => {
             enterprises with a leading software development company.
           </Heading>
           <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 4 }}
+            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
             mt={{ base: "0", lg: "4rem" }}
             justifyContent="center"
             placeItems="center"
