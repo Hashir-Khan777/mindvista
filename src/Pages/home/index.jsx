@@ -226,7 +226,7 @@ const Home = () => {
           </SimpleGrid>
         </Box>
         {/* Teams Section */}
-        <Box
+        {/* <Box
           sx={{
             bgColor: "#090909",
             height: "auto",
@@ -285,7 +285,7 @@ const Home = () => {
               width={"auto"}
             />
           </SimpleGrid>
-        </Box>
+        </Box> */}
         {/* Partners Section */}
         <Box
           sx={{
