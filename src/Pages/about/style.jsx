@@ -9,7 +9,7 @@ const style = {
     backgroundSize: "cover",
     backgroundPosition: "center",
     position: "relative",
-    bgImage: "url(./images/about-us-image-3.jpg)",
+    bgImage: "url(/images/about-us-image-3.jpg)",
   },
   stack: {
     p: "35px 30px ",

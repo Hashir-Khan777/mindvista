@@ -17,7 +17,7 @@ const Navbar = ({ clicked }) => {
     <Flex sx={style.navBar} zIndex={1}>
       <Flex gap="60px" ml={"4rem"}>
         <Box w="90px" as={NavLink} to="/">
-          <Image src="./images/logopng.png" />
+          <Image src="/images/logopng.png" />
         </Box>
         <Flex sx={{ ...style.navMenu }}>
           <Box to="/" as={NavLink}>

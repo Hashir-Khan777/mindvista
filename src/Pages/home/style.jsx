@@ -59,7 +59,7 @@ const style = {
   },
   background: {
     position: "relative",
-    bgImage: "url(./images/hero.png)",
+    bgImage: "url(/images/hero.png)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     h: "100vh",
@@ -82,7 +82,7 @@ const style = {
   },
   contactBackground: {
     position: "relative",
-    bgImage: "url(./images/contact-bg-image.png)",
+    bgImage: "url(/images/contact-bg-image.png)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "80vh",

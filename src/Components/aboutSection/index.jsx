@@ -174,7 +174,7 @@ const Aboutsection = () => {
           transition: { duration: 1 },
         }}
       >
-        <Image src="./images/about-bg.png" />
+        <Image src="/images/about-bg.png" />
       </Box>
     </Box>
   );

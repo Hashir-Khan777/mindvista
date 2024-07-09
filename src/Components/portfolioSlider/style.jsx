@@ -1,7 +1,7 @@
 const style = {
   background: {
     position: "relative",
-    bgImage: "url(./images/portfolio.png)",
+    bgImage: "url(/images/portfolio.png)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     display: "flex",

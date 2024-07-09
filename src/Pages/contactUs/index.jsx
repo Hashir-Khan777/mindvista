@@ -118,7 +118,7 @@ const ContactUs = () => {
               </Stack>
             </Flex>
           </SimpleGrid>
-          <Image mt="20px" src="./images/contact.jpg" />
+          <Image mt="20px" src="/images/contact.jpg" />
         </Stack>
         <Box
           as={motion.div}

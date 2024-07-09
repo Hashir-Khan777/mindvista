@@ -22,7 +22,7 @@ const style = {
     w: "100%",
     h: "100%",
     position: "absolute",
-    backgroundImage: "url(./images/about-bg.png)",
+    backgroundImage: "url(/images/about-bg.png)",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

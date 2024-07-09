@@ -10,13 +10,13 @@ const Slider = () => {
 
   const slides = [
     {
-      url: "./images/hero-image-1.jpg",
+      url: "/images/hero-image-1.jpg",
     },
     {
-      url: "./images/hero-image-2.jpg",
+      url: "/images/hero-image-2.jpg",
     },
     {
-      url: "./images/hero-image-3.jpg",
+      url: "/images/hero-image-3.jpg",
     },
   ];
 

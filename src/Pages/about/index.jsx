@@ -59,7 +59,7 @@ const AboutUs = () => {
             >
               <Image
                 w={{ md: "600px", lg: "650px", xl: "800px" }}
-                src="./images/About-us-image-1.jpg"
+                src="/images/About-us-image-1.jpg"
               />
             </Box>
             <Stack

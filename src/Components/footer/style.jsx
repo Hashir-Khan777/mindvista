@@ -1,6 +1,6 @@
 const style = {
   background: {
-    bgImage: "url(./images/hero-image-1.jpg)",
+    bgImage: "url(/images/hero-image-1.jpg)",
     boxShadow: "md",
     backgroundSize: "cover",
     backgroundPosition: "center",

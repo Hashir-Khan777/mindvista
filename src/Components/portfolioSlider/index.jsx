@@ -20,31 +20,31 @@ export default function App() {
 
   const slides = [
     {
-      url: "./images/portfolio-1.png",
+      url: "/images/portfolio-1.png",
     },
     {
-      url: "./images/portfolio-2.png",
+      url: "/images/portfolio-2.png",
     },
     {
-      url: "./images/portfolio-3.png",
+      url: "/images/portfolio-3.png",
     },
     {
-      url: "./images/portfolio-4.png",
+      url: "/images/portfolio-4.png",
     },
     {
-      url: "./images/portfolio-5.png",
+      url: "/images/portfolio-5.png",
     },
     {
-      url: "./images/portfolio-6.png",
+      url: "/images/portfolio-6.png",
     },
     {
-      url: "./images/portfolio-7.png",
+      url: "/images/portfolio-7.png",
     },
     {
-      url: "./images/portfolio-8.png",
+      url: "/images/portfolio-8.png",
     },
     {
-      url: "./images/portfolio-9.png",
+      url: "/images/portfolio-9.png",
     },
   ];
 

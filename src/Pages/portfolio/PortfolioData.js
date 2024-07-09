@@ -4,9 +4,9 @@ export const projectData = {
       title: "Fitness Tracker App",
       description: "A mobile app to track workouts, nutrition, and progress.",
       image: [
-        "./images/portfolio-1.png",
-        "./images/portfolio-1.png",
-        "./images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
       ],
       tags: ["React Native", "Redux", "Firebase"],
     },
@@ -15,9 +15,9 @@ export const projectData = {
       description:
         "An app to manage personal finances, track expenses, and set budgets.",
       image: [
-        "./images/portfolio-2.png",
-        "./images/portfolio-2.png",
-        "./images/portfolio-2.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-2.png",
       ],
       tags: ["Flutter", "Dart", "SQLite"],
     },
@@ -26,9 +26,9 @@ export const projectData = {
       description:
         "A meditation and mindfulness app with guided sessions and breathing exercises.",
       image: [
-        "./images/portfolio-3.png",
-        "./images/portfolio-3.png",
-        "./images/portfolio-3.png",
+        "/images/portfolio-3.png",
+        "/images/portfolio-3.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["Kotlin", "Coroutines", "Room"],
     },
@@ -37,9 +37,9 @@ export const projectData = {
       description:
         "An educational app offering courses, quizzes, and progress tracking.",
       image: [
-        "./images/portfolio-4.png",
-        "./images/portfolio-4.png",
-        "./images/portfolio-4.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-4.png",
       ],
       tags: ["Swift", "Combine", "CoreData"],
     },
@@ -48,9 +48,9 @@ export const projectData = {
       description:
         "A travel booking app for flights, hotels, and holiday packages.",
       image: [
-        "./images/portfolio-5.png",
-        "./images/portfolio-5.png",
-        "./images/portfolio-5.png",
+        "/images/portfolio-5.png",
+        "/images/portfolio-5.png",
+        "/images/portfolio-5.png",
       ],
       tags: ["React Native", "GraphQL", "AWS"],
     },
@@ -59,9 +59,9 @@ export const projectData = {
       description:
         "A recipe app with a collection of cooking recipes and meal planning features.",
       image: [
-        "./images/portfolio-6.png",
-        "./images/portfolio-6.png",
-        "./images/portfolio-6.png",
+        "/images/portfolio-6.png",
+        "/images/portfolio-6.png",
+        "/images/portfolio-6.png",
       ],
       tags: ["Flutter", "Firebase", "Firestore"],
     },
@@ -72,9 +72,9 @@ export const projectData = {
       description:
         "An immersive puzzle adventure game with challenging levels and story-driven gameplay.",
       image: [
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
       ],
       tags: ["Unity", "C#", "Blender"],
     },
@@ -83,9 +83,9 @@ export const projectData = {
       description:
         "A fast-paced multiplayer racing game with customizable cars and tracks.",
       image: [
-        "./images/portfolio-8.png",
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
+        "/images/portfolio-8.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
       ],
       tags: ["Blueprint", "Photoshop"],
     },
@@ -94,9 +94,9 @@ export const projectData = {
       description:
         "A classic 2D platformer game with retro graphics and challenging levels.",
       image: [
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
       ],
       tags: ["Godot", "GDScript", "Aseprite"],
     },
@@ -105,9 +105,9 @@ export const projectData = {
       description:
         "A first-person shooter game designed for virtual reality headsets.",
       image: [
-        "./images/portfolio-1.png",
-        "./images/portfolio-1.png",
-        "./images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
       ],
       tags: ["Unity", "C#", "Oculus SDK"],
     },
@@ -116,9 +116,9 @@ export const projectData = {
       description:
         "A fast-paced multiplayer racing game with customizable cars and tracks.",
       image: [
-        "./images/portfolio-8.png",
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
+        "/images/portfolio-8.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
       ],
       tags: ["Unreal Engine", "Photoshop"],
     },
@@ -127,9 +127,9 @@ export const projectData = {
       description:
         "A classic 2D platformer game with retro graphics and challenging levels.",
       image: [
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
       ],
       tags: ["Godot", "GDScript", "Aseprite"],
     },
@@ -138,9 +138,9 @@ export const projectData = {
       description:
         "A first-person shooter game designed for virtual reality headsets.",
       image: [
-        "./images/portfolio-1.png",
-        "./images/portfolio-1.png",
-        "./images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
       ],
       tags: ["Unity", "C#", "Oculus SDK"],
     },
@@ -151,9 +151,9 @@ export const projectData = {
       description:
         "A comprehensive HRM tool for managing employee data, attendance, and performance.",
       image: [
-        "./images/portfolio-2.png",
-        "./images/portfolio-2.png",
-        "./images/portfolio-2.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-2.png",
       ],
       tags: ["React", "Node.js", "MongoDB"],
     },
@@ -162,9 +162,9 @@ export const projectData = {
       description:
         "An online store with a range of features including product browsing, cart, and checkout.",
       image: [
-        "./images/portfolio-3.png",
-        "./images/portfolio-3.png",
-        "./images/portfolio-3.png",
+        "/images/portfolio-3.png",
+        "/images/portfolio-3.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["Vue.js", "Express", "MySQL"],
     },
@@ -173,9 +173,9 @@ export const projectData = {
       description:
         "A personal portfolio website showcasing projects, blog posts, and contact information.",
       image: [
-        "./images/portfolio-4.png",
-        "./images/portfolio-4.png",
-        "./images/portfolio-4.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-4.png",
       ],
       tags: ["Gatsby", "GraphQL", "CSS"],
     },
@@ -183,7 +183,7 @@ export const projectData = {
     //   title: "Blog Platform",
     //   description:
     //     "A content management platform for creating and managing blog posts and user comments.",
-    //   image: "./images/portfolio-5.png",
+    //   image: "/images/portfolio-5.png",
     //   tags: ["Next.js", "Firebase", "Tailwind CSS"],
     // },
   ],
@@ -193,9 +193,9 @@ export const projectData = {
       description:
         "A secure crypto wallet for managing and storing various cryptocurrencies.",
       image: [
-        "./images/portfolio-6.png",
-        "./images/portfolio-6.png",
-        "./images/portfolio-6.png",
+        "/images/portfolio-6.png",
+        "/images/portfolio-6.png",
+        "/images/portfolio-6.png",
       ],
       tags: ["Solidity"],
     },
@@ -204,9 +204,9 @@ export const projectData = {
       description:
         "A decentralized exchange platform for trading cryptocurrencies.",
       image: [
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
       ],
       tags: ["Angular", "Ethereum", "Web3.js"],
     },
@@ -215,9 +215,9 @@ export const projectData = {
       description:
         "An online marketplace for buying and selling non-fungible tokens (NFTs).",
       image: [
-        "./images/portfolio-8.png",
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
+        "/images/portfolio-8.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
       ],
       tags: ["Smart Contracts", "IPFS"],
     },
@@ -226,9 +226,9 @@ export const projectData = {
       description:
         "A secure and transparent voting system based on blockchain technology.",
       image: [
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
       ],
       tags: ["React", "Hyperledger"],
     },
@@ -237,9 +237,9 @@ export const projectData = {
       description:
         "An online marketplace for buying and selling non-fungible tokens (NFTs).",
       image: [
-        "./images/portfolio-8.png",
-        "./images/portfolio-7.png",
-        "./images/portfolio-7.png",
+        "/images/portfolio-8.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-7.png",
       ],
       tags: ["Vue.js", "IPFS"],
     },
@@ -248,9 +248,9 @@ export const projectData = {
       description:
         "A secure and transparent voting system based on blockchain technology.",
       image: [
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
-        "./images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
+        "/images/portfolio-9.png",
       ],
       tags: ["React", "Hyperledger"],
     },

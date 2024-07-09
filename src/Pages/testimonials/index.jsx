@@ -19,22 +19,22 @@ export default function App() {
 
   const slides = [
     {
-      url: "./images/portfolio-image-1.jpg",
+      url: "/images/portfolio-image-1.jpg",
     },
     {
-      url: "./images/portfolio-image-1.jpg",
+      url: "/images/portfolio-image-1.jpg",
     },
     {
-      url: "./images/portfolio-image-1.jpg",
+      url: "/images/portfolio-image-1.jpg",
     },
     {
-      url: "./images/portfolio-image-1.jpg",
+      url: "/images/portfolio-image-1.jpg",
     },
     {
-      url: "./images/portfolio-image-1.jpg",
+      url: "/images/portfolio-image-1.jpg",
     },
     {
-      url: "./images/portfolio-image-1.jpg",
+      url: "/images/portfolio-image-1.jpg",
     },
   ];
 

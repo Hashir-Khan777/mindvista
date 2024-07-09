@@ -13,10 +13,7 @@ import "swiper/swiper-bundle.css";
 import { projectData, tagColors } from "../portfolio/PortfolioData";
 const ProjectDetails = () => {
   const { category, projectId } = useParams();
-  console.log("🚀 ~ ProjectDetails ~ category:", category);
-  console.log("🚀 ~ ProjectDetails ~ projectId:", projectId);
   const project = projectData[category][projectId];
-  console.log("🚀 ~ ProjectDetails ~ project:", project);
 
   return (
     <Box p="4rem" bgColor="#090909" color="#fff">

@@ -31,7 +31,7 @@ const Footer = () => {
           <NavLink to="/">
             <Image
               w="90px"
-              src="./images/logopng.png"
+              src="/images/logopng.png"
               mx="auto"
               mb={4}
             />

@@ -17,7 +17,7 @@ const style = {
   background: {
     my: "5rem",
     h: "450px",
-    bgImage: "url(./images/service-image.jpg)",
+    bgImage: "url(/images/service-image.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

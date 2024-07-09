@@ -13,7 +13,7 @@ import {
 const ContactForm = () => {
   return (
     <Box
-      bgImage={`./images/contact-image.jpg`}
+      bgImage={`/images/contact-image.jpg`}
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"

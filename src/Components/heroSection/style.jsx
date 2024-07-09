@@ -1,6 +1,6 @@
 const style = {
   background: {
-    bgImage: "url(./images/contact-image.jpg)",
+    bgImage: "url(/images/contact-image.jpg)",
     h: "550px",
     position: "relative",
     backgroundSize: "cover",
