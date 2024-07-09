@@ -2,6 +2,7 @@ export const projectData = {
   app: [
     {
       title: "Fitness Tracker App",
+      category: "App Development",
       description: "A mobile app to track workouts, nutrition, and progress.",
       image: [
         "/images/portfolio-1.png",
@@ -12,6 +13,7 @@ export const projectData = {
     },
     {
       title: "Expense Manager App",
+      category: "App Development",
       description:
         "An app to manage personal finances, track expenses, and set budgets.",
       image: [
@@ -23,6 +25,7 @@ export const projectData = {
     },
     {
       title: "Meditation App",
+      category: "App Development",
       description:
         "A meditation and mindfulness app with guided sessions and breathing exercises.",
       image: [
@@ -34,6 +37,7 @@ export const projectData = {
     },
     {
       title: "E-Learning App",
+      category: "App Development",
       description:
         "An educational app offering courses, quizzes, and progress tracking.",
       image: [
@@ -45,6 +49,7 @@ export const projectData = {
     },
     {
       title: "Travel Booking App",
+      category: "App Development",
       description:
         "A travel booking app for flights, hotels, and holiday packages.",
       image: [
@@ -56,6 +61,7 @@ export const projectData = {
     },
     {
       title: "Recipe App",
+      category: "App Development",
       description:
         "A recipe app with a collection of cooking recipes and meal planning features.",
       image: [
@@ -69,6 +75,7 @@ export const projectData = {
   game: [
     {
       title: "Puzzle Adventure Game",
+      category: "Game Development",
       description:
         "An immersive puzzle adventure game with challenging levels and story-driven gameplay.",
       image: [
@@ -80,6 +87,7 @@ export const projectData = {
     },
     {
       title: "Multiplayer Racing Game",
+      category: "Game Development",
       description:
         "A fast-paced multiplayer racing game with customizable cars and tracks.",
       image: [
@@ -91,6 +99,7 @@ export const projectData = {
     },
     {
       title: "2D Platformer",
+      category: "Game Development",
       description:
         "A classic 2D platformer game with retro graphics and challenging levels.",
       image: [
@@ -102,6 +111,7 @@ export const projectData = {
     },
     {
       title: "Virtual Reality Shooter",
+      category: "Game Development",
       description:
         "A first-person shooter game designed for virtual reality headsets.",
       image: [
@@ -113,6 +123,7 @@ export const projectData = {
     },
     {
       title: "Multiplayer Racing Game",
+      category: "Game Development",
       description:
         "A fast-paced multiplayer racing game with customizable cars and tracks.",
       image: [
@@ -124,6 +135,7 @@ export const projectData = {
     },
     {
       title: "2D Platformer",
+      category: "Game Development",
       description:
         "A classic 2D platformer game with retro graphics and challenging levels.",
       image: [
@@ -135,6 +147,7 @@ export const projectData = {
     },
     {
       title: "Virtual Reality Shooter",
+      category: "Game Development",
       description:
         "A first-person shooter game designed for virtual reality headsets.",
       image: [
@@ -148,6 +161,7 @@ export const projectData = {
   web: [
     {
       title: "HRM Management Tool",
+      category: "Web Development",
       description:
         "A comprehensive HRM tool for managing employee data, attendance, and performance.",
       image: [
@@ -159,6 +173,7 @@ export const projectData = {
     },
     {
       title: "E-commerce Store",
+      category: "Web Development",
       description:
         "An online store with a range of features including product browsing, cart, and checkout.",
       image: [
@@ -170,6 +185,7 @@ export const projectData = {
     },
     {
       title: "Portfolio Website",
+      category: "Web Development",
       description:
         "A personal portfolio website showcasing projects, blog posts, and contact information.",
       image: [
@@ -179,17 +195,19 @@ export const projectData = {
       ],
       tags: ["Gatsby", "GraphQL", "CSS"],
     },
-    // {
-    //   title: "Blog Platform",
-    //   description:
-    //     "A content management platform for creating and managing blog posts and user comments.",
-    //   image: "/images/portfolio-5.png",
-    //   tags: ["Next.js", "Firebase", "Tailwind CSS"],
-    // },
+    {
+      title: "Blog Platform",
+      category: "Web Development",
+      description:
+        "A content management platform for creating and managing blog posts and user comments.",
+      image: "/images/portfolio-5.png",
+      tags: ["Next.js", "Firebase", "Tailwind CSS"],
+    },
   ],
   blockchain: [
     {
       title: "Crypto Wallet",
+      category: "Blockchain",
       description:
         "A secure crypto wallet for managing and storing various cryptocurrencies.",
       image: [
@@ -201,6 +219,7 @@ export const projectData = {
     },
     {
       title: "Decentralized Exchange",
+      category: "Blockchain",
       description:
         "A decentralized exchange platform for trading cryptocurrencies.",
       image: [
@@ -212,6 +231,7 @@ export const projectData = {
     },
     {
       title: "NFT Marketplace",
+      category: "Blockchain",
       description:
         "An online marketplace for buying and selling non-fungible tokens (NFTs).",
       image: [
@@ -223,6 +243,7 @@ export const projectData = {
     },
     {
       title: "Blockchain Voting System",
+      category: "Blockchain",
       description:
         "A secure and transparent voting system based on blockchain technology.",
       image: [
@@ -234,6 +255,7 @@ export const projectData = {
     },
     {
       title: "NFT Marketplace",
+      category: "Blockchain",
       description:
         "An online marketplace for buying and selling non-fungible tokens (NFTs).",
       image: [
@@ -245,6 +267,7 @@ export const projectData = {
     },
     {
       title: "Blockchain Voting System",
+      category: "Blockchain",
       description:
         "A secure and transparent voting system based on blockchain technology.",
       image: [
