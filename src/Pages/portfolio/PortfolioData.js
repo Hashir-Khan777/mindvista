@@ -6,8 +6,8 @@ export const projectData = {
       description: "A mobile app to track workouts, nutrition, and progress.",
       image: [
         "/images/portfolio-1.png",
-        "/images/portfolio-1.png",
-        "/images/portfolio-1.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["React Native", "Redux", "Firebase"],
     },
@@ -17,9 +17,9 @@ export const projectData = {
       description:
         "An app to manage personal finances, track expenses, and set budgets.",
       image: [
-        "/images/portfolio-2.png",
-        "/images/portfolio-2.png",
-        "/images/portfolio-2.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-5.png",
+        "/images/portfolio-6.png",
       ],
       tags: ["Flutter", "Dart", "SQLite"],
     },
@@ -29,9 +29,9 @@ export const projectData = {
       description:
         "A meditation and mindfulness app with guided sessions and breathing exercises.",
       image: [
-        "/images/portfolio-3.png",
-        "/images/portfolio-3.png",
-        "/images/portfolio-3.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-8.png",
+        "/images/portfolio-9.png",
       ],
       tags: ["Kotlin", "Coroutines", "Room"],
     },
@@ -41,9 +41,9 @@ export const projectData = {
       description:
         "An educational app offering courses, quizzes, and progress tracking.",
       image: [
-        "/images/portfolio-4.png",
-        "/images/portfolio-4.png",
-        "/images/portfolio-4.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["Swift", "Combine", "CoreData"],
     },
@@ -53,9 +53,9 @@ export const projectData = {
       description:
         "A travel booking app for flights, hotels, and holiday packages.",
       image: [
+        "/images/portfolio-4.png",
         "/images/portfolio-5.png",
-        "/images/portfolio-5.png",
-        "/images/portfolio-5.png",
+        "/images/portfolio-6.png",
       ],
       tags: ["React Native", "GraphQL", "AWS"],
     },
@@ -65,9 +65,9 @@ export const projectData = {
       description:
         "A recipe app with a collection of cooking recipes and meal planning features.",
       image: [
-        "/images/portfolio-6.png",
-        "/images/portfolio-6.png",
-        "/images/portfolio-6.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-8.png",
+        "/images/portfolio-9.png",
       ],
       tags: ["Flutter", "Firebase", "Firestore"],
     },
@@ -79,9 +79,9 @@ export const projectData = {
       description:
         "An immersive puzzle adventure game with challenging levels and story-driven gameplay.",
       image: [
-        "/images/portfolio-7.png",
-        "/images/portfolio-7.png",
-        "/images/portfolio-7.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["Unity", "C#", "Blender"],
     },
@@ -91,9 +91,9 @@ export const projectData = {
       description:
         "A fast-paced multiplayer racing game with customizable cars and tracks.",
       image: [
-        "/images/portfolio-8.png",
-        "/images/portfolio-7.png",
-        "/images/portfolio-7.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-5.png",
+        "/images/portfolio-6.png",
       ],
       tags: ["Blueprint", "Photoshop"],
     },
@@ -103,8 +103,8 @@ export const projectData = {
       description:
         "A classic 2D platformer game with retro graphics and challenging levels.",
       image: [
-        "/images/portfolio-9.png",
-        "/images/portfolio-9.png",
+        "/images/portfolio-7.png",
+        "/images/portfolio-8.png",
         "/images/portfolio-9.png",
       ],
       tags: ["Godot", "GDScript", "Aseprite"],
@@ -116,8 +116,8 @@ export const projectData = {
         "A first-person shooter game designed for virtual reality headsets.",
       image: [
         "/images/portfolio-1.png",
-        "/images/portfolio-1.png",
-        "/images/portfolio-1.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["Unity", "C#", "Oculus SDK"],
     },
@@ -127,9 +127,9 @@ export const projectData = {
       description:
         "A fast-paced multiplayer racing game with customizable cars and tracks.",
       image: [
-        "/images/portfolio-8.png",
-        "/images/portfolio-7.png",
-        "/images/portfolio-7.png",
+        "/images/portfolio-1.png",
+        "/images/portfolio-2.png",
+        "/images/portfolio-3.png",
       ],
       tags: ["Unreal Engine", "Photoshop"],
     },

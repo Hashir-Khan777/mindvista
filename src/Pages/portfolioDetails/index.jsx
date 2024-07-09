@@ -20,7 +20,6 @@ const ProjectDetails = () => {
   const { category, projectId } = useParams();
   const project = projectData[category][projectId];
 
-  // Fetch related projects excluding the current project
   const relatedProjects = Object.keys(projectData[category])
     .filter((id) => id !== projectId)
     .map((id) => ({ id, ...projectData[category][id] }));
@@ -71,10 +70,9 @@ const ProjectDetails = () => {
           alignItems={"center"}
           m="auto"
           placeItems={"center"}
-          mx={"4rem"}
         >
           {relatedProjects.map((relatedProject, idx) => (
-            <Card maxW="sm" key={idx} minH={"450px"} bgColor={"#1E1E1E"}>
+            <Card maxW="md" key={idx} minH={"450px"} bgColor={"#1E1E1E"}>
               <CardBody>
                 <Image
                   src={relatedProject.image[0]}

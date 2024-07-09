@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 export default function App() {
   const [hoverEffect, setHoverEffect] = useState("");
@@ -120,9 +121,12 @@ export default function App() {
                 color: "#000",
                 bgColor: "#f8be28",
                 margin: "auto",
-                display: "block",
+                display: "flex",
+                w: "150px",
                 mt: "2rem",
               }}
+              to="/portfolio"
+              as={NavLink}
             >
               View All Portfolio
             </Button>
