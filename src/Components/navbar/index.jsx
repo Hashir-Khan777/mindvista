@@ -1,12 +1,4 @@
-import {
-  Box,
-  Circle,
-  Container,
-  Flex,
-  Icon,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Circle, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import style from "./style";
 import { NavLink } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
@@ -40,6 +32,8 @@ const Navbar = ({ clicked }) => {
       <Flex display={{ base: "none", lg: "flex" }} gap="30px">
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={IoMailOutline} />
+          <Image 
+          />
         </Box>
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={MdOutlinePhone} />
