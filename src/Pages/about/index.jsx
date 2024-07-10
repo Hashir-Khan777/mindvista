@@ -48,7 +48,7 @@ const AboutUs = () => {
             direction={{ base: "column", lg: "row" }}
             justify="center"
             align="center"
-            my="6rem"
+            py="6rem"
           >
             <Box
               as={motion.div}
