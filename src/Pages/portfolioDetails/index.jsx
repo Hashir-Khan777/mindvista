@@ -144,7 +144,7 @@ const ProjectDetails = () => {
                   </Stack>
                 </Box>
                 <Box>
-                  <Stack direction="row" spacing={2} mt={2}>
+                  <Stack direction="row" spacing={2} mt={4}>
                     {relatedProject.tags.map((tag, tagIdx) => (
                       <Tag key={tagIdx} colorScheme={tagColors[tag]}>
                         <TagLabel fontSize="0.7rem">{tag}</TagLabel>
@@ -157,8 +157,9 @@ const ProjectDetails = () => {
                     sx={{
                       fontSize: { base: "10px", md: "12px" },
                       fontWeight: 700,
-                      mt: "10px",
+                      mt: "20px",
                       bgColor: "#F8BE28",
+                      w: "100%",
                     }}
                   >
                     View More Details
