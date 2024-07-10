@@ -29,7 +29,7 @@ const Navbar = ({ clicked }) => {
           </Box>
         </Flex>
       </Flex>
-      <Flex display={{ base: "none", lg: "flex" }} gap="30px">
+      <Flex display={{ base: "none", lg: "flex" }} gap="16px">
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={IoMailOutline} />
           <Image 

@@ -16,7 +16,9 @@ const ServiceCard = ({ service }) => {
       }}
       sx={style.services}
     >
-      <Image src={service.img} alt={service.heading} sx={style.serviceImg} />
+      <Box sx={style.serviceImgContainer}>
+        <Image src={service.img} alt={service.heading} sx={style.serviceImg} />
+      </Box>
       <Text sx={style.serviceHeading}>{service.heading}</Text>
       <Text sx={style.serviceText}>{service.text}</Text>
       {/* <CustomButton text="View More"></CustomButton> */}
@@ -33,7 +35,7 @@ const ServiceCard = ({ service }) => {
           display: "block",
           _hover: {
             color: "#090909",
-            bgColor:"white"
+            bgColor: "white",
           },
         }}
       >

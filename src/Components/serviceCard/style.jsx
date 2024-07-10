@@ -9,11 +9,18 @@ const style = {
     borderRadius: "8px",
     boxShadow: "lg",
   },
-  serviceImg: {
-    h: "auto",
-    w: { base: "40px", lg: "60px" },
-    objectFit: "cover",
+  serviceImgContainer: {
+    height: { base: "60px", lg: "60px" }, // Fixed height for the image container
+    width: { base: "80px", lg: "80px" },  // Fixed width for the image container
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     margin: "0 auto 1rem",
+  },
+  serviceImg: {
+    maxHeight: "100%", // Ensure image fits within the container
+    maxWidth: "100%",
+    objectFit: "contain",
   },
   serviceHeading: {
     color: "#F8BE28",
