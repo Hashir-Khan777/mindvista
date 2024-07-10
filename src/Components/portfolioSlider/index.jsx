@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./style";
@@ -8,46 +8,58 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-// import "./styles.css";
-
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function App() {
   const [hoverEffect, setHoverEffect] = useState("");
+  const navigate = useNavigate();
 
   const slides = [
     {
       url: "/images/portfolio-1.png",
+      id: 1,
     },
     {
       url: "/images/portfolio-2.png",
+      id: 2,
     },
     {
       url: "/images/portfolio-3.png",
+      id: 3,
     },
     {
       url: "/images/portfolio-4.png",
+      id: 4,
     },
     {
       url: "/images/portfolio-5.png",
+      id: 5,
     },
     {
       url: "/images/portfolio-6.png",
+      id: 1,
     },
     {
       url: "/images/portfolio-7.png",
+      id: 2,
     },
     {
       url: "/images/portfolio-8.png",
+      id: 3,
     },
     {
       url: "/images/portfolio-9.png",
+      id: 4,
     },
   ];
+
+  const handleSlideClick = (id) => {
+    navigate(`/project/app/${id}`);
+  };
 
   return (
     <Box flex={1}>
@@ -93,7 +105,7 @@ export default function App() {
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <Box>
+                  <Box onClick={() => handleSlideClick(slide.id)}>
                     <Box
                       onMouseOver={() => setHoverEffect(index)}
                       onMouseOut={() => setHoverEffect(false)}
@@ -105,9 +117,6 @@ export default function App() {
                         w="100%"
                         h="100%"
                         borderRadius="3xl"
-                        // bgColor={
-                        //   hoverEffect === index ? "rgba(0,0,0,0.4)" : null
-                        // }
                       ></Box>
                     </Box>
                   </Box>

@@ -34,7 +34,7 @@ const ProjectDetails = () => {
     .map((id) => ({ id, ...projectData[category][id] }));
 
   return (
-    <Box bgColor="#090909" color="#fff">
+    <Box bgColor="#000" color="#fff">
       <Stack
         direction={{ base: "column", lg: "row" }}
         spacing="4rem"
@@ -98,9 +98,8 @@ const ProjectDetails = () => {
           </Stack>
         </Box>
       </Stack>
-
-      <Box mt="4rem" bgColor="#000" p="4rem">
-        <Heading as="h1" fontSize="2.5rem" mb="2rem">
+      <Box mt="4rem" bgColor="#090909" p="4rem">
+        <Heading as="h1" fontSize="2.5rem" mb="2rem" color="#fff">
           Related Projects
         </Heading>
         <SimpleGrid
@@ -109,31 +108,40 @@ const ProjectDetails = () => {
           columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
           spacing="30px"
           justifyItems="center"
-          alignItems={"center"}
+          alignItems="center"
           m="auto"
-          placeItems={"center"}
+          placeItems="center"
         >
           {relatedProjects.map((relatedProject, idx) => (
-            <Card maxW="md" key={idx} minH={"450px"} bgColor={"#090909"}>
-              <CardBody>
-                <Image
-                  src={relatedProject.image[0]}
-                  alt={relatedProject.title}
-                  borderRadius="lg"
-                  h={"auto"}
-                  w={"100%"}
-                />
-                <Stack mt="6" spacing="3">
-                  <Heading size="1.2rem" color={"#F8BE28"}>
-                    {relatedProject.title}
-                  </Heading>
-                  <Text color={"#fff"} fontSize={"0.8rem"}>
-                    {relatedProject.description}
-                  </Text>
+            <Card maxW="md" key={idx} minH="500px" bgColor="#1E1E1E">
+              <CardBody
+                display="flex"
+                flexDirection="column"
+                justifyContent="space-between"
+                height="100%"
+              >
+                <Box>
+                  <Image
+                    src={relatedProject.image[0]}
+                    alt={relatedProject.title}
+                    borderRadius="lg"
+                    height="auto"
+                    width="100%"
+                  />
+                  <Stack mt="6" spacing="3">
+                    <Heading size="md" color="#F8BE28">
+                      {relatedProject.title}
+                    </Heading>
+                    <Text color="#fff" fontSize="0.8rem">
+                      {relatedProject.description}
+                    </Text>
+                  </Stack>
+                </Box>
+                <Box>
                   <Stack direction="row" spacing={2} mt={2}>
                     {relatedProject.tags.map((tag, tagIdx) => (
                       <Tag key={tagIdx} colorScheme={tagColors[tag]}>
-                        <TagLabel fontSize={"0.7rem"}>{tag}</TagLabel>
+                        <TagLabel fontSize="0.7rem">{tag}</TagLabel>
                       </Tag>
                     ))}
                   </Stack>
@@ -151,7 +159,7 @@ const ProjectDetails = () => {
                   >
                     View More Details
                   </Button>
-                </Stack>
+                </Box>
               </CardBody>
             </Card>
           ))}

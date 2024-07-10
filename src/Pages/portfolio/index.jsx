@@ -44,7 +44,7 @@ const Portfolio = () => {
           mx={"4rem"}
         >
           {projectData[selectedCategory].map((project, index) => (
-            <Card maxW="sm" key={index} minH={"450px"} bgColor={"#1E1E1E"}>
+            <Card maxW="sm" key={index} minH={"500px"} bgColor={"#1E1E1E"}>
               <CardBody>
                 <Image
                   h={"auto"}

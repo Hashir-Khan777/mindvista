@@ -41,50 +41,7 @@ const AboutUs = () => {
       />
       <Box bgColor={"#090909"}>
         <Box m="auto">
-          <Flex
-            py="5rem"
-            mx={{ base: "20px", lg: "0" }}
-            align="center"
-            direction={{ base: "column", lg: "row" }}
-            gap={10}
-          >
-            <Box
-              as={motion.div}
-              initial={{ opacity: 0, transform: "translateX(-20px)" }}
-              whileInView={{
-                opacity: 1,
-                transform: "translateX(0)",
-                transition: { duration: 1 },
-              }}
-            >
-              <Image
-                w={{ md: "600px", lg: "650px", xl: "800px" }}
-                src="/images/About-us-image-1.jpg"
-              />
-            </Box>
-            <Stack
-              as={motion.div}
-              initial={{ opacity: 0, transform: "translateX(20px)" }}
-              whileInView={{
-                opacity: 1,
-                transform: "translateX(0)",
-                transition: { duration: 1 },
-              }}
-              justify="center"
-              w={{ base: "100%", md: "600px", lg: "300px" }}
-            >
-              <Text sx={style.text}>Who We Are</Text>
-              <Heading color="#F8BE28" fontSize="45px">
-                Smart Platform Integration
-              </Heading>
-              <Text mt="10px" color="#fff">
-                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-                lorem.
-              </Text>
-            </Stack>
-          </Flex>
+        
           <Aboutsection />
           <Flex
             gap="5rem"
