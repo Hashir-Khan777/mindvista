@@ -113,7 +113,13 @@ const ProjectDetails = () => {
           placeItems="center"
         >
           {relatedProjects.map((relatedProject, idx) => (
-            <Card maxW="md" key={idx} minH="500px" bgColor="#1E1E1E">
+            <Card
+              maxW="sm"
+              key={idx}
+              minH="500px"
+              bgColor="#1E1E1E"
+              minHeight="100%"
+            >
               <CardBody
                 display="flex"
                 flexDirection="column"
@@ -129,10 +135,10 @@ const ProjectDetails = () => {
                     width="100%"
                   />
                   <Stack mt="6" spacing="3">
-                    <Heading size="md" color="#F8BE28">
+                    <Heading size="1.2rem" color="#F8BE28">
                       {relatedProject.title}
                     </Heading>
-                    <Text color="#fff" fontSize="0.8rem">
+                    <Text color="#fff" fontSize="0.8rem" minHeight="2rem">
                       {relatedProject.description}
                     </Text>
                   </Stack>
@@ -148,13 +154,11 @@ const ProjectDetails = () => {
                   <Button
                     as={RouterLink}
                     to={`/project/${category}/${relatedProject.id}`}
-                    mt="1rem"
                     sx={{
                       fontSize: { base: "10px", md: "12px" },
                       fontWeight: 700,
                       mt: "10px",
                       bgColor: "#F8BE28",
-                      color: "#000",
                     }}
                   >
                     View More Details

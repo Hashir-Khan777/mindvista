@@ -38,32 +38,43 @@ const Portfolio = () => {
           columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
           spacing="30px"
           justifyItems="center"
-          alignItems={"center"}
+          alignItems="center"
           m="auto"
-          placeItems={"center"}
-          mx={"4rem"}
+          placeItems="center"
+          mx="4rem"
         >
           {projectData[selectedCategory].map((project, index) => (
-            <Card maxW="sm" key={index} minH={"500px"} bgColor={"#1E1E1E"}>
-              <CardBody>
+            <Card
+              maxW="sm"
+              key={index}
+              minH="500px"
+              bgColor="#1E1E1E"
+              minHeight="100%"
+            >
+              <CardBody
+                display="flex"
+                flexDirection="column"
+                justifyContent="space-between"
+                height="100%"
+              >
                 <Image
-                  h={"auto"}
-                  w={"100%"}
+                  h="auto"
+                  w="100%"
                   src={project.image[0]}
                   alt={project.title}
                   borderRadius="lg"
                 />
                 <Stack mt="6" spacing="3">
-                  <Heading size="1.2rem" color={"#F8BE28"}>
+                  <Heading size="1.2rem" color="#F8BE28">
                     {project.title}
                   </Heading>
-                  <Text color={"#fff"} fontSize={"0.8rem"}>
+                  <Text color="#fff" fontSize="0.8rem" minHeight="2rem">
                     {project.description}
                   </Text>
                   <Stack direction="row" spacing={2} mt={2}>
                     {project.tags.map((tag, idx) => (
                       <Tag key={idx} colorScheme={tagColors[tag]}>
-                        <TagLabel fontSize={"0.7rem"}>{tag}</TagLabel>
+                        <TagLabel fontSize="0.7rem">{tag}</TagLabel>
                       </Tag>
                     ))}
                   </Stack>
@@ -106,6 +117,7 @@ const Portfolio = () => {
           </Heading>
           <SimpleGrid
             columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+            gap="2rem"
             mt={{ base: "0", lg: "4rem" }}
             justifyContent="center"
             placeItems="center"
