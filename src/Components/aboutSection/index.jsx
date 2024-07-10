@@ -158,6 +158,10 @@ const Aboutsection = () => {
               borderWidth: "1px",
               borderColor: "#f8be28",
               bgColor: "#000",
+              _hover: {
+                color: "#000",
+                bgColor: "#fff",
+              },
             }}
           >
             Know more about us

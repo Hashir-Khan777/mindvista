@@ -1,8 +1,9 @@
+import React from "react";
 import { Box, Circle, Flex, Icon, Image, Text } from "@chakra-ui/react";
-import style from "./style";
 import { NavLink } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlinePhone } from "react-icons/md";
+import style from "./style";
 
 const Navbar = ({ clicked }) => {
   return (
@@ -32,8 +33,7 @@ const Navbar = ({ clicked }) => {
       <Flex display={{ base: "none", lg: "flex" }} gap="16px">
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={IoMailOutline} />
-          <Image 
-          />
+          <Image />
         </Box>
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={MdOutlinePhone} />

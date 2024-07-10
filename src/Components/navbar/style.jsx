@@ -8,19 +8,19 @@ const style = {
     justifyContent: "space-between",
     w: "100%",
     px: "3.5rem",
-    bgColor: "#040507",
+    backgroundColor: "rgba(9, 9, 9, 0.6)", // Background color with opacity
     boxShadow: "md",
     pr: "5rem",
+    position: "fixed", // Fixed position
+    top: 0, // Stick to the top of the viewport
+    zIndex: 999, // Ensure it's above other content
   },
   navMenu: {
-    // fontSize: "18px",
-    // fontWeight: 500,
-    // gap: "2rem",
-    // alignItems: "center",
-    // display: { base: "none", lg: "flex" },
-    display: "flex",
+    fontSize: "18px",
+    fontWeight: 500,
+    display: { base: "none", lg: "flex" },
     alignItems: "center",
-    gap: "60px",
+    gap: "2rem",
   },
   links: {
     fontSize: "16px",
@@ -51,7 +51,7 @@ const style = {
   hamBurger: {
     h: "45px",
     w: "45px",
-    bgColor: "#f8be28",
+    backgroundColor: "#f8be28",
     display: { base: "flex", lg: "none" },
     flexDirection: "column",
   },

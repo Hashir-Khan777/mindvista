@@ -289,7 +289,7 @@ const Home = () => {
         {/* Partners Section */}
         <Box
           sx={{
-            bgColor: "#000",
+            bgColor: "#151515",
             height: "auto",
             px: { base: "1rem", lg: "4rem" },
             pb: "8rem",
@@ -317,9 +317,9 @@ const Home = () => {
             >
               {logos.map((logo, index) => (
                 <Image
-                sx={{
-                  h: { base: "30px", md: "40px" },
-                }}
+                  sx={{
+                    h: { base: "30px", md: "40px" },
+                  }}
                   key={index}
                   src={logo}
                   alt={`Logo ${index + 1}`}
@@ -368,41 +368,45 @@ const Home = () => {
                     <FormLabel color="white">
                       Name <span style={{ color: "red" }}>*</span>
                     </FormLabel>
-                    <Input placeholder="Name" />
+                    <Input />
                   </FormControl>
                   <FormControl mb={4}>
                     <FormLabel color="white">
                       Email <span style={{ color: "red" }}>*</span>
                     </FormLabel>
-                    <Input placeholder="Email" type="email" />
+                    <Input type="email" />
                   </FormControl>
                   <FormControl mb={4}>
                     <FormLabel color="white">Phone Number</FormLabel>
-                    <Input placeholder="Phone Number" type="tel" />
+                    <Input type="tel" />
                   </FormControl>
                 </Box>
                 <Box flex={1} width={{ base: "100%", md: "%" }} height={"auto"}>
                   <FormControl mb={4}>
                     <FormLabel color="white">Message</FormLabel>
-                    <Textarea placeholder="Message" height="100%" rows={9} />
+                    <Textarea height="100%" rows={9} />
                   </FormControl>
                 </Box>
               </Flex>
-              <Flex justifyContent="center">
+              <Box position="relative" height="3rem">
                 <Button
+                  type="submit"
                   sx={{
-                    fontSize: { base: "10px", md: "12px" },
-                    fontWeight: 700,
-                    borderColor: "#fff",
-                    borderWidth: 1,
-                    bgColor: "#00000080",
-                    color: "#fff",
-                    mt: 4,
+                    position: "absolute",
+                    bottom: "-40px",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    backgroundColor: "#F8BE28",
+                    color: "#000",
+                    _hover: {
+                      backgroundColor: "#F8BE28",
+                      opacity: 0.8,
+                    },
                   }}
                 >
                   Send Message
                 </Button>
-              </Flex>
+              </Box>
             </Box>
           </Box>
         </Box>

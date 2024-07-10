@@ -82,7 +82,7 @@ const style = {
   },
   contactBackground: {
     position: "relative",
-    bgImage: "url(/images/contact-bg-image.png)",
+    bgImage: "url(/images/ContactUs.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "80vh",
@@ -98,12 +98,12 @@ const style = {
     width: "100%",
     padding: "20px",
     backgroundColor: "#00000080",
-    py: { base: "2rem", lg: "6rem" },
+    pb: { base: "2rem", lg: "6rem" },
     px: { base: "0", lg: "4rem" },
+    pt: "2rem",
   },
   contactHeading: {
     color: "white",
-    pt: "2rem",
     textAlign: "center",
     fontSize: { base: "1.8rem", md: "2.2rem" },
     fontWeight: 600,
