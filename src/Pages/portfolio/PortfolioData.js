@@ -3,7 +3,8 @@ export const projectData = {
     {
       title: "Fitness Tracker App",
       category: "App Development",
-      description: "A mobile app to track workouts, nutrition, and progress.",
+      description:
+        "A mobile app to track workouts, nutrition, and progress.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-1.png",
         "/images/portfolio-2.png",
@@ -15,7 +16,7 @@ export const projectData = {
       title: "Expense Manager App",
       category: "App Development",
       description:
-        "An app to manage personal finances, track expenses, and set budgets.",
+        "An app to manage personal finances, track expenses, and set budgets.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-4.png",
         "/images/portfolio-5.png",
@@ -27,7 +28,7 @@ export const projectData = {
       title: "Meditation App",
       category: "App Development",
       description:
-        "A meditation and mindfulness app with guided sessions and breathing exercises.",
+        "A meditation and mindfulness app with guided sessions and breathing exercises.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-7.png",
         "/images/portfolio-8.png",
@@ -39,7 +40,7 @@ export const projectData = {
       title: "E-Learning App",
       category: "App Development",
       description:
-        "An educational app offering courses, quizzes, and progress tracking.",
+        "An educational app offering courses, quizzes, and progress tracking.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-1.png",
         "/images/portfolio-2.png",
@@ -51,7 +52,7 @@ export const projectData = {
       title: "Travel Booking App",
       category: "App Development",
       description:
-        "A travel booking app for flights, hotels, and holiday packages.",
+        "A travel booking app for flights, hotels, and holiday packages.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-4.png",
         "/images/portfolio-5.png",
@@ -63,7 +64,7 @@ export const projectData = {
       title: "Recipe App",
       category: "App Development",
       description:
-        "A recipe app with a collection of cooking recipes and meal planning features.",
+        "A recipe app with a collection of cooking recipes and meal planning features.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-7.png",
         "/images/portfolio-8.png",
@@ -77,7 +78,7 @@ export const projectData = {
       title: "Puzzle Adventure Game",
       category: "Game Development",
       description:
-        "An immersive puzzle adventure game with challenging levels and story-driven gameplay.",
+        "An immersive puzzle adventure game with challenging levels and story-driven gameplay.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-1.png",
         "/images/portfolio-1.png",
@@ -89,7 +90,7 @@ export const projectData = {
       title: "Multiplayer Racing Game",
       category: "Game Development",
       description:
-        "A fast-paced multiplayer racing game with customizable cars and tracks.",
+        "A fast-paced multiplayer racing game with customizable cars and tracks.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-4.png",
         "/images/portfolio-5.png",
@@ -101,7 +102,7 @@ export const projectData = {
       title: "2D Platformer",
       category: "Game Development",
       description:
-        "A classic 2D platformer game with retro graphics and challenging levels.",
+        "A classic 2D platformer game with retro graphics and challenging levels.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-7.png",
         "/images/portfolio-8.png",
@@ -113,7 +114,7 @@ export const projectData = {
       title: "Virtual Reality Shooter",
       category: "Game Development",
       description:
-        "A first-person shooter game designed for virtual reality headsets.",
+        "A first-person shooter game designed for virtual reality headsets.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-1.png",
         "/images/portfolio-2.png",
@@ -125,7 +126,7 @@ export const projectData = {
       title: "Multiplayer Racing Game",
       category: "Game Development",
       description:
-        "A fast-paced multiplayer racing game with customizable cars and tracks.",
+        "A fast-paced multiplayer racing game with customizable cars and tracks.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-1.png",
         "/images/portfolio-2.png",
@@ -137,7 +138,7 @@ export const projectData = {
       title: "2D Platformer",
       category: "Game Development",
       description:
-        "A classic 2D platformer game with retro graphics and challenging levels.",
+        "A classic 2D platformer game with retro graphics and challenging levels.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-9.png",
         "/images/portfolio-9.png",
@@ -149,7 +150,7 @@ export const projectData = {
       title: "Virtual Reality Shooter",
       category: "Game Development",
       description:
-        "A first-person shooter game designed for virtual reality headsets.",
+        "A first-person shooter game designed for virtual reality headsets.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-1.png",
         "/images/portfolio-1.png",
@@ -163,7 +164,7 @@ export const projectData = {
       title: "HRM Management Tool",
       category: "Web Development",
       description:
-        "A comprehensive HRM tool for managing employee data, attendance, and performance.",
+        "A comprehensive HRM tool for managing employee data, attendance, and performance.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-2.png",
         "/images/portfolio-2.png",
@@ -175,7 +176,7 @@ export const projectData = {
       title: "E-commerce Store",
       category: "Web Development",
       description:
-        "An online store with a range of features including product browsing, cart, and checkout.",
+        "An online store with a range of features including product browsing, cart, and checkout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-3.png",
         "/images/portfolio-3.png",
@@ -187,7 +188,7 @@ export const projectData = {
       title: "Portfolio Website",
       category: "Web Development",
       description:
-        "A personal portfolio website showcasing projects, blog posts, and contact information.",
+        "A personal portfolio website showcasing projects, blog posts, and contact information.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-4.png",
         "/images/portfolio-4.png",
@@ -199,7 +200,7 @@ export const projectData = {
       title: "Blog Platform",
       category: "Web Development",
       description:
-        "A content management platform for creating and managing blog posts and user comments.",
+        "A content management platform for creating and managing blog posts and user comments.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: "/images/portfolio-5.png",
       tags: ["Next.js", "Firebase", "Tailwind CSS"],
     },
@@ -209,7 +210,7 @@ export const projectData = {
       title: "Crypto Wallet",
       category: "Blockchain",
       description:
-        "A secure crypto wallet for managing and storing various cryptocurrencies.",
+        "A secure crypto wallet for managing and storing various cryptocurrencies.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-6.png",
         "/images/portfolio-6.png",
@@ -221,7 +222,7 @@ export const projectData = {
       title: "Decentralized Exchange",
       category: "Blockchain",
       description:
-        "A decentralized exchange platform for trading cryptocurrencies.",
+        "A decentralized exchange platform for trading cryptocurrencies.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-7.png",
         "/images/portfolio-7.png",
@@ -233,7 +234,7 @@ export const projectData = {
       title: "NFT Marketplace",
       category: "Blockchain",
       description:
-        "An online marketplace for buying and selling non-fungible tokens (NFTs).",
+        "An online marketplace for buying and selling non-fungible tokens (NFTs).  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-8.png",
         "/images/portfolio-7.png",
@@ -245,7 +246,7 @@ export const projectData = {
       title: "Blockchain Voting System",
       category: "Blockchain",
       description:
-        "A secure and transparent voting system based on blockchain technology.",
+        "A secure and transparent voting system based on blockchain technology.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-9.png",
         "/images/portfolio-9.png",
@@ -257,7 +258,7 @@ export const projectData = {
       title: "NFT Marketplace",
       category: "Blockchain",
       description:
-        "An online marketplace for buying and selling non-fungible tokens (NFTs).",
+        "An online marketplace for buying and selling non-fungible tokens (NFTs).  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-8.png",
         "/images/portfolio-7.png",
@@ -269,7 +270,7 @@ export const projectData = {
       title: "Blockchain Voting System",
       category: "Blockchain",
       description:
-        "A secure and transparent voting system based on blockchain technology.",
+        "A secure and transparent voting system based on blockchain technology.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
       image: [
         "/images/portfolio-9.png",
         "/images/portfolio-9.png",

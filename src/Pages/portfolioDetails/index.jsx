@@ -11,6 +11,7 @@ import {
   Button,
   Card,
   CardBody,
+  Flex
 } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -26,7 +27,12 @@ const ProjectDetails = () => {
 
   return (
     <Box bgColor="#090909" color="#fff">
-      <Stack direction={{ base: "column", lg: "row" }} spacing="4rem" p="4rem">
+      <Stack
+        direction={{ base: "column", lg: "row" }}
+        spacing="4rem"
+        p="4rem"
+        pt="8rem"
+      >
         <Box w={{ base: "100%", lg: "50%" }}>
           <Swiper spaceBetween={50} slidesPerView={1}>
             {project?.image.map((img, index) => (
@@ -44,9 +50,12 @@ const ProjectDetails = () => {
           }}
           w={{ base: "100%", lg: "50%" }}
         >
-          <Heading>{project.title}</Heading>
+          <Heading color={"#F8BE28"}>{project.title}</Heading>
           <Text mt="2rem">{project.description}</Text>
-          <Text mt="2rem">Category: {category}</Text>
+          <Flex gap={2}>
+            <Text mt="2rem" color="#F8BE28">Category:</Text>
+            <Text mt="2rem"> {project.category}</Text>
+          </Flex>
           <Stack direction="row" spacing={2} mt="2rem">
             {project?.tags.map((tag, idx) => (
               <Tag key={idx} colorScheme={tagColors[tag]}>
@@ -72,7 +81,7 @@ const ProjectDetails = () => {
           placeItems={"center"}
         >
           {relatedProjects.map((relatedProject, idx) => (
-            <Card maxW="md" key={idx} minH={"450px"} bgColor={"#1E1E1E"}>
+            <Card maxW="md" key={idx} minH={"450px"} bgColor={"#090909"}>
               <CardBody>
                 <Image
                   src={relatedProject.image[0]}
@@ -82,7 +91,7 @@ const ProjectDetails = () => {
                   w={"100%"}
                 />
                 <Stack mt="6" spacing="3">
-                  <Heading size="1.2rem" color={"#fff"}>
+                  <Heading size="1.2rem" color={"#F8BE28"}>
                     {relatedProject.title}
                   </Heading>
                   <Text color={"#fff"} fontSize={"0.8rem"}>
@@ -103,6 +112,8 @@ const ProjectDetails = () => {
                       fontSize: { base: "10px", md: "12px" },
                       fontWeight: 700,
                       mt: "10px",
+                      bgColor: "#F8BE28",
+                      color: "#000",
                     }}
                   >
                     View More Details

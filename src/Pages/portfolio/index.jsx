@@ -54,7 +54,7 @@ const Portfolio = () => {
                   borderRadius="lg"
                 />
                 <Stack mt="6" spacing="3">
-                  <Heading size="1.2rem" color={"#fff"}>
+                  <Heading size="1.2rem" color={"#F8BE28"}>
                     {project.title}
                   </Heading>
                   <Text color={"#fff"} fontSize={"0.8rem"}>
@@ -72,6 +72,7 @@ const Portfolio = () => {
                       fontSize: { base: "10px", md: "12px" },
                       fontWeight: 700,
                       mt: "10px",
+                      bgColor: "#F8BE28",
                     }}
                     onClick={() =>
                       navigate(`/project/${selectedCategory}/${index}`)
@@ -115,12 +116,16 @@ const Portfolio = () => {
                 backgroundColor:
                   selectedCategory === "app" ? "#F8BE28" : "#090909",
                 color: selectedCategory === "app" ? "black" : "#F8BE28",
+                _hover: {
+                  bgColor: "#F8BE28",
+                  color: "#000",
+                },
               }}
               onClick={() => handleCategoryClick("app")}
             >
               <Icon mb="20px" fontSize="60px" as={CiMobile4} />
-              <Heading fontSize="20px">App</Heading>
-              <Heading fontSize="20px">Development</Heading>
+              <Heading fontSize="20px">Web</Heading>
+              <Heading fontSize="20px">Application</Heading>
             </Stack>
             <Stack
               sx={{
@@ -128,12 +133,16 @@ const Portfolio = () => {
                 backgroundColor:
                   selectedCategory === "game" ? "#F8BE28" : "#090909",
                 color: selectedCategory === "game" ? "black" : "#F8BE28",
+                _hover: {
+                  bgColor: "#F8BE28",
+                  color: "#000",
+                },
               }}
               onClick={() => handleCategoryClick("game")}
             >
               <Icon mb="20px" fontSize="60px" as={CiMobile4} />
-              <Heading fontSize="20px">Game</Heading>
-              <Heading fontSize="20px">Development</Heading>
+              <Heading fontSize="20px">Mobile</Heading>
+              <Heading fontSize="20px">Application</Heading>
             </Stack>
             <Stack
               sx={{
@@ -141,12 +150,16 @@ const Portfolio = () => {
                 backgroundColor:
                   selectedCategory === "web" ? "#F8BE28" : "#090909",
                 color: selectedCategory === "web" ? "black" : "#F8BE28",
+                _hover: {
+                  bgColor: "#F8BE28",
+                  color: "#000",
+                },
               }}
               onClick={() => handleCategoryClick("web")}
             >
               <Icon mb="20px" fontSize="60px" as={FaLaptopCode} />
-              <Heading fontSize="20px">Web</Heading>
-              <Heading fontSize="20px">Development</Heading>
+              <Heading fontSize="20px">Admin</Heading>
+              <Heading fontSize="20px">Panel</Heading>
             </Stack>
             <Stack
               sx={{
@@ -154,12 +167,16 @@ const Portfolio = () => {
                 backgroundColor:
                   selectedCategory === "blockchain" ? "#F8BE28" : "#090909",
                 color: selectedCategory === "blockchain" ? "black" : "#F8BE28",
+                _hover: {
+                  bgColor: "#F8BE28",
+                  color: "#000",
+                },
               }}
               onClick={() => handleCategoryClick("blockchain")}
             >
               <Icon mb="20px" fontSize="60px" as={SiHiveBlockchain} />
-              <Heading fontSize="20px">Blockchain</Heading>
-              <Heading fontSize="20px">Development</Heading>
+              <Heading fontSize="20px">UI UX</Heading>
+              <Heading fontSize="20px">Designing</Heading>
             </Stack>
           </SimpleGrid>
         </Box>
