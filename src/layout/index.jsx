@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Icon, Slide } from "@chakra-ui/react";
+import { Box, Button, Flex, Icon, Slide, Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/navbar";
 import { Outlet, useLocation } from "react-router-dom";
@@ -22,7 +22,7 @@ const Layout = () => {
       </Box>
       <Box
         as="a"
-        right="10"
+        right="5"
         bottom="10"
         zIndex="999"
         position="fixed"
@@ -31,19 +31,16 @@ const Layout = () => {
         alignItems="center"
         href="https://api.whatsapp.com/send?phone=+923110011927&text=Hello"
         target="_blank"
-        bgColor="green"
+        // bgColor="green"
         sx={{
-          h: { base: "40px", md: "80px" },
-          w: { base: "40px", md: "80px" },
+          h: { base: "40px", md: "60px" },
+          w: { base: "40px", md: "60px" },
         }}
-        borderRadius="50%"
       >
-        <Icon
-          sx={{
-            fontSize: { base: "20px", md: "50px" },
-          }}
-          as={FaWhatsapp}
-          color="white"
+        <Image
+          src={"/images/whatsappIcon.png"}
+          borderRadius={"10px"}
+          width={"auto"}
         />
       </Box>
       <Footer />

@@ -31,6 +31,10 @@ const ServiceCard = ({ service }) => {
           bgColor: "black",
           margin: "auto",
           display: "block",
+          _hover: {
+            color: "#090909",
+            bgColor:"white"
+          },
         }}
       >
         View More
