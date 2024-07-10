@@ -220,7 +220,7 @@ const Services = () => {
           </Stack>
         </Accordion>
       </Stack>
-      <ContactSection />
+      {/* <ContactSection /> */}
     </Box>
   );
 };
