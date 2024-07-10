@@ -11,10 +11,18 @@ import {
   Button,
   Card,
   CardBody,
-  Flex
+  Flex,
 } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+// import required modules
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+
+// Install Swiper modules
 import { projectData, tagColors } from "../portfolio/PortfolioData";
 
 const ProjectDetails = () => {
@@ -34,7 +42,30 @@ const ProjectDetails = () => {
         pt="8rem"
       >
         <Box w={{ base: "100%", lg: "50%" }}>
-          <Swiper spaceBetween={50} slidesPerView={1}>
+          <Swiper
+            // spaceBetween={50}
+            // slidesPerView={1}
+            // autoplay={{ delay: 3000 }} // Autoplay with a delay of 3 seconds
+            // effect={"coverflow"}
+            // grabCursor={true}
+            // centeredSlides={true}
+            // coverflowEffect={{
+            //   rotate: 50,
+            //   stretch: 0,
+            //   depth: 100,
+            //   modifier: 1,
+            //   slideShadows: true,
+            // }}
+            // pagination={true}
+            // modules={[Autoplay, EffectCoverflow, Pagination]}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+            }}
+            effect={"coverflow"}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
+          >
             {project?.image.map((img, index) => (
               <SwiperSlide key={index}>
                 <Image src={img} alt={`Slide ${index}`} />
@@ -53,7 +84,9 @@ const ProjectDetails = () => {
           <Heading color={"#F8BE28"}>{project.title}</Heading>
           <Text mt="2rem">{project.description}</Text>
           <Flex gap={2}>
-            <Text mt="2rem" color="#F8BE28">Category:</Text>
+            <Text mt="2rem" color="#F8BE28">
+              Category:
+            </Text>
             <Text mt="2rem"> {project.category}</Text>
           </Flex>
           <Stack direction="row" spacing={2} mt="2rem">
