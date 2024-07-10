@@ -25,7 +25,7 @@ const Customaccordian = ({ question, answer }) => {
             ) : (
               <FaPlus fontSize="16px" />
             )}
-            <Text fontSize="18px" fontWeight={700}>
+            <Text fontSize="18px" fontWeight={700} color={"#fff"}>
               {question}
             </Text>
           </AccordionButton>

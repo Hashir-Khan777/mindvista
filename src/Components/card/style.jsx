@@ -8,24 +8,9 @@ const style = {
     w: { base: "250px", md: "200px", xl: "250px" },
     h: "350px",
     transition: "all 0.4s ease-in-out",
-    _before: {
-      content: `""`,
-      position: "absolute",
-      bottom: "100%",
-      left: 0,
-      width: "100%",
-      height: "0",
-      backgroundColor: "#F8BE28",
-      zIndex: -1,
-      transition: "all 0.4s ease-in-out",
-    },
     _hover: {
+      bgColor: "#F8BE28",
       color: "#fff",
-      _before: {
-        bottom: 0,
-        height: "100%",
-        transition: "all 0.4s ease-in-out",
-      },
     },
   },
   icon: {

@@ -1,3 +1,5 @@
+import { position } from "@chakra-ui/react";
+
 const style = {
   subHeading: {
     fontSize: "18px",
@@ -13,9 +15,10 @@ const style = {
     fontSize: { base: "30px", lg: "50px" },
     fontWeight: 700,
     w: { base: "100%", lg: "750px" },
+    color: "#fff",
   },
   background: {
-    my: "5rem",
+    py: "5rem",
     h: "450px",
     bgImage: "url(/images/service-image.jpg)",
     backgroundSize: "cover",
@@ -32,7 +35,7 @@ const style = {
   },
   backgroundHeading: {
     textAlign: { base: "center", lg: "start" },
-    fontSize: { base: "28px" , lg: "40px" , xl:"50px" },
+    fontSize: { base: "28px", lg: "40px", xl: "50px" },
     fontWeight: 700,
   },
   overlay: {
@@ -44,7 +47,7 @@ const style = {
   flex: {
     flexDirection: { base: "column", md: "row" },
     gap: { base: "18px", lg: "40px" },
-    py: { base: "2rem", md:"6rem" , lg: "5rem" },
+    py: { base: "2rem", md: "6rem", lg: "5rem" },
     m: "auto",
   },
   button: {
@@ -58,11 +61,13 @@ const style = {
     boxShadow: "md",
     flexDirection: { base: "column", md: "row" },
     m: "auto",
-    h:{base:"fit-content" , xl:"250px"},
-    flexWrap:{base:"wrap" , lg:"no-wrap"},
-    w: { base: "90%", sm:"320px" , xl: "1080px" },
-    bgColor: "#fff",
+    h: { base: "fit-content", xl: "250px" },
+    flexWrap: { base: "wrap", lg: "no-wrap" },
+    w: { base: "90%", sm: "320px", xl: "1080px" },
+    bgColor: "#000",
     py: "30px",
+    position: "relative",
+    top: "-4.5rem",
   },
 
   FAQsection: {
@@ -72,7 +77,6 @@ const style = {
     pt: { base: "13rem", lg: "8rem" },
     pb: "3rem",
   },
-
 };
 
 export default style;

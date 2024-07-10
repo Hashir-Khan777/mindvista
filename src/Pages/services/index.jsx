@@ -40,7 +40,7 @@ const Services = () => {
             deleniti dolorem necessitatibus sed nobis maiores! Obcaecati nam
             quod vel?"
       />
-      <Box m="auto" my="3rem" maxW="1200px">
+      <Box m="auto" py="3rem" bgColor={"#000"}>
         <Box my="3rem" textAlign="center">
           <Text sx={style.subHeading}>our focusable services</Text>
           <Heading sx={style.heading}>
@@ -146,18 +146,19 @@ const Services = () => {
           </Flex>
         </Box>
       </Box>
-      <Stack placeItems="center" sx={style.FAQsection}>
+      <Stack placeItems="center" sx={style.FAQsection} bgColor="#1E1E1E">
         <Flex
           flexDirection={{ base: "column", lg: "row" }}
           align="center"
           justify={{ base: "center", lg: "space-between" }}
           gap="30px"
+          pt={"4rem"}
         >
           <Box>
-            <Heading mb="20px" fontWeight={700}>
+            <Heading mb="20px" fontWeight={700} color={"#fff"}>
               Frequently Asked Questions
             </Heading>
-            <Text fontSize="17px">
+            <Text fontSize="17px" color={"#fff"}>
               We hope this section will help you better understand the issues
               related to software
             </Text>
