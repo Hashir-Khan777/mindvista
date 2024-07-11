@@ -121,7 +121,7 @@ const Portfolio = () => {
             justifyContent="center"
             alignItems="center"
             bg="#F8BE28"
-            borderRadius="40px"
+            // borderRadius="40px"
             p="10px"
             m={"auto"}
             h={"6rem"}
