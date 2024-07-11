@@ -104,7 +104,8 @@ const Portfolio = () => {
     <Box>
       <Box py="4rem" pt={"8rem"} px="20px" textAlign="center" bgColor="#000">
         <Box m="auto" maxWidth={1440}>
-          <Heading sx={style.heading}>
+          <Heading sx={style.heading}>Portfolio</Heading>
+          <Heading sx={style.text}>
             Develop results-driven products for entrepreneurs, startups, and
             enterprises with a leading software development company.
           </Heading>

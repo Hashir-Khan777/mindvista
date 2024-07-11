@@ -1,7 +1,7 @@
 const style = {
   tab: {
     fontWeight: 600,
-    fontSize: {base:"12px" , sm:"18px" ,  lg:"19px"},
+    fontSize: { base: "12px", sm: "18px", lg: "19px" },
     _hover: { color: "#F8BE28" },
     _selected: { color: "#F8BE28" },
   },
@@ -15,9 +15,9 @@ const style = {
     flexWrap: "wrap",
     justifyContent: "center",
     m: "auto",
-    mt: {base:"2rem" , lg:"4rem"},
+    mt: { base: "2rem", lg: "4rem" },
     mb: "5rem",
-    w: {base:"100%" ,lg:"850px"},
+    w: { base: "100%", lg: "850px" },
     gap: "80px 40px",
   },
   iconBox: {
@@ -37,7 +37,15 @@ const style = {
     m: "auto",
     fontSize: { base: "23px", lg: "35px" },
     color: "#fff",
-    w: { base: "100%", md:"600px" ,  lg: "700px" },
+    w: { base: "100%", md: "600px", lg: "700px" },
+  },
+  text: {
+    m: "auto",
+    fontSize: { base: "14px", lg: "16px" },
+    color: "#fff",
+    w: { base: "100%", md: "600px", lg: "700px" },
+    mt: "1rem",
+    lineHeight: "1.5rem",
   },
 };
 export default style;
