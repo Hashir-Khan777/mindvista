@@ -17,7 +17,6 @@ const Customaccordian = ({ question, answer }) => {
           <AccordionButton
             as={Flex}
             _hover={{ bgColor: "none" }}
-            gap="20px"
             cursor="pointer"
           >
             {isExpanded ? (

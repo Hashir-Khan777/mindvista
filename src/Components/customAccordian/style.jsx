@@ -1,7 +1,7 @@
 const style = {
   accordian: {
-    w: {base:"300px" , md:"350px" , lg:"450px" , xl:"550px"},
-    p: "15px 15px",
+    // w: {base:"300px" , md:"350px" , lg:"450px" , xl:"550px"},
+    p: "15px",
     rounded: "xl",
     border: "2px solid #e7e5ea",
   },

@@ -1,33 +1,19 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import {
   Accordion,
-  AccordionButton,
-  AccordionItem,
-  AccordionPanel,
   Box,
-  Circle,
   Flex,
   Heading,
-  Icon,
   SimpleGrid,
   Stack,
   Text,
-  Textarea,
 } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
-import Herosection from "../../Components/heroSection";
 import style from "./style";
 import Card from "../../Components/card";
 import CustomButton from "../../Components/button";
-import { IoLocationSharp, IoSettingsOutline } from "react-icons/io5";
-import { FaMinus } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa6";
 import Customaccordian from "../../Components/customAccordian";
-import { FaPhone } from "react-icons/fa";
-import CustomInput from "../../Components/inputField";
 import { GiMaterialsScience } from "react-icons/gi";
-import Advisorcard from "../../Components/advisorCard";
-import { CiMail } from "react-icons/ci";
-import ContactSection from "../../Components/contactSection";
 import { motion } from "framer-motion";
 
 const Services = () => {
@@ -111,75 +97,66 @@ const Services = () => {
               />
             </SimpleGrid>
           </Box>
-          <Stack placeItems="center" sx={style.FAQsection} bgColor="#1E1E1E">
+          <Stack
+            placeItems="center"
+            bgColor="#1E1E1E"
+            padding={{ base: "20px", md: "40px" }}
+          >
             <Flex
               flexDirection={{ base: "column", lg: "row" }}
               align="center"
               justify={{ base: "center", lg: "space-between" }}
               gap="30px"
+              width="100%"
             >
-              <Box>
-                <Heading mb="20px" fontWeight={700} color={"#fff"}>
+              <Box
+                textAlign={{ base: "center", lg: "left" }}
+                mb={{ base: "20px", lg: "0" }}
+              >
+                <Heading mb="20px" fontWeight={700} color="#fff">
                   Frequently Asked Questions
                 </Heading>
-                <Text fontSize="17px" color={"#fff"}>
+                <Text fontSize="17px" color="#fff">
                   We hope this section will help you better understand the
-                  issues related to software
+                  issues related to software.
                 </Text>
               </Box>
               <CustomButton text="Contact Us" />
             </Flex>
             <Accordion
               as={Flex}
-              flexDirection={{ base: "column", md: "row" }}
+              flexDirection={{ base: "column", lg: "row" }}
               mt="3rem"
               gap={10}
               allowMultiple
+              width="100%"
             >
-              <Stack gap={8}>
+              <Stack gap={8} flex="1" justifyContent={"center"} m={"auto"}>
                 <Customaccordian
-                  question="What do i need to know before contacting you ?"
-                  answer="The most important thing to know is what do you want to accomplish.
-            Why do I need this software? What for? What should it do? Having a
-            clear vision in mind is crucial when ordering a software
-            application."
+                  question="What do I need to know before contacting you?"
+                  answer="The most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
                 />
                 <Customaccordian
-                  question="What do i need to know before contacting you ?"
-                  answer="The most important thing to know is what do you want to accomplish.
-            Why do I need this software? What for? What should it do? Having a
-            clear vision in mind is crucial when ordering a software
-            application."
+                  question="What do I need to know before contacting you?"
+                  answer="The most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
                 />
                 <Customaccordian
-                  question="What do i need to know before contacting you ?"
-                  answer="The most important thing to know is what do you want to accomplish.
-            Why do I need this software? What for? What should it do? Having a
-            clear vision in mind is crucial when ordering a software
-            application."
+                  question="What do I need to know before contacting you?"
+                  answer="The most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
                 />
               </Stack>
-              <Stack gap={8}>
+              <Stack gap={8} flex="1" justifyContent={"center"} m={"auto"}>
                 <Customaccordian
-                  question="What do i need to know before contacting you ?"
-                  answer="The most important thing to know is what do you want to accomplish.
-            Why do I need this software? What for? What should it do? Having a
-            clear vision in mind is crucial when ordering a software
-            application."
+                  question="What do I need to know before contacting you?"
+                  answer="The most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
                 />
                 <Customaccordian
-                  question="What do i need to know before contacting you ?"
-                  answer="The most important thing to know is what do you want to accomplish.
-            Why do I need this software? What for? What should it do? Having a
-            clear vision in mind is crucial when ordering a software
-            application."
+                  question="What do I need to know before contacting you?"
+                  answer="The most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
                 />
                 <Customaccordian
-                  question="What do i need to know before contacting you ?"
-                  answer="The most important thing to know is what do you want to accomplish.
-            Why do I need this software? What for? What should it do? Having a
-            clear vision in mind is crucial when ordering a software
-            application."
+                  question="What do I need to know before contacting you?"
+                  answer="The most important thing to know is what you want to accomplish. Why do I need this software? What for? What should it do? Having a clear vision in mind is crucial when ordering a software application."
                 />
               </Stack>
             </Accordion>
