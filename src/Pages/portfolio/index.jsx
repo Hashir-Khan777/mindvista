@@ -35,21 +35,20 @@ const Portfolio = () => {
         <SimpleGrid
           my="20px"
           mt="2rem"
-          columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+          columns={{ base: 1, md: 2, lg: 3 }}
           spacing="30px"
           justifyItems="center"
           alignItems="center"
-          m="auto"
-          placeItems="center"
-          mx="4rem"
+          mx={{ base: "1rem", md: "2rem", lg: "4rem" }}
         >
           {projectData[selectedCategory].map((project, index) => (
             <Card
               maxW="sm"
               key={index}
-              minH="500px"
               bgColor="#1E1E1E"
-              minHeight="100%"
+              height="100%"
+              display="flex"
+              flexDirection="column"
             >
               <CardBody
                 display="flex"
@@ -65,26 +64,24 @@ const Portfolio = () => {
                   borderRadius="lg"
                 />
                 <Stack mt="6" spacing="3">
-                  <Heading size="1.2rem" color="#F8BE28">
+                  <Heading size="md" color="#F8BE28">
                     {project.title}
                   </Heading>
-                  <Text color="#fff" fontSize="0.8rem" minHeight="2rem">
+                  <Text color="#fff" fontSize="sm">
                     {project.description}
                   </Text>
                   <Stack direction="row" spacing={2} mt={2}>
                     {project.tags.map((tag, idx) => (
                       <Tag key={idx} colorScheme={tagColors[tag]}>
-                        <TagLabel fontSize="0.7rem">{tag}</TagLabel>
+                        <TagLabel fontSize="xs">{tag}</TagLabel>
                       </Tag>
                     ))}
                   </Stack>
                   <Button
-                    sx={{
-                      fontSize: { base: "10px", md: "12px" },
-                      fontWeight: 700,
-                      mt: "10px",
-                      bgColor: "#F8BE28",
-                    }}
+                    fontSize={{ base: "10px", md: "12px" }}
+                    fontWeight={700}
+                    mt="10px"
+                    bgColor="#F8BE28"
                     onClick={() =>
                       navigate(`/project/${selectedCategory}/${index}`)
                     }
@@ -102,7 +99,7 @@ const Portfolio = () => {
 
   return (
     <Box>
-      <Box py="4rem" pt={"8rem"} px="20px" textAlign="center" bgColor="#000">
+      <Box py="4rem" pt="8rem" px="20px" textAlign="center" bgColor="#000">
         <Box m="auto" maxWidth={1440}>
           <Heading color="#F8BE28" sx={style.heading}>
             Portfolio
@@ -112,47 +109,53 @@ const Portfolio = () => {
             enterprises with a leading software development company.
           </Heading>
           <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
             bg="#F8BE28"
-            // borderRadius="40px"
             p="10px"
-            m={"auto"}
-            h={"6rem"}
-            width={"70%"}
+            m="auto"
+            h="auto"
+            width={{ base: "90%", md: "75%" }}
             mt="4rem"
+            borderRadius="md"
           >
-            {[
-              { label: "Web Application", icon: CiMobile4, category: "app" },
-              {
-                label: "Mobile Application",
-                icon: CiMobile4,
-                category: "game",
-              },
-              { label: "Admin Panel", icon: FaLaptopCode, category: "web" },
-              {
-                label: "UI UX Designing",
-                icon: SiHiveBlockchain,
-                category: "blockchain",
-              },
-            ].map(({ label, icon, category }) => (
-              <Box
-                key={category}
-                display="flex"
-                alignItems="center"
-                p="15px"
-                mx="5px"
-                borderRadius="40px"
-                bg={selectedCategory === category ? "#fff" : "transparent"}
-                color={selectedCategory === category ? "#F8BE28" : "#fff"}
-                cursor="pointer"
-                onClick={() => handleCategoryClick(category)}
-              >
-                <Icon as={icon} mr="10px" fontSize="40px" />
-                <Heading size="sm">{label}</Heading>
-              </Box>
-            ))}
+            <SimpleGrid
+              columns={{ base: 1, sm: 2, lg: 4 }}
+              spacing={5}
+              justifyItems="center"
+              alignItems="center"
+            >
+              {[
+                { label: "Web Application", icon: CiMobile4, category: "app" },
+                {
+                  label: "Mobile Application",
+                  icon: CiMobile4,
+                  category: "game",
+                },
+                { label: "Admin Panel", icon: FaLaptopCode, category: "web" },
+                {
+                  label: "UI UX Designing",
+                  icon: SiHiveBlockchain,
+                  category: "blockchain",
+                },
+              ].map(({ label, icon, category }) => (
+                <Box
+                  key={category}
+                  display="flex"
+                  alignItems="center"
+                  p="15px"
+                  m="5px"
+                  borderRadius="40px"
+                  bg={selectedCategory === category ? "#fff" : "transparent"}
+                  color={selectedCategory === category ? "#F8BE28" : "#fff"}
+                  cursor="pointer"
+                  onClick={() => handleCategoryClick(category)}
+                >
+                  <Icon as={icon} mr="10px" fontSize="40px" />
+                  <Heading size="sm" fontSize="lg">
+                    {label}
+                  </Heading>
+                </Box>
+              ))}
+            </SimpleGrid>
           </Box>
         </Box>
       </Box>
