@@ -14,12 +14,11 @@ import {
   TagLabel,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import Herosection from "../../Components/heroSection";
 import { CiMobile4 } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa";
 import { SiHiveBlockchain } from "react-icons/si";
-import style from "./style";
 import { projectData, tagColors } from "./PortfolioData";
+import style from "./style";
 
 const Portfolio = () => {
   const navigate = useNavigate();
@@ -28,6 +27,7 @@ const Portfolio = () => {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
+
   const renderProjects = () => {
     if (!selectedCategory) return null;
     return (
@@ -104,87 +104,61 @@ const Portfolio = () => {
     <Box>
       <Box py="4rem" pt={"8rem"} px="20px" textAlign="center" bgColor="#000">
         <Box m="auto" maxWidth={1440}>
-          <Heading sx={style.heading}>Portfolio</Heading>
-          <Heading sx={style.text}>
+          <Heading color="#F8BE28" sx={style.heading}>
+            Portfolio
+          </Heading>
+          <Heading
+            color="#fff"
+            fontWeight="normal"
+            mt="10px"
+            sx={style.text}
+          >
             Develop results-driven products for entrepreneurs, startups, and
             enterprises with a leading software development company.
           </Heading>
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
-            gap="2rem"
-            mt={{ base: "0", lg: "4rem" }}
+          <Box
+            display="flex"
             justifyContent="center"
-            placeItems="center"
+            alignItems="center"
+            bg="#F8BE28"
+            borderRadius="40px"
+            p="10px"
+            m={"auto"}
+            h={"6rem"}
+            width={"70%"}
+            mt="4rem"
           >
-            <Stack
-              sx={{
-                ...style.iconBox,
-                backgroundColor:
-                  selectedCategory === "app" ? "#F8BE28" : "#090909",
-                color: selectedCategory === "app" ? "black" : "#F8BE28",
-                _hover: {
-                  bgColor: "#F8BE28",
-                  color: "#000",
-                },
-              }}
-              onClick={() => handleCategoryClick("app")}
-            >
-              <Icon mb="20px" fontSize="60px" as={CiMobile4} />
-              <Heading fontSize="20px">Web</Heading>
-              <Heading fontSize="20px">Application</Heading>
-            </Stack>
-            <Stack
-              sx={{
-                ...style.iconBox,
-                backgroundColor:
-                  selectedCategory === "game" ? "#F8BE28" : "#090909",
-                color: selectedCategory === "game" ? "black" : "#F8BE28",
-                _hover: {
-                  bgColor: "#F8BE28",
-                  color: "#000",
-                },
-              }}
-              onClick={() => handleCategoryClick("game")}
-            >
-              <Icon mb="20px" fontSize="60px" as={CiMobile4} />
-              <Heading fontSize="20px">Mobile</Heading>
-              <Heading fontSize="20px">Application</Heading>
-            </Stack>
-            <Stack
-              sx={{
-                ...style.iconBox,
-                backgroundColor:
-                  selectedCategory === "web" ? "#F8BE28" : "#090909",
-                color: selectedCategory === "web" ? "black" : "#F8BE28",
-                _hover: {
-                  bgColor: "#F8BE28",
-                  color: "#000",
-                },
-              }}
-              onClick={() => handleCategoryClick("web")}
-            >
-              <Icon mb="20px" fontSize="60px" as={FaLaptopCode} />
-              <Heading fontSize="20px">Admin</Heading>
-              <Heading fontSize="20px">Panel</Heading>
-            </Stack>
-            <Stack
-              sx={{
-                ...style.iconBox,
-                backgroundColor:
-                  selectedCategory === "blockchain" ? "#F8BE28" : "#090909",
-                color: selectedCategory === "blockchain" ? "black" : "#F8BE28",
-                _hover: {
-                  bgColor: "#F8BE28",
-                  color: "#000",
-                },
-              }}
-              onClick={() => handleCategoryClick("blockchain")}
-            >
-              <Icon mb="20px" fontSize="60px" as={SiHiveBlockchain} />
-              <Heading fontSize="20px">UI UX</Heading>
-              <Heading fontSize="20px">Designing</Heading>
-            </Stack>
-          </SimpleGrid>
+            {[
+              { label: "Web Application", icon: CiMobile4, category: "app" },
+              {
+                label: "Mobile Application",
+                icon: CiMobile4,
+                category: "game",
+              },
+              { label: "Admin Panel", icon: FaLaptopCode, category: "web" },
+              {
+                label: "UI UX Designing",
+                icon: SiHiveBlockchain,
+                category: "blockchain",
+              },
+            ].map(({ label, icon, category }) => (
+              <Box
+                key={category}
+                display="flex"
+                alignItems="center"
+                p="15px"
+                mx="5px"
+                borderRadius="40px"
+                bg={selectedCategory === category ? "#fff" : "transparent"}
+                color={selectedCategory === category ? "#F8BE28" : "#fff"}
+                cursor="pointer"
+                onClick={() => handleCategoryClick(category)}
+              >
+                <Icon as={icon} mr="10px" fontSize="40px" />
+                <Heading size="sm">{label}</Heading>
+              </Box>
+            ))}
+          </Box>
         </Box>
       </Box>
       {renderProjects()}
