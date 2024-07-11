@@ -35,13 +35,13 @@ const style = {
   },
   heading: {
     m: "auto",
-    fontSize: { base: "23px", lg: "35px" },
+    fontSize: { base: "1.5rem", md: "3rem" },
     color: "#fff",
     w: { base: "100%", md: "600px", lg: "700px" },
   },
   text: {
     m: "auto",
-    fontSize: { base: "14px", lg: "16px" },
+    fontSize: { base: "14px", lg: "18px" },
     color: "#fff",
     w: { base: "100%", md: "600px", lg: "700px" },
     mt: "1rem",
