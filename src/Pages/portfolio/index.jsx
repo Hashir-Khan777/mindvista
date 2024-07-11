@@ -102,14 +102,7 @@ const Portfolio = () => {
 
   return (
     <Box>
-      <Herosection
-        heading="PORTFOLIO"
-        text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-        consectetur, in neque quia hic odit ab porro molestias culpa, atque
-        deleniti dolorem necessitatibus sed nobis maiores! Obcaecati nam
-        quod vel?"
-      />
-      <Box py="4rem" px="20px" textAlign="center" bgColor="#000">
+      <Box py="4rem" pt={"8rem"} px="20px" textAlign="center" bgColor="#000">
         <Box m="auto" maxWidth={1440}>
           <Heading sx={style.heading}>
             Develop results-driven products for entrepreneurs, startups, and
