@@ -107,12 +107,7 @@ const Portfolio = () => {
           <Heading color="#F8BE28" sx={style.heading}>
             Portfolio
           </Heading>
-          <Heading
-            color="#fff"
-            fontWeight="normal"
-            mt="10px"
-            sx={style.text}
-          >
+          <Heading color="#fff" fontWeight="normal" mt="10px" sx={style.text}>
             Develop results-driven products for entrepreneurs, startups, and
             enterprises with a leading software development company.
           </Heading>

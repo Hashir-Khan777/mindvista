@@ -10,12 +10,19 @@ const style = {
     color: "#F8BE28",
     mb: "10px",
   },
+  text: {
+    m: "auto",
+    fontSize: { base: "14px", lg: "18px" },
+    color: "#fff",
+    w: { base: "100%", md: "600px", lg: "700px" },
+    mt: "1rem",
+    lineHeight: "1.5rem",
+  },
   heading: {
     m: "auto",
-    fontSize: { base: "30px", lg: "50px" },
-    fontWeight: 700,
-    w: { base: "100%", lg: "750px" },
+    fontSize: { base: "1.5rem", md: "3rem" },
     color: "#fff",
+    w: { base: "100%", md: "600px", lg: "700px" },
   },
   background: {
     py: "5rem",
@@ -74,7 +81,7 @@ const style = {
     maxW: "1440px",
     m: "auto",
     px: { base: "10px", lg: "100px" },
-    pt: { base: "13rem", lg: "8rem" },
+    pt: { base: "2rem", lg: "4rem" },
     pb: "3rem",
   },
 };

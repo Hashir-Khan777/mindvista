@@ -2,6 +2,14 @@ const style = {
   text: {
     fontSize: "19px",
   },
+  textHeader: {
+    m: "auto",
+    fontSize: { base: "14px", lg: "18px" },
+    color: "#fff",
+    w: { base: "100%", md: "600px", lg: "700px" },
+    mt: "1rem",
+    lineHeight: "1.5rem",
+  },
   infoText: {
     fontSize: "23px",
     fontWeight: 700,
