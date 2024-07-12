@@ -106,15 +106,33 @@ const Services = () => {
 
   return (
     <Box>
-      <Box py="4rem" pt={"8rem"} textAlign="center" bgColor="#000">
+      <Box textAlign="center" bgColor="#000">
         <Box m="auto">
-          <Heading color="#F8BE28" sx={style.heading}>
-            Services
-          </Heading>
-          <Heading color="#fff" fontWeight="normal" mt="10px" sx={style.text}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-            consectetur sit minus. Lorem ipsum dolor sit amet.
-          </Heading>
+          <Box sx={style.background}>
+            <Box sx={style.overlay}>
+              <Heading
+                color="#F8BE28"
+                sx={{
+                  m: "auto",
+                  fontSize: { base: "1.5rem", md: "3rem" },
+                  color: "#fff",
+                  w: { base: "100%", md: "600px", lg: "700px" },
+                  mt: "6rem",
+                }}
+              >
+                Services
+              </Heading>
+              <Heading
+                color="#fff"
+                fontWeight="normal"
+                mt="10px"
+                sx={style.text}
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                consectetur sit minus. Lorem ipsum dolor sit amet.
+              </Heading>
+            </Box>
+          </Box>
 
           <Box py="4rem" mt={"4rem"} textAlign="center" bgColor="#151515">
             <Box my="3rem" textAlign="center">

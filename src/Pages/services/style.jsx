@@ -6,7 +6,7 @@ const style = {
     bgImage: "url(/images/service-bg.avif)",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    h: "70vh",
+    h: "50vh",
   },
   overlay: {
     alignItems: "center",
@@ -14,14 +14,12 @@ const style = {
     height: "100%",
     width: "100%",
     flexDirection: "row",
-    // padding: "0 40px",
     px: { base: "0", lg: "4rem" },
     position: "absolute",
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    // backgroundColor: "#00000080",
     backgroundColor: "rgba(0, 0, 0, 0.8)",
   },
   subHeading: {
@@ -47,14 +45,7 @@ const style = {
     color: "#fff",
     w: { base: "100%", md: "600px", lg: "700px" },
   },
-  background: {
-    py: "5rem",
-    h: "450px",
-    bgImage: "url(/images/service-image.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  },
+
   bacgroundText: {
     textAlign: { base: "center", lg: "start" },
     mb: "10px",
@@ -67,12 +58,6 @@ const style = {
     textAlign: { base: "center", lg: "start" },
     fontSize: { base: "28px", lg: "40px", xl: "50px" },
     fontWeight: 700,
-  },
-  overlay: {
-    w: "100%",
-    h: "100%",
-    bgColor:
-      "linear-gradient(180deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.78) 100%)",
   },
   flex: {
     flexDirection: { base: "column", md: "row" },
