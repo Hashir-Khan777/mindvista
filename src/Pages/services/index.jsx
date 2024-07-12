@@ -134,7 +134,7 @@ const Services = () => {
             </Box>
           </Box>
 
-          <Box py="4rem" mt={"4rem"} textAlign="center" bgColor="#151515">
+          <Box py="4rem" textAlign="center" bgColor="#151515">
             <Box my="3rem" textAlign="center">
               <Text sx={style.subHeading}>Our focusable services</Text>
               <Heading sx={style.heading}>
