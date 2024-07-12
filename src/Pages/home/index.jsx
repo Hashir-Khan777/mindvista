@@ -38,7 +38,7 @@ const Home = () => {
     transform: translateX(-50%);
   }
 `;
-  const servicesData = [
+   const servicesData = [
     {
       heading: "Web Designing",
       text: "Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience.",
