@@ -99,8 +99,14 @@ const Portfolio = () => {
 
   return (
     <Box>
-      <Box py="4rem" pt="8rem" px="20px" textAlign="center" bgColor="#000">
-        <Box m="auto" maxWidth={1440}>
+      <Box
+        py="4rem"
+        pt="8rem"
+        px="20px"
+        textAlign="center"
+        sx={style.background}
+      >
+        <Box m="auto" maxWidth={1440} sx={style.overlay}>
           <Heading color="#F8BE28" sx={style.heading}>
             Portfolio
           </Heading>

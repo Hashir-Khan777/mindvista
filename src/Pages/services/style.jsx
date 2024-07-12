@@ -1,6 +1,29 @@
 import { position } from "@chakra-ui/react";
 
 const style = {
+  background: {
+    position: "relative",
+    bgImage: "url(/images/service-bg.avif)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    h: "70vh",
+  },
+  overlay: {
+    alignItems: "center",
+    justifyContent: "space-between",
+    height: "100%",
+    width: "100%",
+    flexDirection: "row",
+    // padding: "0 40px",
+    px: { base: "0", lg: "4rem" },
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    // backgroundColor: "#00000080",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
+  },
   subHeading: {
     fontSize: "18px",
     textDecoration: "underline",
