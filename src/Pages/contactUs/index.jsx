@@ -39,9 +39,9 @@ const ContactUs = () => {
 
   return (
     <Box>
-      <Box py="4rem" pt={"8rem"} textAlign="center" bgColor="#000">
+      <Box textAlign="center" >
         <Box m="auto" maxWidth={1440}>
-          <Heading color="#F8BE28" sx={style.heading}>
+          {/* <Heading color="#F8BE28" sx={style.heading}>
             Contact Us
           </Heading>
           <Heading
@@ -52,7 +52,7 @@ const ContactUs = () => {
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             deleniti natus voluptate ullam at rerum.
-          </Heading>
+          </Heading> */}
           <Flex
             direction={{ base: "column", lg: "row" }}
             align="center"
@@ -61,7 +61,7 @@ const ContactUs = () => {
             py="6rem"
             justify="center"
             bg={"#1E1E1E"}
-            mt={"4rem"}
+            // mt={"4rem"}
           >
             <Stack
               as={motion.div}
