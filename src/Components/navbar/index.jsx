@@ -8,8 +8,11 @@ import style from "./style";
 const Navbar = ({ clicked }) => {
   return (
     <Flex sx={style.navBar} zIndex={1}>
-      <Flex gap="60px" ml={"4rem"}>
-        <Box w="90px" as={NavLink} to="/">
+      <Flex
+        gap={{ base: "20px", md: "60px" }}
+        ml={{ base: "1rem", md: "4rem" }}
+      >
+        <Box w={{ base: "50px", md: "90px" }} as={NavLink} to="/">
           <Image src="/images/logopng.png" />
         </Box>
         <Flex sx={{ ...style.navMenu }}>

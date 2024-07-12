@@ -98,11 +98,8 @@ const Services = () => {
         src={tech}
         alt={`technology-${index}`}
         m="5px"
-        w={'80px'}
         h={"auto"}
-        // sx={{
-        //   w: "20px",
-        // }}
+        w={{ base: "50px", md: "80px" }}
       />
     ));
   };

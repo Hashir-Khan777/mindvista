@@ -8,12 +8,12 @@ const style = {
     justifyContent: "space-between",
     w: "100%",
     px: "3.5rem",
-    backgroundColor: "rgba(9, 9, 9, 0.6)", // Background color with opacity
+    backgroundColor: "rgba(9, 9, 9, 0.6)",
     boxShadow: "md",
-    pr: "5rem",
-    position: "fixed", // Fixed position
-    top: 0, // Stick to the top of the viewport
-    zIndex: 999, // Ensure it's above other content
+    // pr: "5rem",
+    position: "fixed",
+    top: 0,
+    zIndex: 999,
   },
   navMenu: {
     fontSize: "18px",
@@ -49,21 +49,21 @@ const style = {
   },
 
   hamBurger: {
-    h: "45px",
-    w: "45px",
+    h: { base: "35px", md: "45px" },
+    w: { base: "35px", md: "45px" },
     backgroundColor: "#f8be28",
     display: { base: "flex", lg: "none" },
     flexDirection: "column",
   },
   bar: {
-    w: "20px",
+    w: { base: "17px", md: "20px" },
     my: "2px",
     display: "block",
     border: "1px solid black",
   },
   iconButton: {
-    h: "32px",
-    w: "32px",
+    h: { base: "20px", md: "32px" },
+    w: { base: "20px", md: "32px" },
     color: "#fff",
     border: "1px solid #fff",
     borderRadius: 4,
