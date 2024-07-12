@@ -14,7 +14,7 @@ const style = {
     m: "auto",
     fontSize: { base: "14px", lg: "18px" },
     color: "#fff",
-    w: { base: "100%", md: "600px", lg: "700px" },
+    w: { base: "90%", md: "600px", lg: "700px" },
     mt: "1rem",
     lineHeight: "1.5rem",
   },
