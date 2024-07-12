@@ -23,9 +23,6 @@ const Services = () => {
       img: "/images/web-design.png",
       technologies: [
         "/images/amazon-logo.png",
-        "/images/stripe-logo.png",
-        "/images/microsoft-logo.png",
-        "/images/shopify-logo.png",
         "/images/google-logo.png",
         "/images/coursera-logo.png",
       ],
@@ -37,9 +34,6 @@ const Services = () => {
       technologies: [
         "/images/amazon-logo.png",
         "/images/stripe-logo.png",
-        "/images/microsoft-logo.png",
-        "/images/shopify-logo.png",
-        "/images/google-logo.png",
         "/images/coursera-logo.png",
       ],
     },
@@ -48,8 +42,6 @@ const Services = () => {
       text: "Developing intuitive and high-performing mobile applications for both iOS and Android platforms. We focus on creating apps that offer seamless functionality and an engaging user experience.",
       img: "/images/app-dev.png",
       technologies: [
-        "/images/amazon-logo.png",
-        "/images/stripe-logo.png",
         "/images/microsoft-logo.png",
         "/images/shopify-logo.png",
         "/images/google-logo.png",
@@ -64,8 +56,6 @@ const Services = () => {
         "/images/amazon-logo.png",
         "/images/stripe-logo.png",
         "/images/microsoft-logo.png",
-        "/images/shopify-logo.png",
-        "/images/google-logo.png",
         "/images/coursera-logo.png",
       ],
     },
@@ -76,8 +66,6 @@ const Services = () => {
       technologies: [
         "/images/amazon-logo.png",
         "/images/stripe-logo.png",
-        "/images/microsoft-logo.png",
-        "/images/shopify-logo.png",
         "/images/google-logo.png",
         "/images/coursera-logo.png",
       ],
@@ -88,8 +76,6 @@ const Services = () => {
       img: "/images/seo.png",
       technologies: [
         "/images/amazon-logo.png",
-        "/images/stripe-logo.png",
-        "/images/microsoft-logo.png",
         "/images/shopify-logo.png",
         "/images/google-logo.png",
         "/images/coursera-logo.png",
@@ -112,7 +98,7 @@ const Services = () => {
         src={tech}
         alt={`technology-${index}`}
         m="5px"
-        w={10}
+        w={'6vw'}
         h={"auto"}
         // sx={{
         //   w: "20px",
@@ -225,7 +211,7 @@ const Services = () => {
             <Text fontWeight="bold" mb="1rem">
               Technologies Used:
             </Text>
-            <Flex wrap="wrap">
+            <Flex wrap="wrap" gap={4}>
               {renderTechnologies(selectedService.technologies)}
             </Flex>
           </Box>
