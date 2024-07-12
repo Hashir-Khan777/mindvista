@@ -119,6 +119,7 @@ const style = {
     lineHeight: "1.5rem",
     color: "white",
     fontWeight: 400,
+    minHeight: "20vh",
   },
   serviceContainer: {
     p: { base: "1rem", lg: "2rem" },
