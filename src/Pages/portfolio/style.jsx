@@ -43,7 +43,7 @@ const style = {
 
   background: {
     position: "relative",
-    bgImage: "url(/images/portfolio-bg.avif)",
+    bgImage: "url(/images/portfolio2-bg.avif)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     h: "70vh",
