@@ -14,7 +14,6 @@ const style = {
   infoText: {
     fontSize: { base: "14px", md: "23px" },
     fontWeight: 700,
-    textDecor: "underline",
     color: "#F8BE28",
     textAlign: "left",
   },
