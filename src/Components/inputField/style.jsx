@@ -6,6 +6,7 @@ const style = {
     borderBottom: "2px solid #fff",
     borderRadius: "none",
     color: "#fff",
+    fontSize: "14px",
   },
 };
 

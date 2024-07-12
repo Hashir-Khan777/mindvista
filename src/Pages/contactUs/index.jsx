@@ -39,7 +39,7 @@ const ContactUs = () => {
 
   return (
     <Box>
-      <Box textAlign="center" >
+      <Box textAlign="center">
         <Box m="auto" maxWidth={1440}>
           {/* <Heading color="#F8BE28" sx={style.heading}>
             Contact Us
@@ -78,10 +78,18 @@ const ContactUs = () => {
               h="100%"
             >
               <Text sx={style.infoText}>GET IN TOUCH</Text>
-              <Heading fontSize="35px" color={"#fff"}>
+              <Heading
+                fontSize={{ base: "25px", md: "35px" }}
+                color={"#fff"}
+                textAlign={"left"}
+              >
                 Contact Us
               </Heading>
-              <Text fontSize="16px" color={"#fff"}>
+              <Text
+                fontSize={{ base: "14px", md: "16px" }}
+                color={"#fff"}
+                textAlign={"left"}
+              >
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque
                 inventore
@@ -89,7 +97,7 @@ const ContactUs = () => {
               <SimpleGrid spacingY={5} columns={{ base: 1, lg: 2 }}>
                 <Flex width="100%" gap="20px">
                   <Icon sx={style.infoIcon} as={IoLocationSharp} />
-                  <Stack>
+                  <Stack justifyContent={"left"} alignItems={"left"}>
                     <Heading sx={style.infoHeading} color={"#fff"}>
                       Location
                     </Heading>
@@ -129,7 +137,7 @@ const ContactUs = () => {
                     <Heading sx={style.infoHeading} color={"#fff"}>
                       Social
                     </Heading>
-                    <Flex gap="15px">
+                    <Flex gap="10px">
                       <Circle sx={style.socialLinks}>
                         <Icon as={FaFacebookF} color={"#fff"} />
                       </Circle>
@@ -154,11 +162,15 @@ const ContactUs = () => {
                 transition: { duration: 1 },
               }}
               p="40px 30px "
-              // bgColor="red"
               w={{ base: "90%", lg: "500px", xl: "550px" }}
               h="100%"
             >
-              <Heading mb="35px" fontSize="35px" color="#fff">
+              <Heading
+                mb="35px"
+                fontSize={{ base: "25px", md: "35px" }}
+                color="#fff"
+                textAlign={"left"}
+              >
                 Fill Up The Form
               </Heading>
               <Stack gap="30px" as="form">
@@ -169,6 +181,7 @@ const ContactUs = () => {
                   sx={style.textArea}
                   size="lg"
                   placeholder="ENTER YOUR MESSAGE HERE"
+                  fontSize="14px"
                 />
                 <CustomButton
                   text="Get in touch"

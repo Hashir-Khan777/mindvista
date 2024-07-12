@@ -1,6 +1,7 @@
 const style = {
   text: {
-    fontSize: "19px",
+    fontSize: "14px",
+    textAlign:"left"
   },
   textHeader: {
     m: "auto",
@@ -11,27 +12,30 @@ const style = {
     lineHeight: "1.5rem",
   },
   infoText: {
-    fontSize: "23px",
+    fontSize: { base: "14px", md: "23px" },
     fontWeight: 700,
     textDecor: "underline",
     color: "#F8BE28",
+    textAlign: "left",
   },
   infoIcon: {
     color: "#F8BE28",
-    fontSize: "30px",
+    fontSize: "22px",
   },
-  infoHeding: {
-    fontSize: "25px",
+  infoHeading: {
+    fontSize: { base: "16px", md: "22px" },
+    textAlign: "left",
   },
   socialLinks: {
     cursor: "pointer",
     _hover: {
       color: "#fff",
+      border: "3px solid #F8BE28",
       bgColor: "#F8BE28",
     },
     border: "3px solid #e7e5ea",
-    h: "45px",
-    w: "45px",
+    h: { base: "30px", md: "35px" },
+    w: { base: "30px", md: "35px" },
   },
   textArea: {
     h: { lg: "200px", xl: "250px" },
@@ -40,7 +44,7 @@ const style = {
     borderRadius: "none",
     borderX: "none",
     borderTop: "none",
-    borderBottom: "2px solid black",
+    borderBottom: "2px solid #fff",
   },
   formButtom: {
     mt: "20px",
