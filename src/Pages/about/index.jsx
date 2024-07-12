@@ -42,7 +42,7 @@ const AboutUs = () => {
             w: { base: "100%", md: "600px", lg: "700px" },
           }}
         >
-          Services
+          About Us
         </Heading>
         <Heading
           sx={{

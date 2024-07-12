@@ -9,48 +9,11 @@ import {
   Text,
   Image,
   Button,
-  Tag,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import style from "./style";
 import CustomButton from "../../Components/button";
 import Customaccordian from "../../Components/customAccordian";
-
-export const tagColors = {
-  HTML: "blue",
-  "Node.js": "green",
-  CSS: "green",
-  JavaScript: "orange",
-  "React Native": "cyan",
-  React: "purple",
-  Express: "red",
-  MongoDB: "teal",
-  Angular: "teal",
-  Dart: "yellow",
-  "SEO Audits": "pink",
-  Kotlin: "red",
-  "Link Building": "pink",
-  Room: "blue",
-  Swift: "gray",
-  "Keyword Research": "blue",
-  CoreData: "green",
-  Copywriting: "green",
-  Blogging: "orange",
-  "Smart Contracts": "orange",
-  AWS: "cyan",
-  "Reputation Management": "purple",
-  Solidity: "purple",
-  "PR Campaigns": "purple",
-  "Brand Strategy": "red",
-  Blender: "teal",
-  "Unreal Engine": "yellow",
-  Blueprint: "pink",
-  Photoshop: "cyan",
-  Godot: "purple",
-  IPFS: "purple",
-  GDScript: "yellow",
-  SEO: "gray",
-};
 
 const Services = () => {
   const servicesData = [
@@ -58,37 +21,79 @@ const Services = () => {
       heading: "Web Designing",
       text: "Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience. C",
       img: "/images/web-design.png",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      technologies: [
+        "/images/amazon-logo.png",
+        "/images/stripe-logo.png",
+        "/images/microsoft-logo.png",
+        "/images/shopify-logo.png",
+        "/images/google-logo.png",
+        "/images/coursera-logo.png",
+      ],
     },
     {
       heading: "Web Development",
       text: "Building robust and scalable websites using the latest technologies to ensure optimal performance. Our development services include everything from custom website creation to e-commerce solutions and web applications.",
       img: "/images/web-dev.png",
-      technologies: ["Node.js", "Express", "MongoDB", "React"],
+      technologies: [
+        "/images/amazon-logo.png",
+        "/images/stripe-logo.png",
+        "/images/microsoft-logo.png",
+        "/images/shopify-logo.png",
+        "/images/google-logo.png",
+        "/images/coursera-logo.png",
+      ],
     },
     {
       heading: "App Development",
       text: "Developing intuitive and high-performing mobile applications for both iOS and Android platforms. We focus on creating apps that offer seamless functionality and an engaging user experience.",
       img: "/images/app-dev.png",
-      technologies: ["React Native", "Swift", "Kotlin"],
+      technologies: [
+        "/images/amazon-logo.png",
+        "/images/stripe-logo.png",
+        "/images/microsoft-logo.png",
+        "/images/shopify-logo.png",
+        "/images/google-logo.png",
+        "/images/coursera-logo.png",
+      ],
     },
     {
       heading: "Content Writing",
       text: "Producing compelling and relevant content that resonates with your target audience. Our content writing services cover everything from website copy to blog posts and social media content.",
       img: "/images/content-writing.png",
-      technologies: ["SEO", "Copywriting", "Blogging"],
+      technologies: [
+        "/images/amazon-logo.png",
+        "/images/stripe-logo.png",
+        "/images/microsoft-logo.png",
+        "/images/shopify-logo.png",
+        "/images/google-logo.png",
+        "/images/coursera-logo.png",
+      ],
     },
     {
       heading: "Branding and PR",
       text: "Build a strong brand identity and enhance your reputation with our branding and PR services. We help you define your brand story, manage your online reputation, and develop strategic PR campaigns to increase visibility and credibility.",
       img: "/images/branding-pr.png",
-      technologies: ["Brand Strategy", "PR Campaigns", "Reputation Management"],
+      technologies: [
+        "/images/amazon-logo.png",
+        "/images/stripe-logo.png",
+        "/images/microsoft-logo.png",
+        "/images/shopify-logo.png",
+        "/images/google-logo.png",
+        "/images/coursera-logo.png",
+      ],
     },
     {
       heading: "SEO Optimization",
       text: "Enhancing online visibility and search engine rankings to attract more organic traffic. Our SEO strategies are designed to improve your website's performance and help you reach a larger audience.",
       img: "/images/seo.png",
-      technologies: ["SEO Audits", "Keyword Research", "Link Building"],
+      technologies: [
+        "/images/amazon-logo.png",
+        "/images/stripe-logo.png",
+        "/images/microsoft-logo.png",
+        "/images/shopify-logo.png",
+        "/images/google-logo.png",
+        "/images/coursera-logo.png",
+      ],
     },
   ];
 
@@ -100,11 +105,19 @@ const Services = () => {
     detailsRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const renderTags = (technologies) => {
-    return technologies.map((tech) => (
-      <Tag key={tech} colorScheme={tagColors[tech]} mr="5px" mb="5px">
-        {tech}
-      </Tag>
+  const renderTechnologies = (technologies) => {
+    return technologies.map((tech, index) => (
+      <Image
+        key={index}
+        src={tech}
+        alt={`technology-${index}`}
+        m="5px"
+        w={10}
+        h={"auto"}
+        // sx={{
+        //   w: "20px",
+        // }}
+      />
     ));
   };
 
@@ -119,6 +132,7 @@ const Services = () => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
             consectetur sit minus. Lorem ipsum dolor sit amet.
           </Heading>
+
           <Box py="4rem" mt={"4rem"} textAlign="center" bgColor="#151515">
             <Box my="3rem" textAlign="center">
               <Text sx={style.subHeading}>Our focusable services</Text>
@@ -203,7 +217,6 @@ const Services = () => {
             maxW={{ base: "100%", md: "80%" }}
             p={{ base: "1.5rem", md: "4rem" }}
             m={"auto"}
-            // borderTop="2px solid #f8be28"
           >
             <Heading mb="2rem" color="#f8be28">
               {selectedService.heading}
@@ -212,7 +225,9 @@ const Services = () => {
             <Text fontWeight="bold" mb="1rem">
               Technologies Used:
             </Text>
-            <Flex wrap="wrap">{renderTags(selectedService.technologies)}</Flex>
+            <Flex wrap="wrap">
+              {renderTechnologies(selectedService.technologies)}
+            </Flex>
           </Box>
           <Stack
             placeItems="center"
