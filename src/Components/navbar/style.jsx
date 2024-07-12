@@ -4,16 +4,16 @@ import { BiBorderBottom } from "react-icons/bi";
 const style = {
   navBar: {
     py: "12px",
-    height: "70px",
+    height: { base: "60px", lg: "70px" },
     justifyContent: "space-between",
     w: "100%",
-    px: "3.5rem",
+    px: "2rem",
     backgroundColor: "rgba(9, 9, 9, 0.6)",
     boxShadow: "md",
     // pr: "5rem",
     position: "fixed",
     top: 0,
-    zIndex: 999,
+    zIndex: 1,
   },
   navMenu: {
     fontSize: "18px",

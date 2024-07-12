@@ -53,7 +53,7 @@ const Layout = () => {
         in={isOpen}
         style={{ zIndex: 2 }}
       >
-        <Slidebar clicked={() => setIsOpen(false)} />
+        <Slidebar setIsOpen={setIsOpen} />
       </Slide>
     </Flex>
   );

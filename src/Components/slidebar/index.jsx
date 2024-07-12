@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 import { IoMdClose, IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 
-const Slidebar = ({ clicked }) => {
+const Slidebar = ({ setIsOpen }) => {
   return (
     <Box zIndex="999" sx={style.slideBar}>
       <Flex justify={"end"}>
-        <Circle as="button" onClick={clicked} sx={style.cross}>
+        <Circle as="button" onClick={() => setIsOpen(false)} sx={style.cross}>
           <Icon as={IoMdClose} />
         </Circle>
       </Flex>

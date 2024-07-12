@@ -31,9 +31,9 @@ const AboutUs = () => {
   const animation_1 = `${animationKeyframes} 1s alternate ease-in-out infinite`;
 
   return (
-    <Box py="4rem" pt={"8rem"} px="20px" textAlign="center" bgColor="#000">
+    <Box py="4rem" px="20px" textAlign="center" bgColor="#000">
       <Box m="auto" maxWidth={1440}>
-        <Heading
+        {/* <Heading
           color="#F8BE28"
           sx={{
             m: "auto",
@@ -57,7 +57,7 @@ const AboutUs = () => {
         >
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
           consectetur sit minus. Lorem ipsum dolor sit amet.
-        </Heading>
+        </Heading> */}
         <Box bgColor={"#090909"}>
           <Box m="auto">
             <Aboutsection />
