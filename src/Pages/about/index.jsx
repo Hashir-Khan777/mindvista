@@ -32,7 +32,7 @@ const AboutUs = () => {
 
   return (
     <Box py="4rem" px="20px" textAlign="center" bgColor="#000">
-      <Box m="auto" maxWidth={1440}>
+      <Box m="auto">
         {/* <Heading
           color="#F8BE28"
           sx={{

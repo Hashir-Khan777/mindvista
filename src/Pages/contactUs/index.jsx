@@ -40,7 +40,7 @@ const ContactUs = () => {
   return (
     <Box>
       <Box textAlign="center">
-        <Box m="auto" maxWidth={1440}>
+        <Box>
           {/* <Heading color="#F8BE28" sx={style.heading}>
             Contact Us
           </Heading>

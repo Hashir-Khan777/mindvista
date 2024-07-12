@@ -107,7 +107,7 @@ const Services = () => {
   return (
     <Box>
       <Box py="4rem" pt={"8rem"} textAlign="center" bgColor="#000">
-        <Box m="auto" maxWidth={1440}>
+        <Box m="auto">
           <Heading color="#F8BE28" sx={style.heading}>
             Services
           </Heading>

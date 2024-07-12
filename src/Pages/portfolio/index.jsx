@@ -106,7 +106,7 @@ const Portfolio = () => {
         textAlign="center"
         sx={style.background}
       >
-        <Box m="auto" maxWidth={1440} sx={style.overlay}>
+        <Box m="auto" sx={style.overlay}>
           <Heading color="#F8BE28" sx={style.heading}>
             Portfolio
           </Heading>
