@@ -38,7 +38,7 @@ const Home = () => {
     transform: translateX(-50%);
   }
 `;
-   const servicesData = [
+  const servicesData = [
     {
       heading: "Web Designing",
       text: "Crafting visually stunning and user-friendly websites that captivate and engage visitors. Our designs are tailored to reflect your brand identity while ensuring an optimal user experience.",
@@ -92,9 +92,10 @@ const Home = () => {
             >
               <Text
                 sx={{
-                  fontSize: { base: "0.8rem", md: "1.2rem" },
-                  fontWeight: 600,
+                  fontSize: { base: "20px", md: "24px" },
+                  fontWeight: "semibold",
                   color: "#fff",
+                  mb: "24px",
                 }}
               >
                 MindVista
@@ -103,6 +104,7 @@ const Home = () => {
                 sx={{
                   fontSize: { base: "1.8rem", md: "2.4rem" },
                   fontWeight: 600,
+                  mb: "24px",
                   color: "#fff",
                 }}
               >
@@ -119,6 +121,7 @@ const Home = () => {
                 sx={{
                   fontSize: { base: "12px", md: "15px" },
                   fontWeight: 400,
+                  mb: "24px",
                   color: "#fff",
                   letterSpacing: "1px",
                   lineHeight: "20px",
@@ -131,7 +134,7 @@ const Home = () => {
               </Heading>
               <Button
                 sx={{
-                  fontSize: { base: "10px", md: "12px" },
+                  fontSize: { base: "14px", md: "16px" },
                   fontWeight: 700,
                   mt: "10px",
                 }}
