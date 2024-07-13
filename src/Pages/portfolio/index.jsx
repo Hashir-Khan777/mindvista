@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Heading,
@@ -24,6 +24,20 @@ import style from "./style";
 const Portfolio = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("app");
+  const [animationClass, setAnimationClass] = useState("animate__fadeInUp");
+
+  useEffect(() => {
+    // Determine the animation class based on the selected category
+    if (selectedCategory === "app") {
+      setAnimationClass("animate__fadeInUp");
+    } else if (selectedCategory === "game") {
+      setAnimationClass("animate__fadeInRight");
+    } else if (selectedCategory === "web") {
+      setAnimationClass("animate__fadeInLeft");
+    } else if (selectedCategory === "blockchain") {
+      setAnimationClass("animate__fadeInDown");
+    }
+  }, [selectedCategory]);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -44,12 +58,13 @@ const Portfolio = () => {
         >
           {projectData[selectedCategory].map((project, index) => (
             <Card
-              maxW="sm"
               key={index}
+              maxW="sm"
               bgColor="#1E1E1E"
               height="100%"
               display="flex"
               flexDirection="column"
+              className={`animate__animated ${animationClass}`}
             >
               <CardBody
                 display="flex"
@@ -108,11 +123,11 @@ const Portfolio = () => {
         sx={style.background}
       >
         <Box m="auto" sx={style.overlay}>
-          <Heading color="#F8BE28" sx={style.heading}
-          className="animate__animated animate__bounce"
+          <Heading
+            color="#F8BE28"
+            sx={style.heading}
+            className="animate__animated animate__bounce"
           >
-
-
             Portfolio
           </Heading>
           <Heading color="#fff" fontWeight="normal" mt="10px" sx={style.text}>
