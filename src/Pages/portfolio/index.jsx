@@ -27,7 +27,6 @@ const Portfolio = () => {
   const [animationClass, setAnimationClass] = useState("animate__fadeInUp");
 
   useEffect(() => {
-    // Determine the animation class based on the selected category
     if (selectedCategory === "app") {
       setAnimationClass("animate__bounceIn");
     } else if (selectedCategory === "game") {
