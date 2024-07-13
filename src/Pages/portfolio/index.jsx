@@ -13,6 +13,7 @@ import {
   Tag,
   TagLabel,
 } from "@chakra-ui/react";
+import 'animate.css';
 import { useNavigate } from "react-router-dom";
 import { CiMobile4 } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa";
@@ -107,7 +108,11 @@ const Portfolio = () => {
         sx={style.background}
       >
         <Box m="auto" sx={style.overlay}>
-          <Heading color="#F8BE28" sx={style.heading}>
+          <Heading color="#F8BE28" sx={style.heading}
+          className="animate__animated animate__bounce"
+          >
+
+
             Portfolio
           </Heading>
           <Heading color="#fff" fontWeight="normal" mt="10px" sx={style.text}>
