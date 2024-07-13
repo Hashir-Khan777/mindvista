@@ -29,13 +29,13 @@ const Portfolio = () => {
   useEffect(() => {
     // Determine the animation class based on the selected category
     if (selectedCategory === "app") {
-      setAnimationClass("animate__fadeInUp");
+      setAnimationClass("animate__bounceIn");
     } else if (selectedCategory === "game") {
-      setAnimationClass("animate__fadeInRight");
+      setAnimationClass("animate__bounceInUp");
     } else if (selectedCategory === "web") {
-      setAnimationClass("animate__fadeInLeft");
+      setAnimationClass("animate__fadeInBottomLeft");
     } else if (selectedCategory === "blockchain") {
-      setAnimationClass("animate__fadeInDown");
+      setAnimationClass("animate__fadeInBottomRight");
     }
   }, [selectedCategory]);
 
@@ -126,7 +126,7 @@ const Portfolio = () => {
           <Heading
             color="#F8BE28"
             sx={style.heading}
-            className="animate__animated animate__bounce"
+            className=""
           >
             Portfolio
           </Heading>
