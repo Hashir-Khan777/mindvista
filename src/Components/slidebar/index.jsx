@@ -1,4 +1,4 @@
-import { Box, Button, Circle, Flex, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, Circle, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import style from "./style";
 import { NavLink } from "react-router-dom";

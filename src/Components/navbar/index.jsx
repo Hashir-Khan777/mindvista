@@ -5,7 +5,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { MdOutlinePhone } from "react-icons/md";
 import style from "./style";
 
-const Navbar = ({ clicked }) => {
+const Navbar = ({ clicked, isOpen }) => {
   return (
     <Flex sx={style.navBar} zIndex={1}>
       <Flex
@@ -42,11 +42,13 @@ const Navbar = ({ clicked }) => {
           <Icon fontSize="24px" as={MdOutlinePhone} />
         </Box>
       </Flex>
-      <Circle as="button" onClick={clicked} sx={style.hamBurger}>
-        <Box sx={style.bar} as="span" />
-        <Box sx={style.bar} as="span" />
-        <Box sx={style.bar} as="span" />
-      </Circle>
+      {!isOpen && (
+        <Circle as="button" onClick={clicked} sx={style.hamBurger}>
+          <Box sx={style.bar} as="span" />
+          <Box sx={style.bar} as="span" />
+          <Box sx={style.bar} as="span" />
+        </Circle>
+      )}
     </Flex>
   );
 };

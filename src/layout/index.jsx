@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Icon, Slide, Image } from "@chakra-ui/react";
+import { Box, Flex, Icon, Slide, Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/navbar";
 import { Outlet, useLocation } from "react-router-dom";
@@ -16,7 +16,7 @@ const Layout = () => {
 
   return (
     <Flex position="relative" flexDirection="column" height="100vh">
-      <Navbar clicked={() => setIsOpen(true)} />
+      <Navbar clicked={() => setIsOpen(true)} isOpen={isOpen} />
       <Box flex={1}>
         <Outlet />
       </Box>
