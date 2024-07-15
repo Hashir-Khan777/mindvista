@@ -31,33 +31,8 @@ const AboutUs = () => {
   const animation_1 = `${animationKeyframes} 1s alternate ease-in-out infinite`;
 
   return (
-    <Box py="4rem" px="20px" textAlign="center" bgColor="#000">
+    <Box py="4rem" textAlign="center" bgColor="#000">
       <Box m="auto">
-        {/* <Heading
-          color="#F8BE28"
-          sx={{
-            m: "auto",
-            fontSize: { base: "1.5rem", md: "3rem" },
-            color: "#fff",
-            w: { base: "100%", md: "600px", lg: "700px" },
-          }}
-        >
-          About Us
-        </Heading>
-        <Heading
-          sx={{
-            m: "auto",
-            fontSize: { base: "14px", lg: "18px" },
-            color: "#fff",
-            w: { base: "100%", md: "600px", lg: "700px" },
-            mt: "1rem",
-            lineHeight: "1.5rem",
-            fontWeight: "normal",
-          }}
-        >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-          consectetur sit minus. Lorem ipsum dolor sit amet.
-        </Heading> */}
         <Box bgColor={"#090909"}>
           <Box m="auto">
             <Aboutsection />
@@ -78,20 +53,34 @@ const AboutUs = () => {
                 }}
                 mx="20px"
                 w={{ base: "95%", md: "600px", lg: "570px" }}
+                textAlign={"left"}
               >
-                <Text mb="10px" sx={style.textUnderline}>
+                <Text
+                  sx={{
+                    fontSize: { base: "0.8rem", md: "1.2rem" },
+                    fontWeight: 600,
+                    color: "#F8BE28",
+                    letterSpacing: "2px",
+                    mb: 2,
+                  }}
+                >
                   HOW TO MANAGE
                 </Text>
                 <Heading
                   w={{ sm: "450px", lg: "100%" }}
-                  color="#fff"
-                  fontSize={{ base: "25px", md: "30px", lg: "50px" }}
+                  sx={{
+                    fontSize: { base: "1.8rem", md: "2.2rem" },
+                    fontWeight: 600,
+                    color: "#fff",
+                  }}
                 >
                   Our Managed IT Services Let You Concentrate On What Matters
                 </Heading>
                 <Tabs mt="30px" variant="unstyled">
                   <TabList gap={{ base: "20px", lg: "40px" }}>
-                    <Tab sx={style.tab}>Our Approach</Tab>
+                    <Tab color={"#fff"} sx={style.tab}>
+                      Our Approach
+                    </Tab>
                     <Tab color={"#fff"} sx={style.tab}>
                       Project Goals
                     </Tab>
@@ -100,7 +89,16 @@ const AboutUs = () => {
                   <Text sx={style.tabHeading}>Advisory</Text>
                   <TabPanels>
                     <TabPanel>
-                      <Text sx={style.tabpanel}>
+                      <Text
+                        sx={{
+                          fontSize: { base: "12px", md: "14px" },
+                          fontWeight: 400,
+                          color: "#fff",
+                          letterSpacing: "1px",
+                          lineHeight: "20px",
+                          mt: 2,
+                        }}
+                      >
                         At veroeos accusamus dignissimos ducimus blanditiis
                         volupta delenite atque corrupti quos dolores et quas
                         molestias excepturi sint occaecatie

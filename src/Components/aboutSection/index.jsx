@@ -75,10 +75,12 @@ const Aboutsection = () => {
               </Text>
               <Text
                 sx={{
-                  fontSize: { base: "10px", md: "16px" },
+                  fontSize: { base: "12px", md: "14px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 2,
                 }}
               >
                 of leading Innovation in IT Services
@@ -95,11 +97,13 @@ const Aboutsection = () => {
                 100+ Projects
               </Text>
               <Text
-                sx={{
-                  fontSize: { base: "10px", md: "16px" },
+                 sx={{
+                  fontSize: { base: "12px", md: "14px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 2,
                 }}
               >
                 Successfully delivered with excellence.
@@ -116,11 +120,13 @@ const Aboutsection = () => {
                 20+ Awards
               </Text>
               <Text
-                sx={{
-                  fontSize: { base: "10px", md: "16px" },
+                 sx={{
+                  fontSize: { base: "12px", md: "14px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 2,
                 }}
               >
                 Recognizing Excellence in Innovation and Service
@@ -137,11 +143,13 @@ const Aboutsection = () => {
                 99+ Success
               </Text>
               <Text
-                sx={{
-                  fontSize: { base: "10px", md: "16px" },
+                 sx={{
+                  fontSize: { base: "12px", md: "14px" },
                   fontWeight: 400,
                   color: "#fff",
                   letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 2,
                 }}
               >
                 Driving Excellence and Achievement

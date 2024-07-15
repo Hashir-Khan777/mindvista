@@ -26,17 +26,11 @@ const style = {
     fontWeight: 700,
     color: "#fff",
   },
-  textUnderline: {
-    color: "#F8BE28",
-    fontSize: "19px",
-    letterSpacing: "2px",
-    fontWeight: 600,
-    textDecor: "underline",
-  },
   tab: {
+    letterSpacing: "2px",
     _selected: { color: "#F8BE28" },
     fontWeight: 600,
-    fontSize: { base: "16px", md: "18px", lg: "19px" },
+    fontSize: { base: "0.7rem", md: "1rem" },
   },
   tabIndicator: {
     mt: "20px",
