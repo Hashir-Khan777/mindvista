@@ -98,7 +98,7 @@ const Home = () => {
                   mb: "24px",
                 }}
               >
-                MindVista
+                MindVistaaaaaaaaaaaa
               </Text>
               <Text
                 sx={{
