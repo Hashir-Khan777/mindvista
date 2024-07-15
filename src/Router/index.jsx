@@ -9,6 +9,11 @@ import Services from "../Pages/services";
 import ProjectDetails from "../Pages/portfolioDetails";
 // import WebDesign from "../Pages/WebDesign";
 import WebDesign from "../Pages/webdesign";
+import WebDev from "../Pages/webdev";
+import AppDev from "../Pages/appdev";
+import Branding from "../Pages/branding";
+import Seo from "../Pages/seo";
+import ContentWriting from "../Pages/contentwriting";
 
 const router = createBrowserRouter([
   {
@@ -40,23 +45,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/services/web-development",
-        element: <WebDesign />,
+        element: <WebDev />,
       },
       {
         path: "/services/app-development",
-        element: <WebDesign />,
+        element: <AppDev />,
       },
       {
         path: "/services/branding",
-        element: <WebDesign />,
+        element: <Branding />,
       },
       {
         path: "/services/seo",
-        element: <WebDesign />,
+        element: <Seo />,
       },
       {
         path: "/services/content-writing",
-        element: <WebDesign />,
+        element: <ContentWriting />,
       },
     ],
   },

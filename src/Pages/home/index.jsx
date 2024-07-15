@@ -80,6 +80,7 @@ const Home = () => {
             flexDirection={{ base: "column", md: "row" }}
             display={{ base: "block", md: "flex" }}
           >
+            {/*  */}
             <Box
               sx={{
                 flex: { base: "1", md: "0.5" },
