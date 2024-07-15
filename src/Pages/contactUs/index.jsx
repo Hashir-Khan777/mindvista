@@ -41,18 +41,6 @@ const ContactUs = () => {
     <Box>
       <Box textAlign="center">
         <Box>
-          {/* <Heading color="#F8BE28" sx={style.heading}>
-            Contact Us
-          </Heading>
-          <Heading
-            color="#fff"
-            fontWeight="normal"
-            mt="10px"
-            sx={style.textHeader}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            deleniti natus voluptate ullam at rerum.
-          </Heading> */}
           <Flex
             direction={{ base: "column", lg: "row" }}
             align="center"
@@ -212,13 +200,25 @@ const ContactUs = () => {
                     </Heading>
                     <Flex gap="10px">
                       <Circle sx={style.socialLinks}>
-                        <Icon  sx={style.socialIcon} as={FaFacebookF} color={"#fff"} />
+                        <Icon
+                          sx={style.socialIcon}
+                          as={FaFacebookF}
+                          color={"#fff"}
+                        />
                       </Circle>
                       <Circle sx={style.socialLinks}>
-                        <Icon  sx={style.socialIcon} as={IoLogoTwitter} color={"#fff"} />
+                        <Icon
+                          sx={style.socialIcon}
+                          as={IoLogoTwitter}
+                          color={"#fff"}
+                        />
                       </Circle>
                       <Circle sx={style.socialLinks}>
-                        <Icon  sx={style.socialIcon} as={FaInstagram} color={"#fff"} />
+                        <Icon
+                          sx={style.socialIcon}
+                          as={FaInstagram}
+                          color={"#fff"}
+                        />
                       </Circle>
                     </Flex>
                   </Stack>
