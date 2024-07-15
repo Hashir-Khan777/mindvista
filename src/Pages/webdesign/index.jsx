@@ -34,7 +34,7 @@ const WebDesign = () => {
                   color: "#fff",
                 }}
               >
-                BOOSTTTTT YOUR BUSINESS <br /> WITH OUR OUTSTANDING{" "}
+                BOOST YOUR BUSINESS <br /> WITH OUR OUTSTANDING{" "}
                 <span style={{ color: "#F8BE28" }}>WEB DESIGNING </span>
                 SOLUTIONS
               </Heading>
@@ -66,14 +66,6 @@ const WebDesign = () => {
                 sx={{
                   w: "auto",
                   h: "300px",
-                }}
-              />
-              <Image
-                src="/images/hero-bg.png"
-                sx={{
-                  width: "auto",
-                  height: "auto",
-                  display: { base: "none", md: "block" },
                 }}
               />
             </Box>
