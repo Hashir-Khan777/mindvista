@@ -134,7 +134,17 @@ const Services = () => {
             </Box>
           </Box>
 
-          <Box py="4rem" textAlign="center" bgColor="#151515">
+          <Box
+            textAlign="center"
+            bgColor="#151515"
+            sx={{
+              justifyContent: "center",
+              alignItems: "center",
+              py: { base: "2rem", lg: "6rem" },
+              px: { base: "0", lg: "4rem" },
+              height: "auto",
+            }}
+          >
             <Box my="3rem" textAlign="center">
               <Text sx={style.subHeading}>Our focusable services</Text>
               <Heading sx={style.heading}>
@@ -215,14 +225,26 @@ const Services = () => {
             bgColor="#000"
             color="white"
             textAlign={"left"}
-            maxW={{ base: "100%", md: "80%" }}
-            p={{ base: "1.5rem", md: "4rem" }}
-            m={"auto"}
+            // maxW={{ base: "100%", md: "80%" }}
+            // m={"auto"}
+            sx={{
+              justifyContent: "center",
+              alignItems: "center",
+              py: { base: "2rem", lg: "6rem" },
+              px: { base: "0", lg: "4rem" },
+              height: "auto",
+            }}
           >
             <Heading mb="2rem" color="#f8be28">
               {selectedService.heading}
             </Heading>
-            <Text mb="1rem">{selectedService.text}</Text>
+            <Text mb="1rem">
+              {selectedService.text} <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              quas magni alias, aspernatur, rerum nam quis praesentium esse,
+              fugiat reiciendis doloribus enim dignissimos? Cupiditate
+              reiciendis qui quibusdam molestias ad modi.
+            </Text>
             <Text fontWeight="bold" mb="1rem">
               Technologies Used:
             </Text>
@@ -234,6 +256,13 @@ const Services = () => {
             placeItems="center"
             bgColor="#1E1E1E"
             padding={{ base: "20px", md: "40px" }}
+            sx={{
+              justifyContent: "center",
+              alignItems: "center",
+              py: { base: "2rem", lg: "6rem" },
+              px: { base: "0", lg: "4rem" },
+              height: "auto",
+            }}
           >
             <Flex
               flexDirection={{ base: "column", lg: "row" }}
