@@ -27,8 +27,11 @@ const WebDesign = () => {
             >
               <Heading
                 sx={{
-                  color: "#fff",
                   lineHeight: "3rem",
+                  fontSize: { base: "1.8rem", md: "2.4rem" },
+                  fontWeight: 600,
+                  mb: "24px",
+                  color: "#fff",
                 }}
               >
                 BOOST YOUR BUSINESS <br /> WITH OUR OUTSTANDING{" "}
@@ -37,8 +40,13 @@ const WebDesign = () => {
               </Heading>
               <Text
                 sx={{
+                  fontSize: { base: "12px", md: "15px" },
+                  mb: "24px",
+                  fontWeight: 400,
                   color: "#fff",
-                  mt: "16px",
+                  letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 4,
                 }}
               >
                 This is the Web Design page with some dummy content. Lorem ipsum
@@ -86,13 +94,18 @@ const WebDesign = () => {
                   lineHeight: "3rem",
                 }}
               >
-                <span style={{ color: "#F8BE28" }}> ANDROID APP </span>
+                <span style={{ color: "#F8BE28" }}> WEB DESIGNING </span>
                 DEVELOPMENT COMPANY YOU CAN COUNT ON BOOST YOUR
               </Heading>
               <Text
                 sx={{
+                  fontSize: { base: "12px", md: "15px" },
+                  fontWeight: 400,
+                  mb: "24px",
                   color: "#fff",
-                  mt: "16px",
+                  letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 4,
                 }}
               >
                 This is the Web Design page with some dummy content. Lorem ipsum
@@ -103,8 +116,13 @@ const WebDesign = () => {
               </Text>
               <Text
                 sx={{
+                  fontSize: { base: "12px", md: "15px" },
+                  fontWeight: 400,
+                  mb: "24px",
                   color: "#fff",
-                  mt: "10px",
+                  letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 4,
                 }}
               >
                 This is the Web Design page with some dummy content. Lorem ipsum
@@ -128,6 +146,47 @@ const WebDesign = () => {
               />
             </Box>
           </Flex>
+          <Box
+            px={{ base: "10px", lg: "8rem" }}
+            py="6rem"
+            pt="8rem"
+            bg={"#090909"}
+          >
+            <Box
+              sx={{
+                textAlign: "left",
+                // width: "50%",
+              }}
+            >
+              <Heading
+                sx={{
+                  color: "#fff",
+                  width: "50%",
+                  lineHeight: "3rem",
+                }}
+              >
+                TECHNOLOGIES USED IN <br />
+                <span style={{ color: "#F8BE28" }}> WEB DESIGNING </span>
+              </Heading>
+              <Text
+                sx={{
+                  fontSize: { base: "12px", md: "15px" },
+                  fontWeight: 400,
+                  mb: "24px",
+                  color: "#fff",
+                  letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 4,
+                }}
+              >
+                This is the Web Design page with some dummy content. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores sint autem
+                atque et magni vel veritatis libero at iste aut iusto iure
+                possimus rem, mollitia ab doloribus consequatur. Veritatis,
+                eaque?
+              </Text>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
