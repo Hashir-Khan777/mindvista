@@ -62,10 +62,18 @@ const WebDesign = () => {
               }}
             >
               <Image
-                src={"/images/webdev.png"}
+                src="/images/webdev.png"
                 sx={{
                   w: "auto",
                   h: "300px",
+                }}
+              />
+              <Image
+                src="/images/hero-bg.png"
+                sx={{
+                  width: "auto",
+                  height: "auto",
+                  display: { base: "none", md: "block" },
                 }}
               />
             </Box>
@@ -250,7 +258,6 @@ const WebDesign = () => {
               />
             </Box>
           </Flex>
-       
         </Box>
       </Box>
     </Box>
