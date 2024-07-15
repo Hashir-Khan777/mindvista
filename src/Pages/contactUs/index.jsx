@@ -71,81 +71,154 @@ const ContactUs = () => {
                 transform: "translateX(0)",
                 transition: { duration: 1 },
               }}
-              // border="2px solid #fff"
-              gap="20px"
+              gap="10px"
               p="20px"
               w={{ base: "100%", lg: "550px", xl: "600px" }}
               h="100%"
+              textAlign={"left"}
             >
-              <Text sx={style.infoText}>GET IN TOUCH</Text>
+              <Text
+                sx={{
+                  fontSize: { base: "0.8rem", md: "1.2rem" },
+                  fontWeight: 600,
+                  color: "#F8BE28",
+                  letterSpacing: "2px",
+                }}
+              >
+                GET IN TOUCH
+              </Text>
               <Heading
-                fontSize={{ base: "25px", md: "35px" }}
-                color={"#fff"}
-                textAlign={"left"}
+                sx={{
+                  fontSize: { base: "1.8rem", md: "2.2rem" },
+                  fontWeight: 600,
+                  color: "#fff",
+                }}
               >
                 Contact Us
               </Heading>
               <Text
-                fontSize={{ base: "14px", md: "16px" }}
-                color={"#fff"}
-                textAlign={"left"}
+                sx={{
+                  fontSize: { base: "12px", md: "14px" },
+                  fontWeight: 400,
+                  color: "#fff",
+                  letterSpacing: "1px",
+                  lineHeight: "20px",
+                  mt: 2,
+                  mb: 6,
+                }}
               >
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque
                 inventore
               </Text>
               <SimpleGrid spacingY={5} columns={{ base: 1, lg: 2 }}>
-                <Flex width="100%" gap="20px">
+                <Flex width="100%" gap="10px">
                   <Icon sx={style.infoIcon} as={IoLocationSharp} />
                   <Stack justifyContent={"left"} alignItems={"left"}>
-                    <Heading sx={style.infoHeading} color={"#fff"}>
+                    <Heading
+                      sx={{
+                        fontSize: { base: "1rem", md: "1.5rem" },
+                        fontWeight: 600,
+                        color: "#fff",
+                      }}
+                    >
                       Location
                     </Heading>
-                    <Text sx={style.text} color={"#fff"}>
+                    <Text
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                        fontWeight: 400,
+                        color: "#fff",
+                        letterSpacing: "1px",
+                        lineHeight: "20px",
+                      }}
+                    >
                       55 Main street, 2nd block, Melbourne, Australia
                     </Text>
                   </Stack>
                 </Flex>
-                <Flex width="100%" gap="20px">
+                <Flex width="100%" gap="10px">
                   <Icon sx={style.infoIcon} as={FaPhone} />
                   <Stack>
-                    <Heading sx={style.infoHeading} color={"#fff"}>
+                    <Heading
+                      sx={{
+                        fontSize: { base: "1rem", md: "1.5rem" },
+                        fontWeight: 600,
+                        color: "#fff",
+                      }}
+                    >
                       Phone
                     </Heading>
-                    <Text sx={style.text} color={"#fff"}>
+                    <Text
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                        fontWeight: 400,
+                        color: "#fff",
+                        letterSpacing: "1px",
+                        lineHeight: "20px",
+                      }}
+                    >
                       +00000000000
                     </Text>
                   </Stack>
                 </Flex>
-                <Flex width="100%" gap="20px">
+                <Flex width="100%" gap="10px">
                   <Icon sx={style.infoIcon} as={CiMail} />
                   <Stack>
-                    <Heading sx={style.infoHeading} color={"#fff"}>
+                    <Heading
+                      sx={{
+                        fontSize: { base: "1rem", md: "1.5rem" },
+                        fontWeight: 600,
+                        color: "#fff",
+                      }}
+                    >
                       Email
                     </Heading>
-                    <Text sx={style.text} color={"#fff"}>
+                    <Text
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                        fontWeight: 400,
+                        color: "#fff",
+                        letterSpacing: "1px",
+                        lineHeight: "20px",
+                      }}
+                    >
                       info@example.com
                     </Text>
-                    <Text sx={style.text} color={"#fff"}>
+                    <Text
+                      sx={{
+                        fontSize: { base: "12px", md: "14px" },
+                        fontWeight: 400,
+                        color: "#fff",
+                        letterSpacing: "1px",
+                        lineHeight: "20px",
+                      }}
+                    >
                       info@example.com
                     </Text>
                   </Stack>
                 </Flex>
-                <Flex width="100%" gap="20px">
+                <Flex width="100%" gap="10px">
                   <Icon sx={style.infoIcon} as={IoShareSocialSharp} />
                   <Stack gap="15px">
-                    <Heading sx={style.infoHeading} color={"#fff"}>
+                    <Heading
+                      sx={{
+                        fontSize: { base: "1rem", md: "1.5rem" },
+                        fontWeight: 600,
+                        color: "#fff",
+                      }}
+                    >
                       Social
                     </Heading>
                     <Flex gap="10px">
                       <Circle sx={style.socialLinks}>
-                        <Icon as={FaFacebookF} color={"#fff"} />
+                        <Icon  sx={style.socialIcon} as={FaFacebookF} color={"#fff"} />
                       </Circle>
                       <Circle sx={style.socialLinks}>
-                        <Icon as={IoLogoTwitter} color={"#fff"} />
+                        <Icon  sx={style.socialIcon} as={IoLogoTwitter} color={"#fff"} />
                       </Circle>
                       <Circle sx={style.socialLinks}>
-                        <Icon as={FaInstagram} color={"#fff"} />
+                        <Icon  sx={style.socialIcon} as={FaInstagram} color={"#fff"} />
                       </Circle>
                     </Flex>
                   </Stack>

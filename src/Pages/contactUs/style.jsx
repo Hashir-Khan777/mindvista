@@ -1,7 +1,7 @@
 const style = {
   text: {
     fontSize: "14px",
-    textAlign:"left"
+    textAlign: "left",
   },
   textHeader: {
     m: "auto",
@@ -19,7 +19,12 @@ const style = {
   },
   infoIcon: {
     color: "#F8BE28",
-    fontSize: "22px",
+    fontSize: "18px",
+    mt: "5px",
+  },
+  socialIcon: {
+    color: "#fff",
+    fontSize: { base: "12px", md: "16px" },
   },
   infoHeading: {
     fontSize: { base: "16px", md: "22px" },
@@ -33,8 +38,8 @@ const style = {
       bgColor: "#F8BE28",
     },
     border: "3px solid #e7e5ea",
-    h: { base: "30px", md: "35px" },
-    w: { base: "30px", md: "35px" },
+    h: { base: "25px", md: "30px" },
+    w: { base: "25px", md: "30px" },
   },
   textArea: {
     h: { lg: "200px", xl: "250px" },
