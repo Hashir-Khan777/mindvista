@@ -76,8 +76,16 @@ const AboutUs = () => {
                 >
                   Our Managed IT Services Let You Concentrate On What Matters
                 </Heading>
-                <Tabs mt="30px" variant="unstyled">
-                  <TabList gap={{ base: "20px", lg: "40px" }}>
+                <Tabs
+                  mt="30px"
+                  variant="unstyled"
+                  textAlign={"left"}
+                  sx={{
+                    position: "relative",
+                    left: "-0.8rem",
+                  }}
+                >
+                  <TabList gap="20px">
                     <Tab color={"#fff"} sx={style.tab}>
                       Our Approach
                     </Tab>
@@ -132,7 +140,16 @@ const AboutUs = () => {
                       </SimpleGrid>
                     </TabPanel>
                     <TabPanel>
-                      <Text sx={style.tabpanel}>
+                      <Text
+                        sx={{
+                          fontSize: { base: "12px", md: "14px" },
+                          fontWeight: 400,
+                          color: "#fff",
+                          letterSpacing: "1px",
+                          lineHeight: "20px",
+                          mt: 2,
+                        }}
+                      >
                         At veroeos accusamus dignissimos ducimus blanditiis
                         volupta delenite atque corrupti quos dolores et quas
                         molestias excepturi sint occaecatie
