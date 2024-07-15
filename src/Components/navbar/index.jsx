@@ -27,23 +27,75 @@ const Navbar = ({ clicked, isOpen }) => {
               <Text sx={style.links}>Services</Text>
             </Box>
             <Flex sx={style.dropdownMenu} className="dropdownMenu">
-              <Box as={NavLink} to="/services/web-design" sx={style.dropdownItem}>
-                Web Design
+              <Box
+                as={NavLink}
+                to="/services/web-design"
+                sx={style.dropdownItem}
+              >
+                <Image
+                  sx={{
+                    w: "20px",
+                  }}
+                  src={"/public/images/androidlogo.png"}
+                />{" "}
+                <Text>Web Design</Text>
               </Box>
-              <Box as={NavLink} to="/services/web-development" sx={style.dropdownItem}>
-                Web Development
+              <Box
+                as={NavLink}
+                to="/services/web-development"
+                sx={style.dropdownItem}
+              >
+                <Image
+                  sx={{
+                    w: "20px",
+                  }}
+                  src={"/public/images/androidlogo.png"}
+                />{" "}
+                <Text>Web Development</Text>
               </Box>
-              <Box as={NavLink} to="/services/app-development" sx={style.dropdownItem}>
-                App Development
+              <Box
+                as={NavLink}
+                to="/services/app-development"
+                sx={style.dropdownItem}
+              >
+                <Image
+                  sx={{
+                    w: "20px",
+                  }}
+                  src={"/public/images/androidlogo.png"}
+                />{" "}
+                <Text>App Development</Text>
               </Box>
               <Box as={NavLink} to="/services/branding" sx={style.dropdownItem}>
-                Branding
+                <Image
+                  sx={{
+                    w: "20px",
+                  }}
+                  src={"/public/images/androidlogo.png"}
+                />{" "}
+                <Text>Branding</Text>
               </Box>
               <Box as={NavLink} to="/services/seo" sx={style.dropdownItem}>
-                SEO Optimization
+                <Image
+                  sx={{
+                    w: "20px",
+                  }}
+                  src={"/public/images/androidlogo.png"}
+                />{" "}
+                <Text>SEO Optimization</Text>
               </Box>
-              <Box as={NavLink} to="/services/content-writing" sx={style.dropdownItem}>
-                Content Writing
+              <Box
+                as={NavLink}
+                to="/services/content-writing"
+                sx={style.dropdownItem}
+              >
+                <Image
+                  sx={{
+                    w: "20px",
+                  }}
+                  src={"/public/images/androidlogo.png"}
+                />{" "}
+                <Text>Content Writing</Text>
               </Box>
             </Flex>
           </Box>
