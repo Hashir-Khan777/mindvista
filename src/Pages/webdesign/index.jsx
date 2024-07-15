@@ -34,7 +34,7 @@ const WebDesign = () => {
                   color: "#fff",
                 }}
               >
-                BOOST YOUR BUSINESS <br /> WITH OUR OUTSTANDING{" "}
+                BOOSTTTTT YOUR BUSINESS <br /> WITH OUR OUTSTANDING{" "}
                 <span style={{ color: "#F8BE28" }}>WEB DESIGNING </span>
                 SOLUTIONS
               </Heading>
