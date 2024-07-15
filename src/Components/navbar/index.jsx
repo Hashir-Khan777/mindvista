@@ -36,7 +36,7 @@ const Navbar = ({ clicked, isOpen }) => {
                   sx={{
                     w: "20px",
                   }}
-                  src={"/public/images/webdesignlogo.png"}
+                  src={"/images/webdesignlogo.png"}
                 />{" "}
                 <Text>Web Design</Text>
               </Box>
@@ -49,7 +49,7 @@ const Navbar = ({ clicked, isOpen }) => {
                   sx={{
                     w: "20px",
                   }}
-                  src={"/public/images/webdevlogo.webp"}
+                  src={"/images/webdevlogo.webp"}
                 />{" "}
                 <Text>Web Development</Text>
               </Box>
@@ -62,7 +62,7 @@ const Navbar = ({ clicked, isOpen }) => {
                   sx={{
                     w: "20px",
                   }}
-                  src={"/public/images/androidlogo.png"}
+                  src={"/images/androidlogo.png"}
                 />{" "}
                 <Text>App Development</Text>
               </Box>
@@ -71,7 +71,7 @@ const Navbar = ({ clicked, isOpen }) => {
                   sx={{
                     w: "20px",
                   }}
-                  src={"/public/images/brandinglogo.png"}
+                  src={"/images/brandinglogo.png"}
                 />{" "}
                 <Text>Branding</Text>
               </Box>
@@ -80,7 +80,7 @@ const Navbar = ({ clicked, isOpen }) => {
                   sx={{
                     w: "20px",
                   }}
-                  src={"/public/images/seologo.png"}
+                  src={"/images/seologo.png"}
                 />{" "}
                 <Text>SEO Optimization</Text>
               </Box>
@@ -93,7 +93,7 @@ const Navbar = ({ clicked, isOpen }) => {
                   sx={{
                     w: "20px",
                   }}
-                  src={"/public/images/contentwritinglogo.png"}
+                  src={"/images/contentwritinglogo.png"}
                 />{" "}
                 <Text>Content Writing</Text>
               </Box>

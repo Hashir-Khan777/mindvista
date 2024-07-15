@@ -62,7 +62,7 @@ const WebDesign = () => {
               }}
             >
               <Image
-                src={"/public/images/webdev.png"}
+                src={"/images/webdev.png"}
                 sx={{
                   w: "auto",
                   h: "300px",
@@ -116,57 +116,57 @@ const WebDesign = () => {
                 gap={{ base: 5, lg: 3, xl: 10 }}
               >
                 <Image
-                  src="/public/images/webdevlogo.webp"
+                  src="/images/webdevlogo.webp"
                   sx={{
                     w: "80px",
                     h: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/javascript.png"
+                  src="/images/javascript.png"
                   sx={{
                     h: "80px",
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/reactjs.png"
+                  src="/images/reactjs.png"
                   sx={{
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/bootstrap.png"
+                  src="/images/bootstrap.png"
                   sx={{
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/wordpress.png"
+                  src="/images/wordpress.png"
                   sx={{
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/nodejs.png"
+                  src="/images/nodejs.png"
                   sx={{
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/css.png"
+                  src="/images/css.png"
                   sx={{
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/reactjs.png"
+                  src="/images/reactjs.png"
                   sx={{
                     w: "80px",
                   }}
                 />
                 <Image
-                  src="/public/images/bootstrap.png"
+                  src="/images/bootstrap.png"
                   sx={{
                     w: "80px",
                   }}
@@ -242,7 +242,7 @@ const WebDesign = () => {
               }}
             >
               <Image
-                src={"/public/images/webdev.png"}
+                src={"/images/webdev.png"}
                 sx={{
                   w: "auto",
                   h: "300px",
