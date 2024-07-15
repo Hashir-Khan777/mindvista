@@ -34,18 +34,18 @@ const style = {
         transform: "scaleX(1)",
       },
     },
-    _after: {
-      content: '""',
-      position: "absolute",
-      bottom: "-2px",
-      left: "30%",
-      width: "40%",
-      height: "2px",
-      backgroundColor: "#F8BE28",
-      transform: "scaleX(0)",
-      transformOrigin: "center",
-      transition: "transform 0.3s ease-in-out",
-    },
+    // _after: {
+    //   content: '""',
+    //   position: "absolute",
+    //   bottom: "-2px",
+    //   left: "30%",
+    //   width: "40%",
+    //   height: "2px",
+    //   backgroundColor: "#F8BE28",
+    //   transform: "scaleX(0)",
+    //   transformOrigin: "center",
+    //   transition: "transform 0.3s ease-in-out",
+    // },
   },
 
   hamBurger: {
@@ -73,6 +73,32 @@ const style = {
     _hover: {
       color: "#F8BE28",
       borderColor: "#F8BE28",
+    },
+  },
+  dropdownMenu: {
+    display: "none",
+    position: "absolute",
+    top: "90%",
+    left: 0,
+    mt: "8px",
+    minWidth: "160px",
+    bg: "white",
+    boxShadow: "0 8px 16px rgba(0, 0, 0, 0.1)",
+    zIndex: 1000,
+    flexDirection: "column",
+  },
+  dropdownItem: {
+    padding: "12px 16px",
+    color: "#333",
+    whiteSpace: "nowrap",
+    _hover: {
+      bg: "#F8BE28",
+      color: "white",
+    },
+  },
+  linksWithDropdown: {
+    "&:hover .dropdownMenu": {
+      display: "flex",
     },
   },
 };

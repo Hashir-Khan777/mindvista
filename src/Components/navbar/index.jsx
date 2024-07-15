@@ -22,8 +22,30 @@ const Navbar = ({ clicked, isOpen }) => {
           <Box to="/aboutUs" as={NavLink}>
             <Text sx={style.links}>About Us</Text>
           </Box>
-          <Box to="/services" as={NavLink}>
-            <Text sx={style.links}>Services</Text>
+          <Box sx={{ ...style.links, ...style.linksWithDropdown }}>
+            <Box as={NavLink} to="#">
+              <Text sx={style.links}>Services</Text>
+            </Box>
+            <Flex sx={style.dropdownMenu} className="dropdownMenu">
+              <Box as={NavLink} to="/services/web-design" sx={style.dropdownItem}>
+                Web Design
+              </Box>
+              <Box as={NavLink} to="/services/web-development" sx={style.dropdownItem}>
+                Web Development
+              </Box>
+              <Box as={NavLink} to="/services/app-development" sx={style.dropdownItem}>
+                App Development
+              </Box>
+              <Box as={NavLink} to="/services/branding" sx={style.dropdownItem}>
+                Branding
+              </Box>
+              <Box as={NavLink} to="/services/seo" sx={style.dropdownItem}>
+                SEO Optimization
+              </Box>
+              <Box as={NavLink} to="/services/content-writing" sx={style.dropdownItem}>
+                Content Writing
+              </Box>
+            </Flex>
           </Box>
           <Box to="/portfolio" as={NavLink}>
             <Text sx={style.links}>Portfolio</Text>
@@ -36,7 +58,6 @@ const Navbar = ({ clicked, isOpen }) => {
       <Flex display={{ base: "none", lg: "flex" }} gap="16px">
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={IoMailOutline} />
-          <Image />
         </Box>
         <Box as="button" sx={style.iconButton}>
           <Icon fontSize="24px" as={MdOutlinePhone} />
