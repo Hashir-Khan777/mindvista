@@ -36,49 +36,63 @@ const Navbar = ({ clicked, isOpen }) => {
               <Text sx={style.links}>Services</Text>
             </Box>
             <Flex sx={style.dropdownMenu} className="dropdownMenu">
-              <Box
-                as={NavLink}
-                to="/services/web-design"
-                sx={style.dropdownItem}
+              <SimpleGrid
+                columns={{ base: 1, lg: 3 }}
+                mt="-6rem"
+                gap={{ base: 5, md: 3, xl: 20 }}
+                rowGap={"5rem"}
+                sx={{
+                  w: "60%",
+                }}
               >
-                <Image sx={{ w: "20px" }} src={"/images/webdesignlogo.png"} />
-                <Text>Web Design</Text>
-              </Box>
-              <Box
-                as={NavLink}
-                to="/services/web-development"
-                sx={style.dropdownItem}
-              >
-                <Image sx={{ w: "20px" }} src={"/images/webdevlogo.webp"} />
-                <Text>Web Development</Text>
-              </Box>
-              <Box
-                as={NavLink}
-                to="/services/app-development"
-                sx={style.dropdownItem}
-              >
-                <Image sx={{ w: "20px" }} src={"/images/androidlogo.png"} />
-                <Text>App Development</Text>
-              </Box>
-              <Box as={NavLink} to="/services/branding" sx={style.dropdownItem}>
-                <Image sx={{ w: "20px" }} src={"/images/branding-pr.png"} />
-                <Text>Branding</Text>
-              </Box>
-              <Box as={NavLink} to="/services/seo" sx={style.dropdownItem}>
-                <Image sx={{ w: "20px" }} src={"/images/seologo.png"} />
-                <Text>SEO Optimization</Text>
-              </Box>
-              <Box
-                as={NavLink}
-                to="/services/content-writing"
-                sx={style.dropdownItem}
-              >
-                <Image
-                  sx={{ w: "20px" }}
-                  src={"/images/contentwritinglogo.png"}
-                />
-                <Text>Content Writing</Text>
-              </Box>
+                <Box
+                  as={NavLink}
+                  to="/services/web-design"
+                  sx={style.dropdownItem}
+                >
+                  <Image sx={{ w: "20px" }} src={"/images/webdesignlogo.png"} />
+                  <Text>Web Design</Text>
+                </Box>
+                <Box
+                  as={NavLink}
+                  to="/services/web-development"
+                  sx={style.dropdownItem}
+                >
+                  <Image sx={{ w: "20px" }} src={"/images/webdevlogo.webp"} />
+                  <Text>Web Development</Text>
+                </Box>
+                <Box
+                  as={NavLink}
+                  to="/services/app-development"
+                  sx={style.dropdownItem}
+                >
+                  <Image sx={{ w: "20px" }} src={"/images/androidlogo.png"} />
+                  <Text>App Development</Text>
+                </Box>
+                <Box
+                  as={NavLink}
+                  to="/services/branding"
+                  sx={style.dropdownItem}
+                >
+                  <Image sx={{ w: "20px" }} src={"/images/branding-pr.png"} />
+                  <Text>Branding</Text>
+                </Box>
+                <Box as={NavLink} to="/services/seo" sx={style.dropdownItem}>
+                  <Image sx={{ w: "20px" }} src={"/images/seologo.png"} />
+                  <Text>SEO Optimization</Text>
+                </Box>
+                <Box
+                  as={NavLink}
+                  to="/services/content-writing"
+                  sx={style.dropdownItem}
+                >
+                  <Image
+                    sx={{ w: "20px" }}
+                    src={"/images/contentwritinglogo.png"}
+                  />
+                  <Text>Content Writing</Text>
+                </Box>
+              </SimpleGrid>
             </Flex>
           </Box>
           <Box to="/portfolio" as={NavLink}>
