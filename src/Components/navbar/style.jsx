@@ -1,3 +1,5 @@
+import { border } from "@chakra-ui/react";
+
 const style = {
   navBar: {
     py: "12px",
@@ -58,7 +60,7 @@ const style = {
   dropdownMenu: {
     display: "none",
     position: "absolute",
-    top: "100%",
+    top: "3.5rem",
     left: "-29rem",
     right: "0",
     // mt: "8px",
@@ -66,6 +68,8 @@ const style = {
     h: "40vh",
     bg: "rgba(0, 0, 0, 0.95)",
     flexWrap: "wrap",
+    borderTop:"1px solid #F8BE28",
+    borderBottom:"1px solid #F8BE28",
     // justifyContent: "center",
     // alignItems: "center",
     zIndex: 1000,
