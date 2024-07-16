@@ -10,10 +10,10 @@ const WebDesign = () => {
           <Flex
             direction={{ base: "column", lg: "row" }}
             align="center"
-            px={{ base: "10px", lg: "8rem" }}
+            px={{ base: "1.5rem", lg: "6rem" }}
+            pt={{ base: "7rem", lg: "10rem" }}
             gap="5rem"
             py="6rem"
-            pt="10rem"
             bg={"#090909"}
             sx={{
               justifyContent: "space-between",
@@ -22,7 +22,7 @@ const WebDesign = () => {
             <Box
               sx={{
                 textAlign: "left",
-                width: "50%",
+                w: { base: "90%", lg: "50%" },
               }}
             >
               <Heading
@@ -65,28 +65,29 @@ const WebDesign = () => {
                 src="/images/webdev.png"
                 sx={{
                   w: "auto",
-                  h: "300px",
+                  px: "2rem",
+                  h: { base: "200px", md: "300px" },
                 }}
               />
             </Box>
           </Flex>
           <Box
-            px={{ base: "10px", lg: "8rem" }}
-            py="6rem"
-            pt="8rem"
             bg={"#000"}
+            px={{ base: "1.5rem", lg: "6rem" }}
+            pt={{ base: "7rem", lg: "10rem" }}
+            gap="5rem"
+            py="6rem"
           >
             <Box
               sx={{
                 textAlign: "left",
-                width: "80%",
-                // width: "50%",
+                width: { base: "90%", lg: "50%" },
               }}
             >
               <Heading
                 sx={{
                   color: "#fff",
-                  width: "50%",
+                  w: { base: "90%", lg: "80%" },
                   lineHeight: "3rem",
                 }}
               >
@@ -112,63 +113,71 @@ const WebDesign = () => {
               </Text>
               <SimpleGrid
                 columns={{ base: 2, lg: 3 }}
+                placeItems={"center"}
                 mt="4rem"
                 gap={{ base: 5, lg: 3, xl: 10 }}
               >
                 <Image
-                  src="/images/webdevlogo.webp"
+                  src="/images/reactjs.png"
                   sx={{
-                    w: "80px",
-                    h: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/javascript.png"
                   sx={{
-                    h: "80px",
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/reactjs.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/bootstrap.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/wordpress.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/nodejs.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/css.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/reactjs.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
                 <Image
                   src="/images/bootstrap.png"
                   sx={{
-                    w: "80px",
+                    w: { base: "40px", md: "50px", lg: "80px" },
+                    h: { base: "40px", md: "50px", lg: "80px" },
                   }}
                 />
               </SimpleGrid>
@@ -177,11 +186,11 @@ const WebDesign = () => {
           <Flex
             direction={{ base: "column", lg: "row" }}
             align="center"
-            px={{ base: "10px", lg: "8rem" }}
+            bg={"#090909"}
+            px={{ base: "1.5rem", lg: "6rem" }}
+            pt={{ base: "7rem", lg: "10rem" }}
             gap="5rem"
             py="6rem"
-            pt="8rem"
-            bg={"#090909"}
             sx={{
               justifyContent: "space-between",
             }}
@@ -189,7 +198,7 @@ const WebDesign = () => {
             <Box
               sx={{
                 textAlign: "left",
-                width: "50%",
+                w: { base: "90%", lg: "50%" },
               }}
             >
               <Heading
@@ -245,7 +254,8 @@ const WebDesign = () => {
                 src={"/images/webdev.png"}
                 sx={{
                   w: "auto",
-                  h: "300px",
+                  px: "2rem",
+                  h: { base: "200px", md: "300px" },
                 }}
               />
             </Box>
