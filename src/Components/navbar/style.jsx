@@ -64,9 +64,6 @@ const style = {
     mt: "8px",
     w: "100vw",
     h: "100vh",
-    // bg: "#000",
-    // opacity: "0.5",
-    // backgroundColor: "rgba(9, 9, 9, 0.6)",
     bg: "rgba(0, 0, 0, 0.8)",
     flexWrap: "wrap",
     justifyContent: "center",
@@ -74,8 +71,6 @@ const style = {
     zIndex: 1000,
     transition: "all 0.3s ease-in-out",
     gridTemplateColumns: "repeat(3, 1fr)",
-    gap: "16px",
-    padding: "32px",
   },
   dropdownItem: {
     display: "flex",
@@ -83,6 +78,9 @@ const style = {
     padding: "12px 16px",
     color: "#fff",
     whiteSpace: "nowrap",
+    _hover:{
+      bg: "#F8BE28",
+    }
   },
   linksWithDropdown: {
     "&:hover .dropdownMenu": {

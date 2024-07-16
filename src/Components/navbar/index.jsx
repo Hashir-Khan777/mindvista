@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Circle, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Circle,
+  Flex,
+  Icon,
+  Image,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlinePhone } from "react-icons/md";
@@ -22,21 +30,33 @@ const Navbar = ({ clicked, isOpen }) => {
           <Box to="/aboutUs" as={NavLink}>
             <Text sx={style.links}>About Us</Text>
           </Box>
-       
+
           <Box sx={{ ...style.links, ...style.linksWithDropdown }}>
             <Box as={NavLink} to="#">
               <Text sx={style.links}>Services</Text>
             </Box>
             <Flex sx={style.dropdownMenu} className="dropdownMenu">
-              <Box as={NavLink} to="/services/web-design" sx={style.dropdownItem}>
+              <Box
+                as={NavLink}
+                to="/services/web-design"
+                sx={style.dropdownItem}
+              >
                 <Image sx={{ w: "20px" }} src={"/images/webdesignlogo.png"} />
                 <Text>Web Design</Text>
               </Box>
-              <Box as={NavLink} to="/services/web-development" sx={style.dropdownItem}>
+              <Box
+                as={NavLink}
+                to="/services/web-development"
+                sx={style.dropdownItem}
+              >
                 <Image sx={{ w: "20px" }} src={"/images/webdevlogo.webp"} />
                 <Text>Web Development</Text>
               </Box>
-              <Box as={NavLink} to="/services/app-development" sx={style.dropdownItem}>
+              <Box
+                as={NavLink}
+                to="/services/app-development"
+                sx={style.dropdownItem}
+              >
                 <Image sx={{ w: "20px" }} src={"/images/androidlogo.png"} />
                 <Text>App Development</Text>
               </Box>
@@ -48,8 +68,15 @@ const Navbar = ({ clicked, isOpen }) => {
                 <Image sx={{ w: "20px" }} src={"/images/seologo.png"} />
                 <Text>SEO Optimization</Text>
               </Box>
-              <Box as={NavLink} to="/services/content-writing" sx={style.dropdownItem}>
-                <Image sx={{ w: "20px" }} src={"/images/contentwritinglogo.png"} />
+              <Box
+                as={NavLink}
+                to="/services/content-writing"
+                sx={style.dropdownItem}
+              >
+                <Image
+                  sx={{ w: "20px" }}
+                  src={"/images/contentwritinglogo.png"}
+                />
                 <Text>Content Writing</Text>
               </Box>
             </Flex>
@@ -82,4 +109,3 @@ const Navbar = ({ clicked, isOpen }) => {
 };
 
 export default Navbar;
-
