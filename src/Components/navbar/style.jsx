@@ -1,6 +1,3 @@
-import { position } from "@chakra-ui/react";
-import { BiBorderBottom } from "react-icons/bi";
-
 const style = {
   navBar: {
     py: "12px",
@@ -10,7 +7,6 @@ const style = {
     px: "2rem",
     backgroundColor: "rgba(9, 9, 9, 0.6)",
     boxShadow: "md",
-    // pr: "5rem",
     position: "fixed",
     top: 0,
     zIndex: 1,
@@ -30,24 +26,8 @@ const style = {
     position: "relative",
     _hover: {
       color: "#F8BE28",
-      _after: {
-        transform: "scaleX(1)",
-      },
     },
-    // _after: {
-    //   content: '""',
-    //   position: "absolute",
-    //   bottom: "-2px",
-    //   left: "30%",
-    //   width: "40%",
-    //   height: "2px",
-    //   backgroundColor: "#F8BE28",
-    //   transform: "scaleX(0)",
-    //   transformOrigin: "center",
-    //   transition: "transform 0.3s ease-in-out",
-    // },
   },
-
   hamBurger: {
     h: { base: "35px", md: "45px" },
     w: { base: "35px", md: "45px" },
@@ -78,29 +58,38 @@ const style = {
   dropdownMenu: {
     display: "none",
     position: "absolute",
-    top: "90%",
-    left: 0,
+    top: "100%",
+    left: "-29rem",
+    right: "0",
     mt: "8px",
-    minWidth: "200px",
-    bg: "white",
-    boxShadow: "0 8px 16px rgba(0, 0, 0, 0.1)",
+    w: "100vw",
+    h: "100vh",
+    // bg: "#000",
+    // opacity: "0.5",
+    // backgroundColor: "rgba(9, 9, 9, 0.6)",
+    bg: "rgba(0, 0, 0, 0.8)",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
     zIndex: 1000,
-    flexDirection: "column",
+    transition: "all 0.3s ease-in-out",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "16px",
+    padding: "32px",
   },
   dropdownItem: {
     display: "flex",
     gap: "10px",
     padding: "12px 16px",
-    color: "#333",
+    color: "#fff",
     whiteSpace: "nowrap",
-    _hover: {
-      bg: "#F8BE28",
-      color: "white",
-    },
   },
   linksWithDropdown: {
     "&:hover .dropdownMenu": {
-      display: "flex",
+      display: "grid",
+      margin: "auto",
+      placeItems: "center",
+      animation: "fadeIn 0.5s",
     },
   },
 };

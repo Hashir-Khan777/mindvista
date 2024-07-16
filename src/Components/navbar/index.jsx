@@ -22,79 +22,34 @@ const Navbar = ({ clicked, isOpen }) => {
           <Box to="/aboutUs" as={NavLink}>
             <Text sx={style.links}>About Us</Text>
           </Box>
+       
           <Box sx={{ ...style.links, ...style.linksWithDropdown }}>
             <Box as={NavLink} to="#">
               <Text sx={style.links}>Services</Text>
             </Box>
             <Flex sx={style.dropdownMenu} className="dropdownMenu">
-              <Box
-                as={NavLink}
-                to="/services/web-design"
-                sx={style.dropdownItem}
-              >
-                <Image
-                  sx={{
-                    w: "20px",
-                  }}
-                  src={"/images/webdesignlogo.png"}
-                />{" "}
+              <Box as={NavLink} to="/services/web-design" sx={style.dropdownItem}>
+                <Image sx={{ w: "20px" }} src={"/images/webdesignlogo.png"} />
                 <Text>Web Design</Text>
               </Box>
-              <Box
-                as={NavLink}
-                to="/services/web-development"
-                sx={style.dropdownItem}
-              >
-                <Image
-                  sx={{
-                    w: "20px",
-                  }}
-                  src={"/images/webdevlogo.webp"}
-                />{" "}
+              <Box as={NavLink} to="/services/web-development" sx={style.dropdownItem}>
+                <Image sx={{ w: "20px" }} src={"/images/webdevlogo.webp"} />
                 <Text>Web Development</Text>
               </Box>
-              <Box
-                as={NavLink}
-                to="/services/app-development"
-                sx={style.dropdownItem}
-              >
-                <Image
-                  sx={{
-                    w: "20px",
-                  }}
-                  src={"/images/androidlogo.png"}
-                />{" "}
+              <Box as={NavLink} to="/services/app-development" sx={style.dropdownItem}>
+                <Image sx={{ w: "20px" }} src={"/images/androidlogo.png"} />
                 <Text>App Development</Text>
               </Box>
               <Box as={NavLink} to="/services/branding" sx={style.dropdownItem}>
-                <Image
-                  sx={{
-                    w: "20px",
-                  }}
-                  src={"/images/brandinglogo.png"}
-                />{" "}
+                <Image sx={{ w: "20px" }} src={"/images/branding-pr.png"} />
                 <Text>Branding</Text>
               </Box>
               <Box as={NavLink} to="/services/seo" sx={style.dropdownItem}>
-                <Image
-                  sx={{
-                    w: "20px",
-                  }}
-                  src={"/images/seologo.png"}
-                />{" "}
+                <Image sx={{ w: "20px" }} src={"/images/seologo.png"} />
                 <Text>SEO Optimization</Text>
               </Box>
-              <Box
-                as={NavLink}
-                to="/services/content-writing"
-                sx={style.dropdownItem}
-              >
-                <Image
-                  sx={{
-                    w: "20px",
-                  }}
-                  src={"/images/contentwritinglogo.png"}
-                />{" "}
+              <Box as={NavLink} to="/services/content-writing" sx={style.dropdownItem}>
+                <Image sx={{ w: "20px" }} src={"/images/contentwritinglogo.png"} />
                 <Text>Content Writing</Text>
               </Box>
             </Flex>
@@ -127,3 +82,4 @@ const Navbar = ({ clicked, isOpen }) => {
 };
 
 export default Navbar;
+
