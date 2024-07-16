@@ -201,7 +201,11 @@ export const projectData = {
       category: "Web Development",
       description:
         "A content management platform for creating and managing blog posts and user comments.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quaerat. Totam obcaecati tenetur temporibus, optio vitae maiores laboriosam laudantium atque.",
-      image: "/images/portfolio-5.png",
+      image: [
+        "/images/portfolio-4.png",
+        "/images/portfolio-4.png",
+        "/images/portfolio-4.png",
+      ],
       tags: ["Next.js", "Firebase", "Tailwind CSS"],
     },
   ],

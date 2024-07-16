@@ -10,10 +10,10 @@ const WebDev = () => {
           <Flex
             direction={{ base: "column", lg: "row" }}
             align="center"
-            px={{ base: "10px", lg: "8rem" }}
+            px={{ base: "2rem", lg: "8rem" }}
+            pt={{ base: "7rem", lg: "10rem" }}
             gap="5rem"
             py="6rem"
-            pt="10rem"
             bg={"#090909"}
             sx={{
               justifyContent: "space-between",
@@ -22,7 +22,7 @@ const WebDev = () => {
             <Box
               sx={{
                 textAlign: "left",
-                width: "50%",
+                w: { base: "90%", lg: "50%" },
               }}
             >
               <Heading
@@ -66,15 +66,17 @@ const WebDev = () => {
                 sx={{
                   w: "auto",
                   h: "300px",
+                  px: "2rem",
                 }}
               />
             </Box>
           </Flex>
           <Box
-            px={{ base: "10px", lg: "8rem" }}
-            py="6rem"
-            pt="8rem"
             bg={"#000"}
+            px={{ base: "2rem", lg: "8rem" }}
+            pt={{ base: "7rem", lg: "10rem" }}
+            gap="5rem"
+            py="6rem"
           >
             <Box
               sx={{
@@ -86,7 +88,7 @@ const WebDev = () => {
               <Heading
                 sx={{
                   color: "#fff",
-                  width: "50%",
+                  w: { base: "90%", lg: "50%" },
                   lineHeight: "3rem",
                 }}
               >
@@ -112,11 +114,12 @@ const WebDev = () => {
               </Text>
               <SimpleGrid
                 columns={{ base: 2, lg: 3 }}
+                placeItems={"center"}
                 mt="4rem"
                 gap={{ base: 5, lg: 3, xl: 10 }}
               >
                 <Image
-                  src="/images/webdevlogo.webp"
+                  src="/images/reactjs.png"
                   sx={{
                     w: "80px",
                     h: "80px",

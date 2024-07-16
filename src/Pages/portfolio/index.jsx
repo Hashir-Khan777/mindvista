@@ -61,6 +61,7 @@ const Portfolio = () => {
               maxW="sm"
               bgColor="#1E1E1E"
               height="100%"
+              borderRadius="0"
               display="flex"
               flexDirection="column"
               className={`animate__animated ${animationClass}`}
