@@ -38,11 +38,10 @@ const Navbar = ({ clicked, isOpen }) => {
             <Flex sx={style.dropdownMenu} className="dropdownMenu">
               <SimpleGrid
                 columns={{ base: 1, lg: 3 }}
-                mt="-6rem"
-                gap={{ base: 5, md: 3, xl: 20 }}
-                rowGap={"5rem"}
+                // mt="-4rem"
+                gap={{ base: 5, md: 3, xl: 10 }}
                 sx={{
-                  w: "60%",
+                  w: "50%",
                 }}
               >
                 <Box

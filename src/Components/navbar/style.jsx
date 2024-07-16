@@ -63,7 +63,7 @@ const style = {
     right: "0",
     // mt: "8px",
     w: "100vw",
-    h: "100vh",
+    h: "40vh",
     bg: "rgba(0, 0, 0, 0.95)",
     flexWrap: "wrap",
     // justifyContent: "center",
